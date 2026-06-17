@@ -1163,18 +1163,56 @@ footer p,
   }
 
   .phone-showcase {
-    min-height: 320px;
+    width: min(74vw, 280px);
+    min-height: 250px;
+    margin: 0 auto 6px;
+    padding: 18px;
     border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(73, 32, 28, 0.09);
   }
 
   .phone-frame {
-    width: min(58vw, 185px);
-    max-height: 360px;
-    transform: rotate(-2deg);
+    width: min(36vw, 128px);
+    min-width: 112px;
+    max-height: none;
+    padding: 7px;
+    border-width: 5px;
+    border-radius: 26px;
+    box-shadow: 0 18px 42px rgba(72, 30, 30, 0.18);
+    transform: none;
+  }
+
+  .phone-frame::before {
+    top: 7px;
+    width: 42px;
+    height: 10px;
+  }
+
+  .phone-frame img,
+  .phone-frame .image-fallback {
+    border-radius: 18px;
   }
 
   .phone-showcase:hover .phone-frame {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+  }
+
+  .phone-shadow {
+    width: 150px;
+    height: 150px;
+  }
+
+  .phone-showcase + .project-info {
+    margin-top: 18px;
+  }
+
+  .project-info h3 {
+    font-size: clamp(29px, 10vw, 42px);
+  }
+
+  .project-info > p {
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   .contact {
