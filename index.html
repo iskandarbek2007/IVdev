@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Портфолио full-stack разработчика Iskandarbek Valijonov. Разработка сайтов и мобильных приложений.">
-  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Портфолио Iskandarbek Valijonov — full-stack разработчик сайтов и мобильных приложений.">
+  <meta name="theme-color" content="#fbf7f1">
   <title>Iskandarbek Valijonov — Full-stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor-light" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="logo" href="#home" aria-label="На главную">
@@ -23,6 +20,7 @@
     <nav class="desktop-nav" aria-label="Основная навигация">
       <a href="#about" data-i18n="navAbout">Обо мне</a>
       <a href="#skills" data-i18n="navSkills">Навыки</a>
+      <a href="#can-do" data-i18n="navCanDo">Что создаю</a>
       <a href="#work" data-i18n="navWork">Проекты</a>
       <a href="#contact" data-i18n="navContact">Контакты</a>
     </nav>
@@ -42,63 +40,62 @@
   <div class="mobile-menu">
     <a href="#about" data-i18n="navAbout">Обо мне</a>
     <a href="#skills" data-i18n="navSkills">Навыки</a>
+    <a href="#can-do" data-i18n="navCanDo">Что создаю</a>
     <a href="#work" data-i18n="navWork">Проекты</a>
     <a href="#contact" data-i18n="navContact">Контакты</a>
   </div>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="orbit orbit-one" aria-hidden="true"></div>
-      <div class="orbit orbit-two" aria-hidden="true"></div>
-
+      <div class="hero-mark" aria-hidden="true">I.V</div>
       <div class="hero-content reveal">
-        <div class="availability">
-          <span class="pulse"></span>
-          <span data-i18n="available">Доступен для новых проектов</span>
+        <div class="status-pill">
+          <span></span>
+          <b data-i18n="available">Доступен для новых проектов</b>
         </div>
-        <p class="eyebrow">FULL-STACK DEVELOPER · 2026</p>
+        <p class="eyebrow">FULL-STACK DEVELOPER / FIVERR FREELANCER</p>
         <h1>
-          <span data-i18n="heroLine1">Создаю цифровые</span><br>
-          <span class="outline-text" data-i18n="heroLine2">продукты с характером.</span>
+          <span data-i18n="heroLine1">Аккуратные сайты</span>
+          <em data-i18n="heroLine2">и приложения</em>
+          <span data-i18n="heroLine3">для реальных задач.</span>
         </h1>
-        <p class="hero-copy" data-i18n="heroCopy">Разрабатываю быстрые сайты и удобные мобильные приложения — от идеи и интерфейса до API и базы данных.</p>
+        <p class="hero-copy" data-i18n="heroCopy">Я создаю понятные веб-сайты, мобильные приложения, API и базы данных — с чистым интерфейсом, хорошей структурой и вниманием к деталям.</p>
         <div class="hero-actions">
           <a class="button button-primary magnetic" href="#work">
             <span data-i18n="seeWork">Смотреть проекты</span>
-            <span class="button-arrow">↗</span>
+            <i>↗</i>
           </a>
-          <a class="text-link" href="#contact">
-            <span data-i18n="discuss">Обсудить проект</span>
-            <i></i>
+          <a class="button button-soft magnetic" href="#contact">
+            <span data-i18n="discuss">Связаться со мной</span>
+            <i>→</i>
           </a>
         </div>
       </div>
 
-      <div class="hero-signature" aria-hidden="true">
-        <span>I</span><b>.</b><span>V</span>
-      </div>
-
-      <div class="scroll-note">
-        <span data-i18n="scroll">Листайте</span>
-        <i></i>
-      </div>
+      <aside class="hero-card reveal">
+        <div class="hero-card-top">
+          <span>Iskandarbek Valijonov</span>
+          <b>19</b>
+        </div>
+        <div class="hero-card-logo">I.V</div>
+        <p data-i18n="heroCard">Full-stack разработчик сайтов и мобильных приложений. Работаю на Fiverr и беру проекты под ключ.</p>
+      </aside>
     </section>
 
     <section class="section about" id="about">
       <div class="section-heading reveal">
-        <span class="section-number">01</span>
+        <span>01</span>
         <p data-i18n="aboutLabel">Обо мне</p>
       </div>
       <div class="about-layout">
-        <h2 class="reveal" data-i18n="aboutTitle">Не просто пишу код — превращаю задачи в работающие продукты.</h2>
+        <h2 class="reveal" data-i18n="aboutTitle">Я помогаю превратить идею в сайт или приложение, которым удобно пользоваться.</h2>
         <div class="about-copy reveal">
-          <p data-i18n="aboutP1">Меня зовут Iskandarbek Valijonov, мне 19 лет. Я full-stack разработчик сайтов и мобильных приложений.</p>
-          <p data-i18n="aboutP2">Работаю фрилансером на Fiverr: продумываю логику, создаю интерфейс, подключаю серверную часть и довожу продукт до запуска.</p>
-          <div class="quick-facts">
+          <p data-i18n="aboutP1">Меня зовут Iskandarbek Valijonov, мне 19 лет. Я full-stack разработчик: работаю с frontend, backend, мобильной разработкой, API и базами данных.</p>
+          <p data-i18n="aboutP2">Сейчас я работаю фрилансером на Fiverr. Могу подключиться как к небольшой задаче, так и собрать продукт полностью: от структуры и интерфейса до запуска.</p>
+          <div class="fact-grid">
             <div><strong>19</strong><span data-i18n="age">лет</span></div>
-            <div><strong>Full-stack</strong><span data-i18n="focus">направление</span></div>
             <div><strong>Fiverr</strong><span data-i18n="workplace">фриланс</span></div>
+            <div><strong>Full-stack</strong><span data-i18n="focus">разработка</span></div>
           </div>
         </div>
       </div>
@@ -106,132 +103,144 @@
 
     <section class="section skills" id="skills">
       <div class="section-heading reveal">
-        <span class="section-number">02</span>
-        <p data-i18n="skillsLabel">Инструменты</p>
+        <span>02</span>
+        <p data-i18n="skillsLabel">Стек</p>
       </div>
-      <div class="skills-intro reveal">
-        <h2 data-i18n="skillsTitle">Технологии, с которыми я работаю каждый день.</h2>
-        <p data-i18n="skillsCopy">Подбираю стек под задачу, а не задачу под стек.</p>
+      <div class="section-intro reveal">
+        <h2 data-i18n="skillsTitle">Технологии для frontend, backend, mobile и запуска проекта.</h2>
+        <p data-i18n="skillsCopy">Добавил несколько сильных технологий к твоему стеку, чтобы портфолио выглядело шире и профессиональнее.</p>
       </div>
-      <div class="skill-list reveal">
-        <article class="skill-row">
-          <span class="skill-index">01</span>
+
+      <div class="stack-grid reveal">
+        <article>
+          <span>01</span>
           <h3>Frontend</h3>
-          <p>JavaScript · TypeScript · React</p>
-          <span class="skill-symbol">⌁</span>
+          <p>HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS</p>
         </article>
-        <article class="skill-row">
-          <span class="skill-index">02</span>
+        <article>
+          <span>02</span>
           <h3>Mobile</h3>
-          <p>React Native</p>
-          <span class="skill-symbol">◫</span>
+          <p>React Native, Expo, mobile UI, API integration</p>
         </article>
-        <article class="skill-row">
-          <span class="skill-index">03</span>
+        <article>
+          <span>03</span>
           <h3>Backend</h3>
-          <p>Node.js · Python · REST API</p>
-          <span class="skill-symbol">↔</span>
+          <p>Node.js, Express.js, Python, FastAPI, REST API</p>
         </article>
-        <article class="skill-row">
-          <span class="skill-index">04</span>
-          <h3>Data & Tools</h3>
-          <p>SQL · Docker · Git</p>
-          <span class="skill-symbol">◇</span>
+        <article>
+          <span>04</span>
+          <h3>Data & DevOps</h3>
+          <p>SQL, PostgreSQL, MongoDB, Prisma, Docker, Git, Firebase</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section can-do" id="can-do">
+      <div class="section-heading reveal">
+        <span>03</span>
+        <p data-i18n="canDoLabel">Какие проекты я могу сделать</p>
+      </div>
+      <div class="can-do-grid">
+        <article class="can-do-card reveal">
+          <b>01</b>
+          <h3 data-i18n="canDo1Title">Лендинг или сайт-визитка</h3>
+          <p data-i18n="canDo1Copy">Для бизнеса, личного бренда, услуги, кафе, магазина или специалиста.</p>
+        </article>
+        <article class="can-do-card reveal">
+          <b>02</b>
+          <h3 data-i18n="canDo2Title">Интернет-магазин</h3>
+          <p data-i18n="canDo2Copy">Каталог товаров, корзина, оформление заказа, админ-панель и интеграции.</p>
+        </article>
+        <article class="can-do-card reveal">
+          <b>03</b>
+          <h3 data-i18n="canDo3Title">Web-приложение</h3>
+          <p data-i18n="canDo3Copy">Личный кабинет, dashboard, CRM, API и работа с базой данных.</p>
+        </article>
+        <article class="can-do-card reveal">
+          <b>04</b>
+          <h3 data-i18n="canDo4Title">Мобильное приложение</h3>
+          <p data-i18n="canDo4Copy">Приложение для Android и iOS на React Native с подключением к серверу.</p>
         </article>
       </div>
     </section>
 
     <section class="section work" id="work">
       <div class="section-heading reveal">
-        <span class="section-number">03</span>
-        <p data-i18n="workLabel">Избранные проекты</p>
+        <span>04</span>
+        <p data-i18n="workLabel">Проекты</p>
       </div>
-      <div class="work-header reveal">
-        <h2 data-i18n="workTitle">Работы, в которых идея стала продуктом.</h2>
-        <span>02 CASES</span>
+      <div class="section-intro work-intro reveal">
+        <h2 data-i18n="workTitle">Два сайта и одно мобильное приложение.</h2>
+        <p data-i18n="workCopy">Для сайтов добавлено листание изображений. Просто положи картинки рядом с HTML-файлом с такими именами: foto1site1.jpg, foto2site1.jpg, foto1site2.jpg и так далее.</p>
       </div>
 
       <div class="projects">
         <article class="project-card reveal">
-          <div class="project-visual portfolio-visual">
-            <div class="mini-browser">
-              <div class="mini-top"><i></i><i></i><i></i></div>
-              <div class="mini-logo">I.V</div>
-              <div class="mini-title"></div>
-              <div class="mini-title short"></div>
-              <div class="mini-line"></div>
+          <div class="project-gallery" data-gallery>
+            <div class="gallery-track">
+              <img src="foto1site1.jpg" alt="Скриншот сайта портфолио 1" data-fallback="foto1site1">
+              <img src="foto2site1.jpg" alt="Скриншот сайта портфолио 2" data-fallback="foto2site1">
+              <img src="foto3site1.jpg" alt="Скриншот сайта портфолио 3" data-fallback="foto3site1">
             </div>
-            <span class="project-count">01 / 02</span>
+            <div class="gallery-controls">
+              <button type="button" data-prev aria-label="Предыдущее фото">←</button>
+              <span data-current>01</span>
+              <button type="button" data-next aria-label="Следующее фото">→</button>
+            </div>
           </div>
           <div class="project-info">
-            <div>
-              <p class="project-type">WEB · DESIGN · DEVELOPMENT</p>
-              <h3 data-i18n="project1Title">Персональное портфолио</h3>
-            </div>
-            <p data-i18n="project1Copy">Мультиязычный сайт разработчика с адаптивным интерфейсом, авторскими анимациями и быстрым доступом к контактам.</p>
+            <p class="project-type">SITE / PORTFOLIO</p>
+            <h3 data-i18n="project1Title">Персональное портфолио</h3>
+            <p data-i18n="project1Copy">Сайт разработчика с мультиязычностью, аккуратной подачей навыков, проектами и быстрыми контактами.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
           </div>
         </article>
 
         <article class="project-card project-reverse reveal">
-          <div class="project-visual password-visual">
-            <div class="phone">
-              <div class="phone-notch"></div>
-              <div class="shield">IV<span>•</span></div>
-              <div class="password-row"><i></i><b></b></div>
-              <div class="password-row"><i></i><b></b></div>
-              <div class="password-row"><i></i><b></b></div>
+          <div class="project-gallery" data-gallery>
+            <div class="gallery-track">
+              <img src="foto1site2.jpg" alt="Скриншот сайта кофейни 1" data-fallback="foto1site2">
+              <img src="foto2site2.jpg" alt="Скриншот сайта кофейни 2" data-fallback="foto2site2">
+              <img src="foto3site2.jpg" alt="Скриншот сайта кофейни 3" data-fallback="foto3site2">
             </div>
-            <div class="lock-ring"><span></span></div>
-            <span class="project-count">02 / 02</span>
+            <div class="gallery-controls">
+              <button type="button" data-prev aria-label="Предыдущее фото">←</button>
+              <span data-current>01</span>
+              <button type="button" data-next aria-label="Следующее фото">→</button>
+            </div>
           </div>
           <div class="project-info">
-            <div>
-              <p class="project-type">MOBILE · SECURITY · PRODUCT</p>
-              <h3 data-i18n="project2Title">Менеджер паролей</h3>
+            <p class="project-type">SITE / COFFEE SHOP</p>
+            <h3 data-i18n="project2Title">Сайт для кофейни</h3>
+            <p data-i18n="project2Copy">Стильный сайт для кофейни с меню, атмосферной главной страницей, блоками преимуществ и контактами.</p>
+            <div class="tags"><span>React</span><span>Responsive UI</span><span>Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="phone-showcase">
+            <div class="phone-frame">
+              <img src="foto1phone.jpg" alt="Скриншот мобильного приложения менеджера паролей" data-fallback="foto1phone">
             </div>
-            <p data-i18n="project2Copy">Мобильное приложение для удобного хранения и управления паролями с фокусом на понятный интерфейс и безопасность данных.</p>
+            <div class="phone-shadow"></div>
+          </div>
+          <div class="project-info">
+            <p class="project-type">MOBILE / SECURITY</p>
+            <h3 data-i18n="project3Title">Менеджер паролей</h3>
+            <p data-i18n="project3Copy">Мобильное приложение для хранения и управления паролями с понятным интерфейсом и фокусом на безопасность данных.</p>
             <div class="tags"><span>React Native</span><span>TypeScript</span><span>API</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section services">
-      <div class="section-heading reveal">
-        <span class="section-number">04</span>
-        <p data-i18n="servicesLabel">Услуги</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card reveal">
-          <span>01</span>
-          <div class="service-icon">↗</div>
-          <h3 data-i18n="websiteTitle">Разработка сайтов</h3>
-          <p data-i18n="websiteCopy">Лендинги, портфолио и полноценные веб-приложения с адаптивным дизайном.</p>
-        </article>
-        <article class="service-card reveal">
-          <span>02</span>
-          <div class="service-icon">⌘</div>
-          <h3 data-i18n="appTitle">Разработка приложений</h3>
-          <p data-i18n="appCopy">Кроссплатформенные мобильные приложения для iOS и Android на React Native.</p>
-        </article>
-        <article class="service-card reveal">
-          <span>03</span>
-          <div class="service-icon">⟷</div>
-          <h3 data-i18n="fullTitle">Full-stack решение</h3>
-          <p data-i18n="fullCopy">Интерфейс, API, серверная логика и база данных — единый продукт под ключ.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
-      <div class="contact-orbit" aria-hidden="true"></div>
-      <p class="eyebrow reveal" data-i18n="contactLabel">ЕСТЬ ИДЕЯ?</p>
-      <h2 class="reveal"><span data-i18n="contactTitle1">Давайте создадим</span><br><em data-i18n="contactTitle2">что-то сильное.</em></h2>
-      <p class="contact-copy reveal" data-i18n="contactCopy">Расскажите о своей задаче — я отвечу и предложу подходящее решение.</p>
+      <p class="eyebrow reveal" data-i18n="contactLabel">Готов обсудить проект</p>
+      <h2 class="reveal"><span data-i18n="contactTitle1">Напишите мне,</span><em data-i18n="contactTitle2"> и начнём.</em></h2>
+      <p class="contact-copy reveal" data-i18n="contactCopy">Опишите, какой сайт или приложение вам нужно. Я отвечу и предложу подходящий вариант реализации.</p>
       <a class="button button-primary button-large magnetic reveal" href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">
         <span data-i18n="writeTelegram">Написать в Telegram</span>
-        <span class="button-arrow">↗</span>
+        <i>↗</i>
       </a>
 
       <div class="contact-links reveal">
