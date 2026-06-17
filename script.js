@@ -34,7 +34,7 @@ const translations = {
     canDo4Copy: "Приложение для Android и iOS на React Native с подключением к серверу.",
     workLabel: "Проекты",
     workTitle: "Два сайта и одно мобильное приложение.",
-    workCopy: "Для сайтов добавлено листание изображений. Просто положи картинки рядом с HTML-файлом с такими именами: foto1site1.jpg, foto2site1.jpg, foto1site2.jpg и так далее.",
+    workCopy: "Для каждого проекта оставлено одно аккуратное превью, чтобы сайт смотрелся чище и быстрее открывался на телефоне.",
     project1Title: "Персональное портфолио",
     project1Copy: "Сайт разработчика с мультиязычностью, аккуратной подачей навыков, проектами и быстрыми контактами.",
     project2Title: "Сайт для кофейни",
@@ -84,7 +84,7 @@ const translations = {
     canDo4Copy: "An Android and iOS app built with React Native and connected to a backend.",
     workLabel: "Projects",
     workTitle: "Two websites and one mobile application.",
-    workCopy: "Website projects include image sliders. Put your images next to the HTML file with names like foto1site1.jpg, foto2site1.jpg, foto1site2.jpg and so on.",
+    workCopy: "Each project now uses one clean preview image, so the portfolio looks lighter and loads better on mobile.",
     project1Title: "Personal portfolio",
     project1Copy: "A developer website with multilingual content, clean skill presentation, projects and fast contact links.",
     project2Title: "Coffee shop website",
@@ -134,7 +134,7 @@ const translations = {
     canDo4Copy: "React Native yordamida Android va iOS uchun serverga ulangan ilova.",
     workLabel: "Loyihalar",
     workTitle: "Ikkita sayt va bitta mobil ilova.",
-    workCopy: "Sayt loyihalarida rasmlarni almashtirish qo'shildi. Rasmlarni HTML fayli yoniga foto1site1.jpg, foto2site1.jpg, foto1site2.jpg kabi nomlar bilan joylashtiring.",
+    workCopy: "Har bir loyiha uchun bitta toza preview rasmi qoldirildi, shunda sayt telefonda yengilroq va chiroyliroq ko'rinadi.",
     project1Title: "Shaxsiy portfolio",
     project1Copy: "Ko'p tilli kontent, ko'nikmalar, loyihalar va tezkor aloqa havolalariga ega dasturchi sayti.",
     project2Title: "Kofeyna sayti",
@@ -230,60 +230,6 @@ document.querySelectorAll(".magnetic").forEach((button) => {
   button.addEventListener("pointerleave", () => {
     button.style.transform = "";
   });
-});
-
-document.querySelectorAll("[data-gallery]").forEach((gallery) => {
-  const track = gallery.querySelector(".gallery-track");
-  const slides = Array.from(track.children);
-  const prevButton = gallery.querySelector("[data-prev]");
-  const nextButton = gallery.querySelector("[data-next]");
-  const currentLabel = gallery.querySelector("[data-current]");
-  const mobileGallery = window.matchMedia("(max-width: 650px)");
-  let index = 0;
-  let animationTimer;
-
-  function updateGallery() {
-    if (mobileGallery.matches) {
-      index = 0;
-      track.style.transform = "";
-      currentLabel.textContent = "01";
-      slides.forEach((slide, slideIndex) => {
-        slide.classList.toggle("active-slide", slideIndex === 0);
-      });
-      gallery.classList.remove("is-changing");
-      return;
-    }
-
-    window.clearTimeout(animationTimer);
-    gallery.classList.add("is-changing");
-    track.style.transform = `translateX(-${index * 100}%)`;
-    currentLabel.textContent = String(index + 1).padStart(2, "0");
-    slides.forEach((slide, slideIndex) => {
-      slide.classList.toggle("active-slide", slideIndex === index);
-    });
-    animationTimer = window.setTimeout(() => {
-      gallery.classList.remove("is-changing");
-    }, 950);
-  }
-
-  prevButton.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateGallery();
-  });
-
-  nextButton.addEventListener("click", () => {
-    index = (index + 1) % slides.length;
-    updateGallery();
-  });
-
-  setInterval(() => {
-    if (mobileGallery.matches) return;
-    index = (index + 1) % slides.length;
-    updateGallery();
-  }, 4800);
-
-  updateGallery();
-  mobileGallery.addEventListener("change", updateGallery);
 });
 
 document.querySelectorAll("img[data-fallback]").forEach((image) => {

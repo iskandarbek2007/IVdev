@@ -111,8 +111,8 @@ button {
   border-radius: 50%;
   box-shadow: inset 0 0 0 1px rgba(199, 154, 66, 0.45), 0 14px 35px rgba(122, 17, 40, 0.22);
   font-size: 17px;
-  font-weight: 800;
-  letter-spacing: -0.06em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 .logo i {
@@ -133,7 +133,7 @@ button {
   position: relative;
   color: var(--muted);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
   transition: color 0.25s;
 }
@@ -182,7 +182,7 @@ button {
   border: 0;
   border-radius: 999px;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -243,8 +243,8 @@ button {
 .mobile-menu a {
   color: var(--burgundy);
   font-size: clamp(34px, 11vw, 62px);
-  font-weight: 850;
-  letter-spacing: -0.06em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 .hero {
@@ -275,8 +275,8 @@ button {
   z-index: 0;
   color: rgba(122, 17, 40, 0.045);
   font-size: clamp(130px, 22vw, 340px);
-  font-weight: 900;
-  letter-spacing: -0.12em;
+  font-weight: 700;
+  letter-spacing: -0.065em;
   line-height: 0.75;
   user-select: none;
 }
@@ -311,6 +311,7 @@ button {
 .status-pill b {
   color: var(--burgundy);
   font-size: 12px;
+  font-weight: 600;
 }
 
 @keyframes statusPulse {
@@ -321,7 +322,7 @@ button {
   margin: 0;
   color: var(--gold);
   font-size: 12px;
-  font-weight: 850;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -331,9 +332,9 @@ button {
   margin: 18px 0 24px;
   color: var(--burgundy-2);
   font-size: clamp(48px, 7vw, 96px);
-  font-weight: 850;
+  font-weight: 700;
   line-height: 0.98;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.045em;
 }
 
 .hero h1 span,
@@ -374,7 +375,7 @@ button {
   overflow: hidden;
   border-radius: 999px;
   font-size: 13px;
-  font-weight: 850;
+  font-weight: 700;
   transition: transform 0.2s, box-shadow 0.3s;
 }
 
@@ -447,7 +448,7 @@ button {
   gap: 16px;
   color: var(--muted);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .hero-card-top b {
@@ -464,8 +465,8 @@ button {
   margin: 70px 0 55px;
   color: var(--burgundy);
   font-size: 96px;
-  font-weight: 900;
-  letter-spacing: -0.14em;
+  font-weight: 700;
+  letter-spacing: -0.08em;
   text-align: center;
 }
 
@@ -499,14 +500,14 @@ button {
 .section-heading span {
   color: var(--gold);
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .section-heading p {
   margin: 0;
   color: var(--burgundy);
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -522,9 +523,9 @@ button {
   margin: 0;
   color: var(--burgundy-2);
   font-size: clamp(34px, 4.3vw, 64px);
-  font-weight: 850;
+  font-weight: 700;
   line-height: 1.06;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.035em;
 }
 
 .about-copy p,
@@ -631,7 +632,7 @@ button {
 .can-do-card b {
   color: var(--gold);
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .stack-grid h3,
@@ -639,7 +640,7 @@ button {
   margin: 56px 0 14px;
   color: var(--burgundy);
   font-size: 23px;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;
 }
 
 .stack-grid p,
@@ -714,17 +715,9 @@ button {
   pointer-events: none;
 }
 
-.gallery-track {
-  height: 100%;
-  display: flex;
-  transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-}
-
-.gallery-track img,
-.gallery-track .image-fallback {
+.project-gallery > img,
+.project-gallery > .image-fallback {
   width: 100%;
-  min-width: 100%;
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
@@ -734,20 +727,12 @@ button {
     linear-gradient(45deg, rgba(199, 154, 66, 0.12), transparent),
     #fffaf2;
   filter: saturate(1.02) contrast(1.01);
-  transform: scale(1);
-  transition: opacity 0.6s ease, transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
-.gallery-track > * {
-  opacity: 0.72;
-}
-
-.gallery-track > .active-slide {
-  opacity: 1;
-}
-
-.project-gallery.is-changing .gallery-track > .active-slide {
-  animation: slidePhotoIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) both;
+.project-gallery:hover > img {
+  filter: saturate(1.05) contrast(1.03);
+  transform: scale(1.015);
 }
 
 .image-fallback {
@@ -762,65 +747,15 @@ button {
     linear-gradient(45deg, rgba(199, 154, 66, 0.18), transparent),
     var(--paper);
   font-size: clamp(34px, 7vw, 72px);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.08em;
-}
-
-@keyframes slidePhotoIn {
-  from {
-    opacity: 0.78;
-    transform: scale(1.035);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.gallery-controls {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px;
-  background: rgba(255, 253, 249, 0.9);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  backdrop-filter: blur(14px);
-}
-
-.gallery-controls button {
-  width: 36px;
-  height: 36px;
-  color: #fff;
-  background: var(--burgundy);
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform 0.25s, background 0.25s;
-}
-
-.gallery-controls button:hover {
-  background: var(--burgundy-2);
-  transform: translateY(-2px);
-}
-
-.gallery-controls span {
-  min-width: 30px;
-  color: var(--burgundy);
-  font-size: 12px;
-  font-weight: 900;
-  text-align: center;
 }
 
 .project-type {
   margin: 0 0 14px;
   color: var(--gold);
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.12em;
 }
 
@@ -828,9 +763,9 @@ button {
   margin: 0 0 22px;
   color: var(--burgundy-2);
   font-size: clamp(31px, 4vw, 54px);
-  font-weight: 850;
+  font-weight: 700;
   line-height: 1.04;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.035em;
 }
 
 .project-info > p {
@@ -853,7 +788,7 @@ button {
   border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .phone-showcase {
@@ -944,9 +879,9 @@ button {
   margin: 18px auto 22px;
   color: var(--burgundy-2);
   font-size: clamp(44px, 7vw, 92px);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 0.98;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.045em;
 }
 
 .contact h2 span,
@@ -995,7 +930,7 @@ button {
 .contact-links span {
   color: var(--gold);
   font-size: 11px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1003,7 +938,7 @@ button {
 .contact-links strong {
   color: var(--burgundy);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   word-break: break-word;
 }
 
@@ -1022,7 +957,7 @@ footer p,
   margin: 0;
   color: var(--muted);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .back-top:hover {
@@ -1189,30 +1124,16 @@ footer p,
     border-radius: 16px;
   }
 
-  .gallery-track {
-    display: block;
-    height: auto;
-    transform: none !important;
-    transition: none;
-  }
-
-  .gallery-track img,
-  .gallery-track .image-fallback {
+  .project-gallery > img,
+  .project-gallery > .image-fallback {
     display: block;
     width: 100%;
-    min-width: 0;
     height: auto;
     min-height: 0;
     max-height: 210px;
     border-radius: 16px;
     object-fit: cover;
     object-position: top center;
-  }
-
-  .gallery-track img:not(:first-child),
-  .gallery-track .image-fallback:not(:first-child),
-  .gallery-controls {
-    display: none;
   }
 
   .phone-showcase {
