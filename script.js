@@ -239,10 +239,19 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   const nextButton = gallery.querySelector("[data-next]");
   const currentLabel = gallery.querySelector("[data-current]");
   let index = 0;
+  let animationTimer;
 
   function updateGallery() {
+    window.clearTimeout(animationTimer);
+    gallery.classList.add("is-changing");
     track.style.transform = `translateX(-${index * 100}%)`;
     currentLabel.textContent = String(index + 1).padStart(2, "0");
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("active-slide", slideIndex === index);
+    });
+    animationTimer = window.setTimeout(() => {
+      gallery.classList.remove("is-changing");
+    }, 950);
   }
 
   prevButton.addEventListener("click", () => {
@@ -259,6 +268,8 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     index = (index + 1) % slides.length;
     updateGallery();
   }, 4800);
+
+  updateGallery();
 });
 
 document.querySelectorAll("img[data-fallback]").forEach((image) => {

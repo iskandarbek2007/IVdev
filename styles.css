@@ -666,8 +666,8 @@ button {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.65fr);
-  gap: 6vw;
+  grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.7fr);
+  gap: 5vw;
   align-items: center;
 }
 
@@ -678,37 +678,38 @@ button {
 .project-gallery {
   position: relative;
   min-height: 0;
-  aspect-ratio: 21 / 10;
-  padding: 42px 18px 18px;
+  max-width: 760px;
+  aspect-ratio: 16 / 9;
+  padding: 36px 14px 14px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0 42px, transparent 42px),
+    linear-gradient(180deg, rgba(255, 253, 249, 0.98) 0 36px, transparent 36px),
     radial-gradient(circle at 18% 18%, rgba(199, 154, 66, 0.2), transparent 32%),
     linear-gradient(135deg, var(--paper), var(--paper-2));
   border: 1px solid var(--line);
-  border-radius: 36px;
-  box-shadow: var(--shadow);
+  border-radius: 28px;
+  box-shadow: 0 22px 60px rgba(73, 32, 28, 0.1);
 }
 
 .project-gallery::before {
   position: absolute;
-  top: 18px;
-  left: 22px;
-  z-index: 3;
-  width: 8px;
-  height: 8px;
+  top: 15px;
+  left: 19px;
+  z-index: 4;
+  width: 7px;
+  height: 7px;
   content: "";
   background: var(--burgundy);
   border-radius: 50%;
-  box-shadow: 16px 0 0 var(--gold), 32px 0 0 rgba(122, 17, 40, 0.22);
+  box-shadow: 14px 0 0 var(--gold), 28px 0 0 rgba(122, 17, 40, 0.22);
 }
 
 .project-gallery::after {
   position: absolute;
-  inset: 42px 18px 18px;
-  z-index: 2;
+  inset: 36px 14px 14px;
+  z-index: 3;
   content: "";
-  border-radius: 26px;
+  border-radius: 20px;
   box-shadow: inset 0 0 0 1px rgba(122, 17, 40, 0.1), inset 0 45px 70px rgba(255, 255, 255, 0.12);
   pointer-events: none;
 }
@@ -716,7 +717,8 @@ button {
 .gallery-track {
   height: 100%;
   display: flex;
-  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
 .gallery-track img,
@@ -724,14 +726,28 @@ button {
   width: 100%;
   min-width: 100%;
   height: 100%;
-  border-radius: 26px;
-  object-fit: contain;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top center;
   background:
     linear-gradient(135deg, rgba(122, 17, 40, 0.07), transparent),
     linear-gradient(45deg, rgba(199, 154, 66, 0.12), transparent),
     #fffaf2;
   filter: saturate(1.02) contrast(1.01);
-  animation: slidePhotoIn 0.7s ease both;
+  transform: scale(1);
+  transition: opacity 0.6s ease, transform 0.95s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-track > * {
+  opacity: 0.72;
+}
+
+.gallery-track > .active-slide {
+  opacity: 1;
+}
+
+.project-gallery.is-changing .gallery-track > .active-slide {
+  animation: slidePhotoIn 0.95s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .image-fallback {
@@ -752,8 +768,8 @@ button {
 
 @keyframes slidePhotoIn {
   from {
-    opacity: 0.68;
-    transform: scale(0.985);
+    opacity: 0.78;
+    transform: scale(1.035);
   }
   to {
     opacity: 1;
@@ -763,21 +779,22 @@ button {
 
 .gallery-controls {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 8px;
-  background: rgba(255, 253, 249, 0.84);
+  background: rgba(255, 253, 249, 0.9);
   border: 1px solid var(--line);
   border-radius: 999px;
   backdrop-filter: blur(14px);
 }
 
 .gallery-controls button {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   color: #fff;
   background: var(--burgundy);
   border: 0;
@@ -841,7 +858,7 @@ button {
 
 .phone-showcase {
   position: relative;
-  min-height: 520px;
+  min-height: clamp(360px, 48vw, 520px);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -854,13 +871,13 @@ button {
 .phone-frame {
   position: relative;
   z-index: 2;
-  width: 245px;
-  height: 500px;
-  padding: 14px;
+  width: clamp(185px, 24vw, 245px);
+  aspect-ratio: 9 / 18.4;
+  padding: clamp(9px, 1.3vw, 14px);
   overflow: hidden;
   background: #23181a;
-  border: 8px solid #2e2023;
-  border-radius: 42px;
+  border: clamp(5px, 0.8vw, 8px) solid #2e2023;
+  border-radius: clamp(30px, 4vw, 42px);
   box-shadow: 0 35px 80px rgba(72, 30, 30, 0.24);
   transform: rotate(-4deg);
   transition: transform 0.45s;
@@ -872,11 +889,11 @@ button {
 
 .phone-frame::before {
   position: absolute;
-  top: 12px;
+  top: clamp(8px, 1.1vw, 12px);
   left: 50%;
   z-index: 4;
-  width: 78px;
-  height: 18px;
+  width: clamp(54px, 8vw, 78px);
+  height: clamp(12px, 1.8vw, 18px);
   content: "";
   background: #23181a;
   border-radius: 999px;
@@ -888,7 +905,7 @@ button {
   width: 100%;
   min-width: 0;
   height: 100%;
-  border-radius: 28px;
+  border-radius: clamp(21px, 3vw, 28px);
   object-fit: cover;
 }
 
@@ -898,8 +915,8 @@ button {
 
 .phone-shadow {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: clamp(210px, 34vw, 300px);
+  height: clamp(210px, 34vw, 300px);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(122, 17, 40, 0.18), transparent 68%);
 }
@@ -1135,9 +1152,9 @@ footer p,
   }
 
   .project-gallery,
-  .gallery-track img {
-    min-height: 280px;
-    height: auto;
+  .gallery-track img,
+  .gallery-track .image-fallback {
+    min-height: 250px;
   }
 
   .gallery-controls {
@@ -1146,12 +1163,18 @@ footer p,
   }
 
   .phone-showcase {
-    min-height: 430px;
+    min-height: 320px;
+    border-radius: 28px;
   }
 
   .phone-frame {
-    width: 205px;
-    height: 410px;
+    width: min(58vw, 185px);
+    max-height: 360px;
+    transform: rotate(-2deg);
+  }
+
+  .phone-showcase:hover .phone-frame {
+    transform: translateY(-5px);
   }
 
   .contact {
