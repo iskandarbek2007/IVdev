@@ -1148,37 +1148,94 @@ footer p,
   }
 
   .projects {
-    gap: 74px;
+    gap: 22px;
   }
 
-  .project-gallery,
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 14px;
+    background: rgba(255, 253, 249, 0.82);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    box-shadow: 0 18px 48px rgba(73, 32, 28, 0.08);
+  }
+
+  .project-reverse .project-gallery {
+    order: 0;
+  }
+
+  .project-gallery {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+    min-height: 0;
+    padding: 32px 10px 10px;
+    border-radius: 22px;
+    box-shadow: none;
+  }
+
+  .project-gallery::before {
+    top: 13px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    box-shadow: 12px 0 0 var(--gold), 24px 0 0 rgba(122, 17, 40, 0.22);
+  }
+
+  .project-gallery::after {
+    inset: 32px 10px 10px;
+    border-radius: 16px;
+  }
+
+  .gallery-track {
+    display: block;
+    height: auto;
+    transform: none !important;
+    transition: none;
+  }
+
   .gallery-track img,
   .gallery-track .image-fallback {
-    min-height: 250px;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    max-height: 210px;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: top center;
   }
 
+  .gallery-track img:not(:first-child),
+  .gallery-track .image-fallback:not(:first-child),
   .gallery-controls {
-    right: 14px;
-    bottom: 14px;
+    display: none;
   }
 
   .phone-showcase {
-    width: min(74vw, 280px);
-    min-height: 250px;
-    margin: 0 auto 6px;
-    padding: 18px;
-    border-radius: 28px;
-    box-shadow: 0 18px 45px rgba(73, 32, 28, 0.09);
+    order: 0;
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 22px 0;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(199, 154, 66, 0.18), transparent 54%),
+      linear-gradient(135deg, var(--paper), var(--paper-2));
+    border-radius: 22px;
+    box-shadow: none;
   }
 
   .phone-frame {
-    width: min(36vw, 128px);
-    min-width: 112px;
+    width: 118px;
+    min-width: 0;
     max-height: none;
-    padding: 7px;
-    border-width: 5px;
-    border-radius: 26px;
-    box-shadow: 0 18px 42px rgba(72, 30, 30, 0.18);
+    padding: 6px;
+    border-width: 4px;
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(72, 30, 30, 0.16);
     transform: none;
   }
 
@@ -1194,16 +1251,20 @@ footer p,
   }
 
   .phone-showcase:hover .phone-frame {
-    transform: translateY(-4px);
+    transform: none;
   }
 
   .phone-shadow {
-    width: 150px;
-    height: 150px;
+    display: none;
   }
 
   .phone-showcase + .project-info {
-    margin-top: 18px;
+    margin-top: 0;
+  }
+
+  .project-info {
+    width: 100%;
+    padding: 0 4px 4px;
   }
 
   .project-info h3 {

@@ -238,10 +238,22 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   const prevButton = gallery.querySelector("[data-prev]");
   const nextButton = gallery.querySelector("[data-next]");
   const currentLabel = gallery.querySelector("[data-current]");
+  const mobileGallery = window.matchMedia("(max-width: 650px)");
   let index = 0;
   let animationTimer;
 
   function updateGallery() {
+    if (mobileGallery.matches) {
+      index = 0;
+      track.style.transform = "";
+      currentLabel.textContent = "01";
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle("active-slide", slideIndex === 0);
+      });
+      gallery.classList.remove("is-changing");
+      return;
+    }
+
     window.clearTimeout(animationTimer);
     gallery.classList.add("is-changing");
     track.style.transform = `translateX(-${index * 100}%)`;
@@ -265,11 +277,13 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   });
 
   setInterval(() => {
+    if (mobileGallery.matches) return;
     index = (index + 1) % slides.length;
     updateGallery();
   }, 4800);
 
   updateGallery();
+  mobileGallery.addEventListener("change", updateGallery);
 });
 
 document.querySelectorAll("img[data-fallback]").forEach((image) => {
