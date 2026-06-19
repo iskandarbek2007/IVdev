@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Создаю сайты, мобильные приложения, API и системы заявок для бизнеса: от идеи и дизайна до запуска и поддержки.">
-  <meta name="theme-color" content="#1E1B4B">
+  <meta name="theme-color" content="#0D0E12">
   <meta property="og:title" content="IV Studio — разработка сайтов, приложений и backend-систем">
   <meta property="og:description" content="Сайты, мобильные приложения и системы заявок для малого бизнеса и сервисных компаний.">
   <meta property="og:image" content="foto1site1.jpg">
   <meta property="og:type" content="website">
   <title>IV Studio — разработка сайтов, приложений и backend-систем</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="fog-layer fog-one" aria-hidden="true"></div>
-  <div class="fog-layer fog-two" aria-hidden="true"></div>
-  <div class="fog-layer fog-three" aria-hidden="true"></div>
   <div class="tech-background" aria-hidden="true">
     <div class="circuit circuit-one"></div>
     <div class="circuit circuit-two"></div>
@@ -203,10 +203,7 @@
       <p class="contact-copy reveal" data-delay="170" data-i18n="contactCopy">Опишите задачу — я предложу структуру, технологии и примерную стоимость. Обычно отвечаю в течение дня.</p>
       <div class="contact-layout">
         <form class="project-form reveal" id="project-form">
-          <label><span data-i18n="formName">Имя</span><input name="name" type="text" required data-i18n-placeholder="formNamePlaceholder" placeholder="Как к вам обращаться?"></label>
           <label><span data-i18n="formContact">Telegram / WhatsApp</span><input name="contact" type="text" required data-i18n-placeholder="formContactPlaceholder" placeholder="@username или номер"></label>
-          <label><span data-i18n="formType">Тип проекта</span><select name="type"><option data-i18n="formType1">Сайт для бизнеса</option><option data-i18n="formType2">Мобильное приложение</option><option data-i18n="formType3">Backend / API</option><option data-i18n="formType4">Другое</option></select></label>
-          <label><span data-i18n="formBudget">Бюджет</span><select name="budget"><option data-i18n="formBudget1">До 3 000 000 сум</option><option data-i18n="formBudget2">3–7 млн сум</option><option data-i18n="formBudget3">7–15 млн сум</option><option data-i18n="formBudget4">Нужно оценить</option></select></label>
           <label class="form-wide"><span data-i18n="formDescription">Описание задачи</span><textarea name="description" required data-i18n-placeholder="formDescriptionPlaceholder" placeholder="Что нужно создать и какие функции важны?"></textarea></label>
           <button class="button button-primary form-submit" type="submit"><span data-i18n="formSubmit">Отправить заявку</span><i>↗</i></button>
         </form>

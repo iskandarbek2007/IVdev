@@ -272,9 +272,9 @@ const projectForm = document.getElementById("project-form");
 projectForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(projectForm);
-  const subject = encodeURIComponent(`Новая заявка: ${data.get("type")}`);
+  const subject = encodeURIComponent("Новая заявка с сайта IV Studio");
   const body = encodeURIComponent(
-    `Имя: ${data.get("name")}\nКонтакт: ${data.get("contact")}\nТип проекта: ${data.get("type")}\nБюджет: ${data.get("budget")}\n\nЗадача:\n${data.get("description")}`
+    `Контакт: ${data.get("contact")}\n\nЗадача:\n${data.get("description")}`
   );
   window.location.href = `mailto:iskandarbek2007@gmail.com?subject=${subject}&body=${body}`;
 });
@@ -284,9 +284,14 @@ let pointerFrame = 0;
 window.addEventListener("pointermove", (event) => {
   if (window.matchMedia("(pointer: coarse)").matches || pointerFrame) return;
   pointerFrame = requestAnimationFrame(() => {
-    cursorGlow.style.transform = `translate3d(${event.clientX - 240}px, ${event.clientY - 240}px, 0)`;
+    cursorGlow.style.transform = `translate3d(${event.clientX - 4.5}px, ${event.clientY - 4.5}px, 0)`;
     pointerFrame = 0;
   });
 }, { passive: true });
+
+document.querySelectorAll("a, button, input, textarea, select").forEach((element) => {
+  element.addEventListener("pointerenter", () => cursorGlow.classList.add("is-hovering"));
+  element.addEventListener("pointerleave", () => cursorGlow.classList.remove("is-hovering"));
+});
 
 document.getElementById("year").textContent = new Date().getFullYear();
