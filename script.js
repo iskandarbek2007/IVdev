@@ -2,170 +2,175 @@ const translations = {
   ru: {
     navAbout: "Обо мне",
     navSkills: "Навыки",
-    navCanDo: "Что создаю",
-    navWork: "Проекты",
+    navServices: "Что создаю",
+    navProjects: "Проекты",
     navContact: "Контакты",
     available: "Доступен для новых проектов",
-    heroLine1: "Аккуратные сайты",
-    heroLine2: "и приложения",
+    heroKicker: "FULL-STACK DEVELOPER / FIVERR FREELANCER",
+    heroLine1: "Цифровые продукты",
+    heroLine2: "премиального уровня",
     heroLine3: "для реальных задач.",
-    heroCopy: "Я создаю понятные веб-сайты, мобильные приложения, API и базы данных — с чистым интерфейсом, хорошей структурой и вниманием к деталям.",
-    seeWork: "Смотреть проекты",
-    discuss: "Связаться со мной",
-    heroCard: "Full-stack разработчик сайтов и мобильных приложений. Работаю на Fiverr и беру проекты под ключ.",
+    heroCopy: "Создаю сайты и мобильные приложения, где сильная инженерия сочетается с понятным интерфейсом, скоростью и вниманием к деталям.",
+    seeProjects: "Смотреть проекты",
+    contactMe: "Связаться со мной",
+    scroll: "Листайте, чтобы узнать больше",
     aboutLabel: "Обо мне",
-    aboutTitle: "Я помогаю превратить идею в сайт или приложение, которым удобно пользоваться.",
-    aboutP1: "Меня зовут Iskandarbek Valijonov, мне 19 лет. Я full-stack разработчик: работаю с frontend, backend, мобильной разработкой, API и базами данных.",
-    aboutP2: "Сейчас я работаю фрилансером на Fiverr. Могу подключиться как к небольшой задаче, так и собрать продукт полностью: от структуры и интерфейса до запуска.",
-    age: "лет",
-    workplace: "фриланс",
-    focus: "разработка",
-    skillsLabel: "Стек",
-    skillsTitle: "Технологии для frontend, backend, mobile и запуска проекта.",
-    skillsCopy: "Добавил несколько сильных технологий к твоему стеку, чтобы портфолио выглядело шире и профессиональнее.",
-    canDoLabel: "Какие проекты я могу сделать",
-    canDo1Title: "Лендинг или сайт-визитка",
-    canDo1Copy: "Для бизнеса, личного бренда, услуги, кафе, магазина или специалиста.",
-    canDo2Title: "Интернет-магазин",
-    canDo2Copy: "Каталог товаров, корзина, оформление заказа, админ-панель и интеграции.",
-    canDo3Title: "Web-приложение",
-    canDo3Copy: "Личный кабинет, dashboard, CRM, API и работа с базой данных.",
-    canDo4Title: "Мобильное приложение",
-    canDo4Copy: "Приложение для Android и iOS на React Native с подключением к серверу.",
-    workLabel: "Проекты",
-    workTitle: "Два сайта и одно мобильное приложение.",
-    workCopy: "Для каждого проекта оставлено одно аккуратное превью, чтобы сайт смотрелся чище и быстрее открывался на телефоне.",
-    project1Title: "Персональное портфолио",
-    project1Copy: "Сайт разработчика с мультиязычностью, аккуратной подачей навыков, проектами и быстрыми контактами.",
-    project2Title: "Сайт для кофейни",
-    project2Copy: "Стильный сайт для кофейни с меню, атмосферной главной страницей, блоками преимуществ и контактами.",
-    project3Title: "Менеджер паролей",
-    project3Copy: "Мобильное приложение для хранения и управления паролями с понятным интерфейсом и фокусом на безопасность данных.",
-    contactLabel: "Готов обсудить проект",
-    contactTitle1: "Напишите мне,",
-    contactTitle2: " и начнём.",
-    contactCopy: "Опишите, какой сайт или приложение вам нужно. Я отвечу и предложу подходящий вариант реализации.",
-    writeTelegram: "Написать в Telegram",
+    aboutTitle: "Превращаю идеи в продуманные продукты, которыми приятно пользоваться.",
+    aboutP1: "Меня зовут Iskandarbek Valijonov, мне 19 лет. Я full-stack разработчик сайтов и мобильных приложений.",
+    aboutP2: "Работаю фрилансером на Fiverr и могу реализовать проект полностью: от структуры и интерфейса до API, базы данных и запуска.",
+    years: "лет",
+    freelance: "фриланс",
+    development: "разработка",
+    skillsLabel: "Технологии",
+    skillsTitle: "Стек для полного цикла разработки.",
+    skillsCopy: "Подбираю технологии под продукт и бизнес-задачу, сохраняя понятную архитектуру и возможность развития.",
+    servicesLabel: "Возможности",
+    servicesTitle: "Какие продукты я могу создать.",
+    service1Title: "Лендинг и бизнес-сайт",
+    service1Copy: "Сильная презентация бренда, услуги, кафе, компании или специалиста.",
+    service2Title: "Интернет-магазин",
+    service2Copy: "Каталог, корзина, оформление заказа, админ-панель и интеграции.",
+    service3Title: "Web-приложение",
+    service3Copy: "Личный кабинет, dashboard, CRM, API и работа с базой данных.",
+    service4Title: "Мобильное приложение",
+    service4Copy: "Приложение для Android и iOS на React Native с серверной частью.",
+    projectsLabel: "Избранные проекты",
+    projectsTitle: "Работы, в которых дизайн поддерживает функциональность.",
+    projectsCopy: "Каждый проект адаптирован под разные экраны и построен вокруг реальной пользовательской задачи.",
+    portfolioTitle: "Персональное портфолио",
+    portfolioCopy: "Мультиязычный сайт разработчика с аккуратной подачей навыков, проектов и контактной информации.",
+    coffeeTitle: "Сайт для кофейни",
+    coffeeCopy: "Атмосферный сайт с меню, преимуществами, адаптивным интерфейсом и контактами.",
+    passwordTitle: "Менеджер паролей",
+    passwordCopy: "Мобильное приложение для хранения и управления паролями с фокусом на понятный интерфейс и безопасность.",
+    contactLabel: "Новый проект",
+    contactTitle1: "Давайте создадим",
+    contactTitle2: "что-то значимое.",
+    contactCopy: "Расскажите, какой сайт или приложение вам нужно. Я отвечу и предложу подходящий вариант реализации.",
+    telegramButton: "Написать в Telegram",
     phone: "Телефон",
-    top: "Наверх"
+    backTop: "Наверх",
   },
   en: {
     navAbout: "About",
     navSkills: "Skills",
-    navCanDo: "What I build",
-    navWork: "Projects",
+    navServices: "What I build",
+    navProjects: "Projects",
     navContact: "Contact",
     available: "Available for new projects",
-    heroLine1: "Clean websites",
-    heroLine2: "and apps",
-    heroLine3: "for real tasks.",
-    heroCopy: "I create clear websites, mobile apps, APIs and databases with clean interfaces, solid structure and attention to detail.",
-    seeWork: "View projects",
-    discuss: "Contact me",
-    heroCard: "Full-stack web and mobile app developer. I work on Fiverr and build complete projects.",
+    heroKicker: "FULL-STACK DEVELOPER / FIVERR FREELANCER",
+    heroLine1: "Digital products",
+    heroLine2: "with a premium feel",
+    heroLine3: "for real challenges.",
+    heroCopy: "I build websites and mobile apps where strong engineering meets clear interfaces, speed and attention to detail.",
+    seeProjects: "View projects",
+    contactMe: "Contact me",
+    scroll: "Scroll to discover more",
     aboutLabel: "About me",
-    aboutTitle: "I help turn an idea into a website or app that feels easy to use.",
-    aboutP1: "My name is Iskandarbek Valijonov and I am 19 years old. I am a full-stack developer working with frontend, backend, mobile development, APIs and databases.",
-    aboutP2: "I currently work as a freelancer on Fiverr. I can help with a small task or build a full product from structure and interface to launch.",
-    age: "years old",
-    workplace: "freelance",
-    focus: "development",
-    skillsLabel: "Stack",
-    skillsTitle: "Technologies for frontend, backend, mobile and project launch.",
-    skillsCopy: "I added several strong technologies to the stack so the portfolio looks broader and more professional.",
-    canDoLabel: "Projects I can create",
-    canDo1Title: "Landing page or business site",
-    canDo1Copy: "For a business, personal brand, service, cafe, shop or specialist.",
-    canDo2Title: "Online store",
-    canDo2Copy: "Product catalog, cart, checkout, admin panel and integrations.",
-    canDo3Title: "Web application",
-    canDo3Copy: "User account, dashboard, CRM, API and database functionality.",
-    canDo4Title: "Mobile application",
-    canDo4Copy: "An Android and iOS app built with React Native and connected to a backend.",
-    workLabel: "Projects",
-    workTitle: "Two websites and one mobile application.",
-    workCopy: "Each project now uses one clean preview image, so the portfolio looks lighter and loads better on mobile.",
-    project1Title: "Personal portfolio",
-    project1Copy: "A developer website with multilingual content, clean skill presentation, projects and fast contact links.",
-    project2Title: "Coffee shop website",
-    project2Copy: "A stylish cafe website with a menu, atmospheric hero section, advantages and contact blocks.",
-    project3Title: "Password manager",
-    project3Copy: "A mobile app for storing and managing passwords with a clear interface and a focus on data security.",
-    contactLabel: "Ready to discuss a project",
-    contactTitle1: "Message me,",
-    contactTitle2: " and let's start.",
-    contactCopy: "Describe the website or app you need. I will reply and suggest a suitable implementation plan.",
-    writeTelegram: "Message on Telegram",
+    aboutTitle: "I turn ideas into thoughtful products that feel effortless to use.",
+    aboutP1: "My name is Iskandarbek Valijonov. I am a 19-year-old full-stack web and mobile application developer.",
+    aboutP2: "I freelance on Fiverr and can deliver a complete product, from structure and interface to APIs, databases and launch.",
+    years: "years old",
+    freelance: "freelance",
+    development: "development",
+    skillsLabel: "Technology",
+    skillsTitle: "A stack for complete product development.",
+    skillsCopy: "I choose technology around the product and business goal, keeping architecture clear and ready to grow.",
+    servicesLabel: "Capabilities",
+    servicesTitle: "Digital products I can create.",
+    service1Title: "Landing and business site",
+    service1Copy: "A strong presentation for a brand, service, cafe, company or specialist.",
+    service2Title: "Online store",
+    service2Copy: "Catalog, cart, checkout, admin panel and integrations.",
+    service3Title: "Web application",
+    service3Copy: "User account, dashboard, CRM, API and database functionality.",
+    service4Title: "Mobile application",
+    service4Copy: "An Android and iOS app built with React Native and a backend.",
+    projectsLabel: "Selected projects",
+    projectsTitle: "Work where design supports functionality.",
+    projectsCopy: "Every project is responsive and built around a real user need.",
+    portfolioTitle: "Personal portfolio",
+    portfolioCopy: "A multilingual developer website presenting skills, projects and contact information.",
+    coffeeTitle: "Coffee shop website",
+    coffeeCopy: "An atmospheric site with a menu, benefits, responsive interface and contacts.",
+    passwordTitle: "Password manager",
+    passwordCopy: "A mobile app for managing passwords with a focus on clarity and data security.",
+    contactLabel: "New project",
+    contactTitle1: "Let's create",
+    contactTitle2: "something meaningful.",
+    contactCopy: "Tell me about the website or app you need. I will reply with a suitable implementation approach.",
+    telegramButton: "Message on Telegram",
     phone: "Phone",
-    top: "Back to top"
+    backTop: "Back to top",
   },
   uz: {
     navAbout: "Men haqimda",
     navSkills: "Ko'nikmalar",
-    navCanDo: "Nima yarataman",
-    navWork: "Loyihalar",
+    navServices: "Nima yarataman",
+    navProjects: "Loyihalar",
     navContact: "Aloqa",
     available: "Yangi loyihalar uchun ochiqman",
-    heroLine1: "Aniq saytlar",
-    heroLine2: "va ilovalar",
+    heroKicker: "FULL-STACK DEVELOPER / FIVERR FREELANCER",
+    heroLine1: "Premium darajadagi",
+    heroLine2: "raqamli mahsulotlar",
     heroLine3: "real vazifalar uchun.",
-    heroCopy: "Men tushunarli veb-saytlar, mobil ilovalar, API va ma'lumotlar bazalarini toza interfeys, yaxshi tuzilma va e'tibor bilan yarataman.",
-    seeWork: "Loyihalarni ko'rish",
-    discuss: "Bog'lanish",
-    heroCard: "Saytlar va mobil ilovalar yaratadigan full-stack dasturchi. Fiverr platformasida ishlayman va loyihalarni to'liq bajaraman.",
+    heroCopy: "Kuchli dasturlash, tushunarli interfeys, tezlik va detallarga e'tiborni birlashtirgan saytlar va mobil ilovalar yarataman.",
+    seeProjects: "Loyihalarni ko'rish",
+    contactMe: "Bog'lanish",
+    scroll: "Ko'proq bilish uchun pastga",
     aboutLabel: "Men haqimda",
-    aboutTitle: "Men g'oyani foydalanishga qulay sayt yoki ilovaga aylantirishga yordam beraman.",
-    aboutP1: "Mening ismim Iskandarbek Valijonov, yoshim 19 da. Men frontend, backend, mobil dasturlash, API va ma'lumotlar bazalari bilan ishlaydigan full-stack dasturchiman.",
-    aboutP2: "Hozir Fiverr platformasida frilanser bo'lib ishlayman. Kichik vazifaga ham, to'liq mahsulot yaratishga ham yordam bera olaman.",
-    age: "yosh",
-    workplace: "frilans",
-    focus: "dasturlash",
-    skillsLabel: "Stek",
-    skillsTitle: "Frontend, backend, mobile va loyihani ishga tushirish uchun texnologiyalar.",
-    skillsCopy: "Portfolio kengroq va professionalroq ko'rinishi uchun stekka yana bir nechta kuchli texnologiyalar qo'shildi.",
-    canDoLabel: "Qanday loyihalar qila olaman",
-    canDo1Title: "Landing yoki biznes sayt",
-    canDo1Copy: "Biznes, shaxsiy brend, xizmat, kafe, do'kon yoki mutaxassis uchun.",
-    canDo2Title: "Internet do'kon",
-    canDo2Copy: "Mahsulot katalogi, savat, buyurtma, admin panel va integratsiyalar.",
-    canDo3Title: "Web-ilova",
-    canDo3Copy: "Shaxsiy kabinet, dashboard, CRM, API va ma'lumotlar bazasi bilan ishlash.",
-    canDo4Title: "Mobil ilova",
-    canDo4Copy: "React Native yordamida Android va iOS uchun serverga ulangan ilova.",
-    workLabel: "Loyihalar",
-    workTitle: "Ikkita sayt va bitta mobil ilova.",
-    workCopy: "Har bir loyiha uchun bitta toza preview rasmi qoldirildi, shunda sayt telefonda yengilroq va chiroyliroq ko'rinadi.",
-    project1Title: "Shaxsiy portfolio",
-    project1Copy: "Ko'p tilli kontent, ko'nikmalar, loyihalar va tezkor aloqa havolalariga ega dasturchi sayti.",
-    project2Title: "Kofeyna sayti",
-    project2Copy: "Menyu, atmosfera, afzalliklar va aloqa bloklariga ega zamonaviy kafe sayti.",
-    project3Title: "Parol menejeri",
-    project3Copy: "Parollarni saqlash va boshqarish uchun tushunarli interfeys hamda xavfsizlikka yo'naltirilgan mobil ilova.",
-    contactLabel: "Loyihani muhokama qilishga tayyorman",
-    contactTitle1: "Menga yozing,",
-    contactTitle2: " boshlaymiz.",
-    contactCopy: "Qanday sayt yoki ilova kerakligini yozing. Men javob beraman va mos yechim taklif qilaman.",
-    writeTelegram: "Telegram orqali yozish",
+    aboutTitle: "G'oyalarni foydalanishga yoqimli, puxta mahsulotlarga aylantiraman.",
+    aboutP1: "Mening ismim Iskandarbek Valijonov, yoshim 19 da. Men saytlar va mobil ilovalar yaratadigan full-stack dasturchiman.",
+    aboutP2: "Fiverr platformasida frilanser bo'lib ishlayman va loyihani tuzilma hamda interfeysdan API, baza va ishga tushirishgacha bajara olaman.",
+    years: "yosh",
+    freelance: "frilans",
+    development: "dasturlash",
+    skillsLabel: "Texnologiyalar",
+    skillsTitle: "To'liq mahsulot yaratish uchun stek.",
+    skillsCopy: "Texnologiyalarni mahsulot va biznes vazifasiga mos tanlayman, arxitekturani tushunarli va rivojlantirishga tayyor saqlayman.",
+    servicesLabel: "Imkoniyatlar",
+    servicesTitle: "Men yaratadigan raqamli mahsulotlar.",
+    service1Title: "Landing va biznes sayt",
+    service1Copy: "Brend, xizmat, kafe, kompaniya yoki mutaxassis uchun kuchli taqdimot.",
+    service2Title: "Internet do'kon",
+    service2Copy: "Katalog, savat, buyurtma, admin panel va integratsiyalar.",
+    service3Title: "Web-ilova",
+    service3Copy: "Shaxsiy kabinet, dashboard, CRM, API va ma'lumotlar bazasi.",
+    service4Title: "Mobil ilova",
+    service4Copy: "React Native va backend yordamida Android hamda iOS ilovasi.",
+    projectsLabel: "Tanlangan loyihalar",
+    projectsTitle: "Dizayn funksionallikni qo'llab-quvvatlaydigan ishlar.",
+    projectsCopy: "Har bir loyiha turli ekranlarga moslangan va real foydalanuvchi vazifasiga qurilgan.",
+    portfolioTitle: "Shaxsiy portfolio",
+    portfolioCopy: "Ko'nikmalar, loyihalar va aloqalarni ko'rsatadigan ko'p tilli dasturchi sayti.",
+    coffeeTitle: "Kofeyna sayti",
+    coffeeCopy: "Menyu, afzalliklar, moslashuvchan interfeys va kontaktlarga ega atmosfera sayti.",
+    passwordTitle: "Parol menejeri",
+    passwordCopy: "Tushunarli interfeys va ma'lumotlar xavfsizligiga yo'naltirilgan mobil ilova.",
+    contactLabel: "Yangi loyiha",
+    contactTitle1: "Keling, birgalikda",
+    contactTitle2: "muhim mahsulot yaratamiz.",
+    contactCopy: "Qanday sayt yoki ilova kerakligini yozing. Men mos yechim bilan javob beraman.",
+    telegramButton: "Telegram orqali yozish",
     phone: "Telefon",
-    top: "Yuqoriga"
-  }
+    backTop: "Yuqoriga",
+  },
 };
 
 const languageButtons = document.querySelectorAll(".lang");
 const translatableElements = document.querySelectorAll("[data-i18n]");
 
 function setLanguage(language) {
-  const dictionary = translations[language];
-  if (!dictionary) return;
-
+  const dictionary = translations[language] || translations.ru;
   document.documentElement.lang = language;
+
   translatableElements.forEach((element) => {
-    const key = element.dataset.i18n;
-    if (dictionary[key]) element.textContent = dictionary[key];
+    const value = dictionary[element.dataset.i18n];
+    if (value) element.textContent = value;
   });
 
   languageButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === language);
+    button.classList.toggle("is-active", button.dataset.lang === language);
   });
 
   localStorage.setItem("iv-language", language);
@@ -178,67 +183,97 @@ languageButtons.forEach((button) => {
 setLanguage(localStorage.getItem("iv-language") || "ru");
 
 const header = document.querySelector(".site-header");
-window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 30);
-}, { passive: true });
-
 const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 function closeMenu() {
-  menuButton.classList.remove("open");
-  mobileMenu.classList.remove("open");
   document.body.classList.remove("menu-open");
+  menuButton.classList.remove("is-open");
+  mobileMenu.classList.remove("is-open");
   menuButton.setAttribute("aria-expanded", "false");
 }
 
 menuButton.addEventListener("click", () => {
-  const isOpen = mobileMenu.classList.toggle("open");
-  menuButton.classList.toggle("open", isOpen);
+  const isOpen = mobileMenu.classList.toggle("is-open");
+  menuButton.classList.toggle("is-open", isOpen);
   document.body.classList.toggle("menu-open", isOpen);
   menuButton.setAttribute("aria-expanded", String(isOpen));
 });
 
-mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+mobileMenu.querySelectorAll("a").forEach((link, index) => {
+  link.style.setProperty("--menu-delay", `${index * 60}ms`);
+  link.addEventListener("click", closeMenu);
+});
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("is-scrolled", window.scrollY > 28);
+}, { passive: true });
+
+const revealElements = document.querySelectorAll(".reveal");
+
+document.querySelectorAll(".stagger-group").forEach((group) => {
+  group.querySelectorAll(":scope > .reveal").forEach((element, index) => {
+    element.style.setProperty("--reveal-delay", `${index * 140}ms`);
+  });
+});
+
+revealElements.forEach((element) => {
+  if (element.dataset.delay) {
+    element.style.setProperty("--reveal-delay", `${element.dataset.delay}ms`);
+  }
+});
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
-    }
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("is-visible");
+    revealObserver.unobserve(entry.target);
   });
-}, { threshold: 0.14 });
+}, {
+  threshold: 0.1,
+  rootMargin: "0px 0px -7% 0px",
+});
 
-document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
-
-const cursorGlow = document.querySelector(".cursor-glow");
-window.addEventListener("pointermove", (event) => {
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
-}, { passive: true });
-
-document.querySelectorAll(".magnetic").forEach((button) => {
-  button.addEventListener("pointermove", (event) => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
-    const rect = button.getBoundingClientRect();
-    const x = event.clientX - rect.left - rect.width / 2;
-    const y = event.clientY - rect.top - rect.height / 2;
-    button.style.transform = `translate(${x * 0.08}px, ${y * 0.1}px)`;
-  });
-
-  button.addEventListener("pointerleave", () => {
-    button.style.transform = "";
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    revealElements.forEach((element) => revealObserver.observe(element));
   });
 });
 
-document.querySelectorAll("img[data-fallback]").forEach((image) => {
+const video = document.querySelector(".hero-video video");
+const videoFallback = document.querySelector(".hero-fallback");
+
+if (video) {
+  const showVideoFallback = () => videoFallback.classList.add("is-visible");
+  video.addEventListener("error", showVideoFallback, { once: true });
+  video.querySelector("source")?.addEventListener("error", showVideoFallback, { once: true });
+  video.play().catch(() => {});
+}
+
+document.querySelectorAll("img").forEach((image) => {
   image.addEventListener("error", () => {
     const fallback = document.createElement("div");
-    fallback.className = "image-fallback";
-    fallback.textContent = image.dataset.fallback;
+    fallback.className = "media-fallback";
+    fallback.textContent = "I.V";
     image.replaceWith(fallback);
   }, { once: true });
 });
+
+const cursorGlow = document.querySelector(".cursor-glow");
+let pointerFrame = 0;
+let pointerX = window.innerWidth / 2;
+let pointerY = window.innerHeight / 2;
+
+window.addEventListener("pointermove", (event) => {
+  if (window.matchMedia("(pointer: coarse)").matches) return;
+  pointerX = event.clientX;
+  pointerY = event.clientY;
+  if (pointerFrame) return;
+
+  pointerFrame = requestAnimationFrame(() => {
+    cursorGlow.style.transform = `translate3d(${pointerX - 240}px, ${pointerY - 240}px, 0)`;
+    pointerFrame = 0;
+  });
+}, { passive: true });
 
 document.getElementById("year").textContent = new Date().getFullYear();
