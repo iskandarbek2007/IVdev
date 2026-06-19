@@ -850,6 +850,10 @@ button {
   gap: 12px;
 }
 
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .premium-card {
   position: relative;
   min-height: 245px;
@@ -956,6 +960,12 @@ button {
 
 .service-card h3 {
   margin-top: 20px;
+}
+
+.section-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
 }
 
 .projects-intro {
@@ -1245,6 +1255,35 @@ button {
   line-height: 1.85;
 }
 
+.case-list {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.case-list p {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 12px;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 237, 213, 0.1);
+}
+
+.case-list b {
+  color: var(--ice);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-list span {
+  color: var(--ice-muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -1259,6 +1298,142 @@ button {
   border-radius: 9px;
   font-size: 10px;
   font-weight: 600;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.price-card,
+.process-step,
+.included-item,
+.project-form,
+.contact-direct {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(255, 248, 237, 0.1), rgba(43, 40, 95, 0.28));
+  border: 1px solid rgba(255, 237, 213, 0.17);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09), 0 20px 55px rgba(12, 10, 37, 0.1);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+
+.price-card {
+  min-height: 310px;
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.price-card > span {
+  color: var(--ice-muted);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.price-card > b {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 6px 9px;
+  color: var(--navy);
+  background: var(--ice);
+  border-radius: 99px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.price-card h3 {
+  margin: 65px 0 18px;
+  color: var(--ice-bright);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.price-card strong {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--ice);
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.price-card p,
+.pricing-note {
+  color: var(--ice-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.price-card.featured {
+  border-color: rgba(255, 237, 213, 0.38);
+  transform: translateY(-10px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 28px 75px rgba(12, 10, 37, 0.2);
+}
+
+.pricing-note {
+  max-width: 650px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 9px;
+}
+
+.process-step {
+  min-height: 170px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.process-step span {
+  color: var(--ice-muted);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.process-step h3 {
+  margin: 64px 0 0;
+  color: var(--ice);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.included-item {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px 48px;
+  color: var(--ice);
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.included-item::before {
+  position: absolute;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  content: "✓";
+  color: var(--navy);
+  background: var(--ice);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
 }
 
 .contact {
@@ -1307,6 +1482,106 @@ button {
   color: var(--ice-muted);
   font-size: 15px;
   line-height: 1.85;
+}
+
+.contact-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 14px;
+  max-width: 1050px;
+  margin: 44px auto 0;
+  text-align: left;
+}
+
+.project-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.project-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.project-form label > span {
+  color: var(--ice-muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-form input,
+.project-form select,
+.project-form textarea {
+  width: 100%;
+  padding: 14px 15px;
+  color: var(--ice-bright);
+  background: rgba(21, 19, 51, 0.45);
+  border: 1px solid rgba(255, 237, 213, 0.14);
+  border-radius: 11px;
+  outline: 0;
+  font: inherit;
+  transition: border-color 250ms ease, background 250ms ease;
+}
+
+.project-form input:focus,
+.project-form select:focus,
+.project-form textarea:focus {
+  background: rgba(21, 19, 51, 0.62);
+  border-color: rgba(255, 237, 213, 0.42);
+}
+
+.project-form select option {
+  color: var(--ice-bright);
+  background: var(--navy);
+}
+
+.project-form textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+.form-wide {
+  grid-column: 1 / -1;
+}
+
+.form-submit {
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.contact-direct p {
+  margin: 0 0 8px;
+  color: var(--ice-bright);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.contact-direct .button {
+  min-width: 0;
+}
+
+.direct-link {
+  padding: 13px 0;
+  color: var(--ice-muted);
+  border-bottom: 1px solid rgba(255, 237, 213, 0.1);
+  font-size: 12px;
+  word-break: break-word;
 }
 
 .contact-grid {
@@ -1412,6 +1687,19 @@ footer p,
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid,
+  .included-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
 
   .contact-grid {
@@ -1533,8 +1821,28 @@ footer p,
 
   .fact-grid,
   .card-grid,
-  .contact-grid {
+  .contact-grid,
+  .pricing-grid,
+  .process-grid,
+  .included-grid {
     grid-template-columns: 1fr;
+  }
+
+  .price-card.featured {
+    transform: none;
+  }
+
+  .project-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-wide {
+    grid-column: auto;
+  }
+
+  .case-list p {
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 
   .premium-card {
