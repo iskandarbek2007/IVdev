@@ -223,7 +223,6 @@ const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 const languageButtons = document.querySelectorAll(".lang");
-const pointer = document.querySelector(".pointer");
 
 function setLanguage(language) {
   const dictionary = translations[language] || translations.ru;
@@ -283,16 +282,6 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll(".enter").forEach((element) => revealObserver.observe(element));
 
 if (window.matchMedia("(pointer: fine)").matches) {
-  window.addEventListener("pointermove", (event) => {
-    pointer.style.left = `${event.clientX}px`;
-    pointer.style.top = `${event.clientY}px`;
-  });
-
-  document.querySelectorAll("a, button, input, textarea").forEach((element) => {
-    element.addEventListener("mouseenter", () => pointer.classList.add("active"));
-    element.addEventListener("mouseleave", () => pointer.classList.remove("active"));
-  });
-
   document.querySelectorAll(".magnetic").forEach((element) => {
     element.addEventListener("mousemove", (event) => {
       const box = element.getBoundingClientRect();
