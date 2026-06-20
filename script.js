@@ -1,297 +1,328 @@
 const translations = {
   ru: {
-    navServices: "Услуги", navProjects: "Проекты", navPricing: "Цены", navProcess: "Процесс", navContact: "Контакты",
-    available: "Доступен для новых проектов", heroKicker: "САЙТЫ / ПРИЛОЖЕНИЯ / BACKEND ДЛЯ БИЗНЕСА",
-    heroLine1: "Сайты, приложения", heroLine2: "и backend", heroLine3: "для бизнеса.",
-    heroCopy: "Разрабатываю быстрые сайты, мобильные приложения, API и системы заявок — от идеи и дизайна до запуска.",
-    seeProjects: "Посмотреть работы", contactMe: "Обсудить проект", scroll: "Листайте, чтобы узнать больше",
-    aboutLabel: "О разработке", aboutTitle: "Разработка от идеи до запуска — без разрыва между дизайном и кодом.",
-    aboutP1: "Я разрабатываю веб-сайты, мобильные интерфейсы и backend-логику. Помогаю бизнесу запускать цифровые продукты: от идеи и дизайна до публикации и поддержки.",
-    aboutP2: "Основные направления — сайты для бизнеса, приложения и системы заявок для малого бизнеса и сервисных компаний.",
-    directions: "направления", freelance: "фриланс", development: "от идеи до запуска",
-    skillsLabel: "Технологии", skillsTitle: "Технологии — инструмент, а не самоцель.",
-    skillsCopy: "Подбираю стек под задачу: от лёгкого лендинга до приложения с базой данных, API и админ-панелью.",
-    skill1Copy: "Быстрые адаптивные сайты и удобные интерфейсы.", skill2Copy: "Мобильные приложения для Android и iOS.",
-    skill3Copy: "Backend, API, бизнес-логика и интеграции.", skill4Copy: "Данные, заявки, авторизация и админ-функции.",
-    servicesLabel: "Услуги", servicesTitle: "Что я могу сделать для вашего бизнеса.",
-    service1Title: "Сайт для бизнеса", service1Copy: "Презентация услуг и форма, через которую клиенты смогут оставить заявку.",
-    service2Title: "Мобильное приложение", service2Copy: "Приложение для Android и iOS с удобным интерфейсом и серверной частью.",
-    service3Title: "Backend и API", service3Copy: "Авторизация, бизнес-логика, платежи и интеграции с внешними сервисами.",
-    service4Title: "Telegram-интеграция", service4Copy: "Заявки с сайта будут сразу приходить вам в Telegram.",
-    service5Title: "База данных", service5Copy: "Хранение заявок, контента и пользователей с удобным управлением.",
-    service6Title: "Админ-панель", service6Copy: "Меняйте данные и управляйте заявками без обновления приложения.",
-    getEstimate: "Получить оценку", projectsLabel: "Кейсы", projectsTitle: "Проекты как решение конкретной задачи.",
-    projectsCopy: "Показываю не только интерфейс, но и задачу, решение и практический результат.",
-    portfolioTitle: "Персональное портфолио", coffeeTitle: "Сайт для кофейни", passwordTitle: "Менеджер паролей",
-    caseTask: "Задача", caseSolution: "Решение", caseResult: "Результат",
-    portfolioTask: "Собрать личный бренд и контакты в одном месте.",
-    portfolioSolution: "Мультиязычный адаптивный сайт с проектами и быстрыми CTA.",
-    portfolioResult: "Понятная презентация услуг для локальных и международных клиентов.",
-    coffeeTask: "Показать меню, атмосферу и контакты кофейни.",
-    coffeeSolution: "Адаптивный лендинг с визуальным меню и точками контакта.",
-    coffeeResult: "Онлайн-витрина и понятный путь к визиту или заявке.",
-    passwordTask: "Сделать хранение паролей понятным на мобильном устройстве.",
-    passwordSolution: "React Native интерфейс с категориями, поиском и защищённым хранилищем.",
-    passwordResult: "Единое место для управления данными без перегруженного интерфейса.",
-    discussSimilar: "Обсудить похожий проект",
-    pricingLabel: "Пакеты", pricingTitle: "Ориентир по стоимости.", popular: "Популярный",
-    price1: "от 2 500 000 сум", price1Copy: "Одностраничный сайт, адаптив, форма заявки и базовая SEO-настройка.",
-    price2: "от 5 000 000 сум", price2Copy: "Многостраничный сайт, услуги, формы, портфолио и аналитика.",
-    price3: "от 10 000 000 сум", price3Copy: "Сайт или приложение с базой данных, API, авторизацией и админ-панелью.",
-    pricingNote: "Точная стоимость зависит от функций, дизайна и сроков. После обсуждения вы получите понятную оценку.",
-    processLabel: "Процесс работы", processTitle: "Понятные этапы без хаоса.",
-    process1: "Обсуждение задачи", process2: "Структура и дизайн", process3: "Разработка",
-    process4: "Формы, база и API", process5: "Тестирование", process6: "Запуск и поддержка",
-    includedLabel: "Что входит", includedTitle: "Базовый стандарт каждой работы.",
-    included1: "Адаптивная версия", included2: "Чистый и понятный код", included3: "Быстрая загрузка",
-    included4: "Подключение домена", included5: "Форма заявки", included6: "Помощь с запуском",
-    included7: "Поддержка после сдачи", included8: "Базовая SEO-настройка",
-    contactLabel: "Новый проект", contactTitle1: "Есть идея для сайта", contactTitle2: "или приложения?",
-    contactCopy: "Опишите задачу — я предложу структуру, технологии и примерную стоимость. Обычно отвечаю в течение дня.",
-    telegramButton: "Написать в Telegram", directContact: "Предпочитаете написать сразу?", phone: "Телефон",
-    formName: "Имя", formNamePlaceholder: "Как к вам обращаться?", formContact: "Telegram / WhatsApp",
-    formContactPlaceholder: "@username или номер", formType: "Тип проекта", formType1: "Сайт для бизнеса",
-    formType2: "Мобильное приложение", formType3: "Backend / API", formType4: "Другое",
-    formBudget: "Бюджет", formBudget1: "До 3 000 000 сум", formBudget2: "3–7 млн сум",
-    formBudget3: "7–15 млн сум", formBudget4: "Нужно оценить", formDescription: "Описание задачи",
-    formDescriptionPlaceholder: "Что нужно создать и какие функции важны?", formSubmit: "Отправить заявку",
-    backTop: "Наверх"
+    navServices: "Возможности",
+    navWork: "Проекты",
+    navProcess: "Процесс",
+    navContact: "Контакты",
+    heroIndex: "FULL-STACK DEVELOPMENT",
+    heroEyebrow: "Независимая IT-студия · Ташкент",
+    heroTitleOne: "Создаю цифровые",
+    heroTitleAccent: "продукты с характером.",
+    heroCopy: "Проектирую и разрабатываю сайты, мобильные приложения и backend-системы, которые помогают бизнесу выглядеть сильнее и работать быстрее.",
+    heroCta: "Обсудить проект",
+    heroWork: "Смотреть работы",
+    available: "Доступен для новых проектов",
+    aboutEyebrow: "О студии",
+    aboutTitle: "Технологии должны решать задачи, а дизайн — создавать доверие.",
+    aboutText: "Меня зовут Iskandarbek Valijonov. Я full-stack разработчик, который ведет продукт от идеи и интерфейса до серверной логики, базы данных и запуска.",
+    factAge: "лет",
+    factDirections: "направления",
+    factOwner: "ответственный",
+    servicesEyebrow: "Что создаю",
+    servicesTitle: "От первой идеи до работающего продукта.",
+    serviceWebTitle: "Сайты для бизнеса",
+    serviceWebText: "Лендинги, корпоративные сайты, интернет-магазины и web-сервисы с продуманной логикой и сильной визуальной подачей.",
+    serviceMobileTitle: "Мобильные приложения",
+    serviceMobileText: "Кроссплатформенные приложения на React Native с API, авторизацией и безопасной работой с данными.",
+    serviceBackendTitle: "Backend и автоматизация",
+    serviceBackendText: "API, базы данных, админ-панели, Telegram-интеграции и серверная архитектура для стабильной работы продукта.",
+    stackLabel: "ОСНОВНОЙ СТЕК",
+    workEyebrow: "Избранные проекты",
+    workTitle: "Не просто экраны. Решения с контекстом.",
+    projectOneTitle: "Персональная digital-платформа",
+    projectOneText: "Портфолио, которое упаковывает опыт разработчика в ясный образ студии и приводит клиента к прямому контакту.",
+    caseTask: "Задача",
+    projectOneResult: "Позиционирование и доверие",
+    projectTwoTitle: "Сайт современной кофейни",
+    projectTwoText: "Атмосферная web-подача заведения: меню, история бренда, преимущества и понятный путь к посещению.",
+    projectTwoResult: "Передать атмосферу бренда",
+    projectThreeTitle: "Keystone Password Manager",
+    projectThreeText: "Мобильное хранилище паролей с акцентом на безопасность, понятную навигацию и визуальное ощущение защищенности.",
+    projectThreeResult: "Безопасность без сложности",
+    processEyebrow: "Как строится работа",
+    processTitle: "Прозрачный процесс без лишней бюрократии.",
+    processOne: "Погружение",
+    processOneText: "Задачи, аудитория и приоритеты.",
+    processTwo: "Система",
+    processTwoText: "Структура, сценарии и визуальное направление.",
+    processThree: "Разработка",
+    processThreeText: "Интерфейс, логика, API и база данных.",
+    processFour: "Запуск",
+    processFourText: "Тестирование, публикация и поддержка.",
+    pricingEyebrow: "Форматы работы",
+    pricingTitle: "Понятный масштаб и честная отправная точка.",
+    priceOneTitle: "Landing Page",
+    priceOneText: "Сильная презентация услуги или продукта.",
+    priceOneValue: "от 2 500 000 UZS",
+    priceTwoTitle: "Business Website",
+    priceTwoText: "Многостраничный сайт с бизнес-логикой.",
+    priceTwoValue: "от 5 000 000 UZS",
+    priceThreeTitle: "Full-stack Product",
+    priceThreeText: "Web или mobile-продукт с backend-системой.",
+    priceThreeValue: "от 10 000 000 UZS",
+    contactEyebrow: "Есть идея?",
+    contactTitle: "Давайте превратим ее в сильный цифровой продукт.",
+    contactText: "Опишите задачу в нескольких предложениях. Я отвечу лично и предложу подходящий формат разработки.",
+    formContact: "Как с вами связаться",
+    formContactPlaceholder: "Telegram, email или телефон",
+    formProject: "Расскажите о проекте",
+    formProjectPlaceholder: "Что нужно создать и для кого?",
+    formSubmit: "Отправить запрос",
+    phone: "Телефон",
+    backTop: "Наверх ↑"
   },
   en: {
-    navServices: "Services", navProjects: "Work", navPricing: "Pricing", navProcess: "Process", navContact: "Contact",
-    available: "Available for new projects", heroKicker: "WEBSITES / APPS / BACKEND FOR BUSINESS",
-    heroLine1: "Websites, apps", heroLine2: "and backend", heroLine3: "for business.",
-    heroCopy: "I build fast websites, mobile apps, APIs and lead systems — from idea and design to launch.",
-    seeProjects: "View work", contactMe: "Discuss a project", scroll: "Scroll to learn more",
-    aboutLabel: "Development", aboutTitle: "From idea to launch, with design and code working together.",
-    aboutP1: "I build websites, mobile interfaces and backend systems. I help businesses launch digital products from concept and design to deployment and support.",
-    aboutP2: "My focus is business websites, apps and lead systems for small businesses and service companies.",
-    directions: "core services", freelance: "freelance", development: "idea to launch",
-    skillsLabel: "Technology", skillsTitle: "Technology is a tool, not the product.",
-    skillsCopy: "I choose the stack for the job, from a focused landing page to a product with database, API and admin panel.",
-    skill1Copy: "Fast responsive websites and clear interfaces.", skill2Copy: "Mobile apps for Android and iOS.",
-    skill3Copy: "Backend, APIs, business logic and integrations.", skill4Copy: "Data, leads, authentication and admin features.",
-    servicesLabel: "Services", servicesTitle: "What I can build for your business.",
-    service1Title: "Business website", service1Copy: "Present your services and let customers submit requests.",
-    service2Title: "Mobile application", service2Copy: "An Android and iOS app with a clear interface and backend.",
-    service3Title: "Backend and API", service3Copy: "Authentication, business logic, payments and external integrations.",
-    service4Title: "Telegram integration", service4Copy: "New website leads can arrive directly in Telegram.",
-    service5Title: "Database", service5Copy: "Store and manage leads, content and users.",
-    service6Title: "Admin panel", service6Copy: "Update data and manage requests without changing the app.",
-    getEstimate: "Get an estimate", projectsLabel: "Case studies", projectsTitle: "Projects built around a clear problem.",
-    projectsCopy: "Each case explains the task, solution and practical result.",
-    portfolioTitle: "Personal portfolio", coffeeTitle: "Coffee shop website", passwordTitle: "Password manager",
-    caseTask: "Task", caseSolution: "Solution", caseResult: "Result",
-    portfolioTask: "Bring a personal brand, work and contacts into one place.",
-    portfolioSolution: "A multilingual responsive website with projects and clear calls to action.",
-    portfolioResult: "A focused service presentation for local and international clients.",
-    coffeeTask: "Present the menu, atmosphere and contact details.",
-    coffeeSolution: "A responsive landing page with a visual menu and clear contact paths.",
-    coffeeResult: "An online storefront that guides visitors toward a visit or enquiry.",
-    passwordTask: "Make password storage clear and usable on mobile.",
-    passwordSolution: "A React Native interface with categories, search and secure storage.",
-    passwordResult: "One simple place to manage sensitive data without a crowded interface.",
-    discussSimilar: "Discuss a similar project",
-    pricingLabel: "Packages", pricingTitle: "Starting prices.", popular: "Popular",
-    price1: "from 2,500,000 UZS", price1Copy: "One-page website, responsive layout, lead form and basic SEO.",
-    price2: "from 5,000,000 UZS", price2Copy: "Multi-page website, services, forms, portfolio and analytics.",
-    price3: "from 10,000,000 UZS", price3Copy: "Website or app with database, API, authentication and admin panel.",
-    pricingNote: "Final pricing depends on features, design and timeline. You will receive a clear estimate after a short discussion.",
-    processLabel: "Process", processTitle: "Clear steps, no chaos.",
-    process1: "Project discussion", process2: "Structure and design", process3: "Development",
-    process4: "Forms, database and API", process5: "Testing", process6: "Launch and support",
-    includedLabel: "Included", includedTitle: "A solid baseline for every project.",
-    included1: "Responsive layout", included2: "Clean maintainable code", included3: "Fast loading",
-    included4: "Domain connection", included5: "Lead form", included6: "Launch assistance",
-    included7: "Post-launch support", included8: "Basic SEO setup",
-    contactLabel: "New project", contactTitle1: "Have an idea for a website", contactTitle2: "or application?",
-    contactCopy: "Describe your goal and I will suggest the structure, technology and estimated budget. I usually reply within one day.",
-    telegramButton: "Message on Telegram", directContact: "Prefer to message directly?", phone: "Phone",
-    formName: "Name", formNamePlaceholder: "How should I address you?", formContact: "Telegram / WhatsApp",
-    formContactPlaceholder: "@username or phone number", formType: "Project type", formType1: "Business website",
-    formType2: "Mobile application", formType3: "Backend / API", formType4: "Other",
-    formBudget: "Budget", formBudget1: "Up to 3,000,000 UZS", formBudget2: "3–7 million UZS",
-    formBudget3: "7–15 million UZS", formBudget4: "Need an estimate", formDescription: "Project details",
-    formDescriptionPlaceholder: "What do you need and which features matter?", formSubmit: "Send enquiry",
-    backTop: "Back to top"
+    navServices: "Capabilities",
+    navWork: "Projects",
+    navProcess: "Process",
+    navContact: "Contact",
+    heroIndex: "FULL-STACK DEVELOPMENT",
+    heroEyebrow: "Independent IT studio · Tashkent",
+    heroTitleOne: "I build digital",
+    heroTitleAccent: "products with character.",
+    heroCopy: "I design and develop websites, mobile apps and backend systems that help businesses look stronger and operate faster.",
+    heroCta: "Discuss a project",
+    heroWork: "View selected work",
+    available: "Available for new projects",
+    aboutEyebrow: "About the studio",
+    aboutTitle: "Technology should solve problems. Design should build trust.",
+    aboutText: "I am Iskandarbek Valijonov, a full-stack developer taking products from initial idea and interface to backend logic, database and launch.",
+    factAge: "years old",
+    factDirections: "disciplines",
+    factOwner: "accountable owner",
+    servicesEyebrow: "What I build",
+    servicesTitle: "From the first idea to a working product.",
+    serviceWebTitle: "Business websites",
+    serviceWebText: "Landing pages, corporate websites, online stores and web services with thoughtful logic and a strong visual presence.",
+    serviceMobileTitle: "Mobile applications",
+    serviceMobileText: "Cross-platform React Native apps with APIs, authentication and secure data handling.",
+    serviceBackendTitle: "Backend and automation",
+    serviceBackendText: "APIs, databases, admin panels, Telegram integrations and server architecture for reliable products.",
+    stackLabel: "CORE STACK",
+    workEyebrow: "Selected work",
+    workTitle: "More than screens. Solutions with context.",
+    projectOneTitle: "Personal digital platform",
+    projectOneText: "A portfolio that turns developer expertise into a clear studio identity and guides clients toward direct contact.",
+    caseTask: "Objective",
+    projectOneResult: "Positioning and trust",
+    projectTwoTitle: "Contemporary coffee shop website",
+    projectTwoText: "An atmospheric web presence with menu, brand story, key benefits and a clear path to an in-person visit.",
+    projectTwoResult: "Translate the brand atmosphere",
+    projectThreeTitle: "Keystone Password Manager",
+    projectThreeText: "A mobile password vault focused on security, clear navigation and a strong sense of protection.",
+    projectThreeResult: "Security without complexity",
+    processEyebrow: "How we work",
+    processTitle: "A transparent process without unnecessary bureaucracy.",
+    processOne: "Discovery",
+    processOneText: "Goals, audience and priorities.",
+    processTwo: "System",
+    processTwoText: "Structure, scenarios and visual direction.",
+    processThree: "Development",
+    processThreeText: "Interface, logic, API and database.",
+    processFour: "Launch",
+    processFourText: "Testing, publishing and support.",
+    pricingEyebrow: "Engagements",
+    pricingTitle: "Clear scope and an honest starting point.",
+    priceOneTitle: "Landing Page",
+    priceOneText: "A strong presentation for a service or product.",
+    priceOneValue: "from 2,500,000 UZS",
+    priceTwoTitle: "Business Website",
+    priceTwoText: "A multi-page website with business logic.",
+    priceTwoValue: "from 5,000,000 UZS",
+    priceThreeTitle: "Full-stack Product",
+    priceThreeText: "A web or mobile product with a backend system.",
+    priceThreeValue: "from 10,000,000 UZS",
+    contactEyebrow: "Have an idea?",
+    contactTitle: "Let’s turn it into a strong digital product.",
+    contactText: "Describe your task in a few sentences. I will reply personally and suggest the right development format.",
+    formContact: "How can I reach you?",
+    formContactPlaceholder: "Telegram, email or phone",
+    formProject: "Tell me about the project",
+    formProjectPlaceholder: "What should be built and for whom?",
+    formSubmit: "Send request",
+    phone: "Phone",
+    backTop: "Back to top ↑"
   },
   uz: {
-    navServices: "Xizmatlar", navProjects: "Loyihalar", navPricing: "Narxlar", navProcess: "Jarayon", navContact: "Aloqa",
-    available: "Yangi loyihalar uchun ochiqman", heroKicker: "BIZNES UCHUN SAYTLAR / ILOVALAR / BACKEND",
-    heroLine1: "Biznes uchun", heroLine2: "sayt, ilova", heroLine3: "va backend.",
-    heroCopy: "Tezkor saytlar, mobil ilovalar, API va ariza tizimlarini g'oyadan dizayn va ishga tushirishgacha yarataman.",
-    seeProjects: "Ishlarni ko'rish", contactMe: "Loyihani muhokama qilish", scroll: "Ko'proq bilish uchun pastga",
-    aboutLabel: "Dasturlash", aboutTitle: "G'oyadan ishga tushirishgacha — dizayn va kod birgalikda.",
-    aboutP1: "Veb-saytlar, mobil interfeyslar va backend tizimlarini yarataman. Biznesga raqamli mahsulotni g'oya va dizayndan nashr hamda qo'llab-quvvatlashgacha ishga tushirishga yordam beraman.",
-    aboutP2: "Asosiy yo'nalishlar: kichik biznes va servis kompaniyalari uchun saytlar, ilovalar va ariza tizimlari.",
-    directions: "yo'nalish", freelance: "frilans", development: "g'oyadan ishga tushirishgacha",
-    skillsLabel: "Texnologiyalar", skillsTitle: "Texnologiya — vosita, mahsulot emas.",
-    skillsCopy: "Vazifaga mos stek tanlayman: oddiy landingdan baza, API va admin panelga ega ilovagacha.",
-    skill1Copy: "Tezkor moslashuvchan saytlar va qulay interfeyslar.", skill2Copy: "Android va iOS uchun mobil ilovalar.",
-    skill3Copy: "Backend, API, biznes mantiqi va integratsiyalar.", skill4Copy: "Ma'lumotlar, arizalar, avtorizatsiya va admin funksiyalar.",
-    servicesLabel: "Xizmatlar", servicesTitle: "Biznesingiz uchun nimalar yarata olaman.",
-    service1Title: "Biznes sayti", service1Copy: "Xizmatlarni ko'rsatish va mijozlardan ariza olish.",
-    service2Title: "Mobil ilova", service2Copy: "Android va iOS uchun qulay interfeys va backendga ega ilova.",
-    service3Title: "Backend va API", service3Copy: "Avtorizatsiya, biznes mantiqi, to'lovlar va integratsiyalar.",
-    service4Title: "Telegram integratsiyasi", service4Copy: "Saytdagi yangi arizalar to'g'ridan-to'g'ri Telegramga keladi.",
-    service5Title: "Ma'lumotlar bazasi", service5Copy: "Arizalar, kontent va foydalanuvchilarni saqlash va boshqarish.",
-    service6Title: "Admin panel", service6Copy: "Ilovani yangilamasdan ma'lumot va arizalarni boshqaring.",
-    getEstimate: "Narxni bilish", projectsLabel: "Keyslar", projectsTitle: "Aniq vazifa uchun yaratilgan loyihalar.",
-    projectsCopy: "Har bir keysda vazifa, yechim va amaliy natija ko'rsatilgan.",
-    portfolioTitle: "Shaxsiy portfolio", coffeeTitle: "Kofeyna sayti", passwordTitle: "Parol menejeri",
-    caseTask: "Vazifa", caseSolution: "Yechim", caseResult: "Natija",
-    portfolioTask: "Shaxsiy brend, ishlar va aloqalarni bir joyga yig'ish.",
-    portfolioSolution: "Loyihalar va aniq CTA'larga ega ko'p tilli moslashuvchan sayt.",
-    portfolioResult: "Mahalliy va xalqaro mijozlar uchun tushunarli xizmat taqdimoti.",
-    coffeeTask: "Menyu, atmosfera va kontaktlarni ko'rsatish.",
-    coffeeSolution: "Vizual menyu va aniq aloqa yo'llariga ega moslashuvchan landing.",
-    coffeeResult: "Tashrif yoki arizaga olib boradigan onlayn vitrina.",
-    passwordTask: "Parollarni mobil qurilmada tushunarli saqlash.",
-    passwordSolution: "Kategoriyalar, qidiruv va xavfsiz saqlashga ega React Native interfeysi.",
-    passwordResult: "Ortiqcha murakkabliksiz maxfiy ma'lumotlarni boshqarish joyi.",
-    discussSimilar: "O'xshash loyihani muhokama qilish",
-    pricingLabel: "Paketlar", pricingTitle: "Boshlang'ich narxlar.", popular: "Ommabop",
-    price1: "2 500 000 so'mdan", price1Copy: "Bir sahifali sayt, adaptiv, ariza formasi va asosiy SEO.",
-    price2: "5 000 000 so'mdan", price2Copy: "Ko'p sahifali sayt, xizmatlar, formalar, portfolio va analitika.",
-    price3: "10 000 000 so'mdan", price3Copy: "Baza, API, avtorizatsiya va admin panelga ega sayt yoki ilova.",
-    pricingNote: "Aniq narx funksiyalar, dizayn va muddatga bog'liq. Muhokamadan so'ng tushunarli baho olasiz.",
-    processLabel: "Ish jarayoni", processTitle: "Tushunarli bosqichlar, tartibli ish.",
-    process1: "Vazifani muhokama qilish", process2: "Tuzilma va dizayn", process3: "Dasturlash",
-    process4: "Forma, baza va API", process5: "Test", process6: "Ishga tushirish va yordam",
-    includedLabel: "Nimalar kiradi", includedTitle: "Har bir loyiha uchun asosiy standart.",
-    included1: "Moslashuvchan versiya", included2: "Toza va tushunarli kod", included3: "Tez yuklanish",
-    included4: "Domen ulash", included5: "Ariza formasi", included6: "Ishga tushirishda yordam",
-    included7: "Topshirgandan keyingi yordam", included8: "Asosiy SEO sozlamasi",
-    contactLabel: "Yangi loyiha", contactTitle1: "Sayt yoki ilova uchun", contactTitle2: "g'oyangiz bormi?",
-    contactCopy: "Vazifani yozing — men tuzilma, texnologiya va taxminiy narxni taklif qilaman. Odatda bir kun ichida javob beraman.",
-    telegramButton: "Telegram orqali yozish", directContact: "Darhol yozishni xohlaysizmi?", phone: "Telefon",
-    formName: "Ism", formNamePlaceholder: "Sizga qanday murojaat qilay?", formContact: "Telegram / WhatsApp",
-    formContactPlaceholder: "@username yoki raqam", formType: "Loyiha turi", formType1: "Biznes sayti",
-    formType2: "Mobil ilova", formType3: "Backend / API", formType4: "Boshqa",
-    formBudget: "Budjet", formBudget1: "3 000 000 so'mgacha", formBudget2: "3–7 mln so'm",
-    formBudget3: "7–15 mln so'm", formBudget4: "Baholash kerak", formDescription: "Vazifa tavsifi",
-    formDescriptionPlaceholder: "Nima yaratish va qaysi funksiyalar muhim?", formSubmit: "Ariza yuborish",
-    backTop: "Yuqoriga"
+    navServices: "Imkoniyatlar",
+    navWork: "Loyihalar",
+    navProcess: "Jarayon",
+    navContact: "Aloqa",
+    heroIndex: "FULL-STACK DEVELOPMENT",
+    heroEyebrow: "Mustaqil IT studiya · Toshkent",
+    heroTitleOne: "Xarakterga ega",
+    heroTitleAccent: "raqamli mahsulotlar.",
+    heroCopy: "Biznesga kuchliroq ko‘rinish va tezroq ishlashga yordam beradigan saytlar, mobil ilovalar va backend tizimlarini loyihalayman.",
+    heroCta: "Loyihani muhokama qilish",
+    heroWork: "Ishlarni ko‘rish",
+    available: "Yangi loyihalar uchun ochiqman",
+    aboutEyebrow: "Studiya haqida",
+    aboutTitle: "Texnologiya muammoni hal qilishi, dizayn esa ishonch yaratishi kerak.",
+    aboutText: "Men Iskandarbek Valijonovman. G‘oya va interfeysdan server mantig‘i, ma’lumotlar bazasi va ishga tushirishgacha mahsulotni yaratadigan full-stack dasturchiman.",
+    factAge: "yosh",
+    factDirections: "yo‘nalish",
+    factOwner: "mas’ul ijrochi",
+    servicesEyebrow: "Nima yarataman",
+    servicesTitle: "Birinchi g‘oyadan ishlaydigan mahsulotgacha.",
+    serviceWebTitle: "Biznes uchun saytlar",
+    serviceWebText: "Landing, korporativ sayt, internet-do‘kon va puxta mantiq hamda kuchli vizual uslubga ega web-servislar.",
+    serviceMobileTitle: "Mobil ilovalar",
+    serviceMobileText: "API, autentifikatsiya va xavfsiz ma’lumotlar bilan ishlaydigan React Native ilovalari.",
+    serviceBackendTitle: "Backend va avtomatlashtirish",
+    serviceBackendText: "Barqaror mahsulot uchun API, ma’lumotlar bazasi, admin panel, Telegram integratsiyasi va server arxitekturasi.",
+    stackLabel: "ASOSIY TEXNOLOGIYALAR",
+    workEyebrow: "Tanlangan loyihalar",
+    workTitle: "Shunchaki ekranlar emas. Kontekstli yechimlar.",
+    projectOneTitle: "Shaxsiy raqamli platforma",
+    projectOneText: "Dasturchi tajribasini aniq studiya obraziga aylantiradigan va mijozni to‘g‘ridan-to‘g‘ri aloqaga olib keladigan portfolio.",
+    caseTask: "Vazifa",
+    projectOneResult: "Pozitsiyalash va ishonch",
+    projectTwoTitle: "Zamonaviy qahvaxona sayti",
+    projectTwoText: "Menyu, brend tarixi, afzalliklar va tashrifga olib boradigan tushunarli yo‘lga ega atmosferali sayt.",
+    projectTwoResult: "Brend muhitini yetkazish",
+    projectThreeTitle: "Keystone Password Manager",
+    projectThreeText: "Xavfsizlik, tushunarli navigatsiya va himoyalanganlik hissiga yo‘naltirilgan mobil parol ombori.",
+    projectThreeResult: "Murakkabliksiz xavfsizlik",
+    processEyebrow: "Ish jarayoni",
+    processTitle: "Ortiqcha byurokratiyasiz shaffof jarayon.",
+    processOne: "Tahlil",
+    processOneText: "Maqsad, auditoriya va ustuvorliklar.",
+    processTwo: "Tizim",
+    processTwoText: "Tuzilma, ssenariy va vizual yo‘nalish.",
+    processThree: "Dasturlash",
+    processThreeText: "Interfeys, mantiq, API va ma’lumotlar bazasi.",
+    processFour: "Ishga tushirish",
+    processFourText: "Sinov, nashr va qo‘llab-quvvatlash.",
+    pricingEyebrow: "Ish formatlari",
+    pricingTitle: "Aniq ko‘lam va halol boshlang‘ich narx.",
+    priceOneTitle: "Landing Page",
+    priceOneText: "Xizmat yoki mahsulotning kuchli taqdimoti.",
+    priceOneValue: "2 500 000 UZS dan",
+    priceTwoTitle: "Business Website",
+    priceTwoText: "Biznes mantig‘iga ega ko‘p sahifali sayt.",
+    priceTwoValue: "5 000 000 UZS dan",
+    priceThreeTitle: "Full-stack Product",
+    priceThreeText: "Backend tizimli web yoki mobil mahsulot.",
+    priceThreeValue: "10 000 000 UZS dan",
+    contactEyebrow: "G‘oyangiz bormi?",
+    contactTitle: "Uni kuchli raqamli mahsulotga aylantiramiz.",
+    contactText: "Vazifani bir necha jumlada tasvirlab bering. Shaxsan javob beraman va mos ishlab chiqish formatini taklif qilaman.",
+    formContact: "Siz bilan qanday bog‘lanish mumkin?",
+    formContactPlaceholder: "Telegram, email yoki telefon",
+    formProject: "Loyiha haqida ayting",
+    formProjectPlaceholder: "Nima va kim uchun yaratilishi kerak?",
+    formSubmit: "So‘rov yuborish",
+    phone: "Telefon",
+    backTop: "Yuqoriga ↑"
   }
 };
 
+const documentRoot = document.documentElement;
+const body = document.body;
+const header = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
 const languageButtons = document.querySelectorAll(".lang");
-const textElements = document.querySelectorAll("[data-i18n]");
-const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
-let currentLanguage = localStorage.getItem("iv-language") || "ru";
+const pointer = document.querySelector(".pointer");
 
 function setLanguage(language) {
-  currentLanguage = translations[language] ? language : "ru";
-  const dictionary = translations[currentLanguage];
-  document.documentElement.lang = currentLanguage;
+  const dictionary = translations[language] || translations.ru;
+  documentRoot.lang = language;
 
-  textElements.forEach((element) => {
-    const value = dictionary[element.dataset.i18n];
-    if (value) element.textContent = value;
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) element.textContent = dictionary[key];
   });
 
-  placeholderElements.forEach((element) => {
-    const value = dictionary[element.dataset.i18nPlaceholder];
-    if (value) element.placeholder = value;
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    if (dictionary[key]) element.placeholder = dictionary[key];
   });
 
   languageButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.lang === currentLanguage);
+    button.classList.toggle("active", button.dataset.lang === language);
   });
 
-  localStorage.setItem("iv-language", currentLanguage);
+  localStorage.setItem("iv-language", language);
 }
 
-languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
-setLanguage(currentLanguage);
-
-const header = document.querySelector(".site-header");
-const menuButton = document.querySelector(".menu-button");
-const mobileMenu = document.querySelector(".mobile-menu");
-
-function closeMenu() {
-  document.body.classList.remove("menu-open");
-  menuButton.classList.remove("is-open");
-  mobileMenu.classList.remove("is-open");
-  menuButton.setAttribute("aria-expanded", "false");
-}
-
-menuButton.addEventListener("click", () => {
-  const isOpen = mobileMenu.classList.toggle("is-open");
-  menuButton.classList.toggle("is-open", isOpen);
-  document.body.classList.toggle("menu-open", isOpen);
-  menuButton.setAttribute("aria-expanded", String(isOpen));
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-mobileMenu.querySelectorAll("a").forEach((link, index) => {
-  link.style.setProperty("--menu-delay", `${index * 60}ms`);
+setLanguage(localStorage.getItem("iv-language") || "ru");
+
+function closeMenu() {
+  body.classList.remove("menu-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  mobileMenu.setAttribute("aria-hidden", "true");
+}
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = body.classList.toggle("menu-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  mobileMenu.setAttribute("aria-hidden", String(!isOpen));
+});
+
+mobileMenu.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
 
-window.addEventListener("scroll", () => header.classList.toggle("is-scrolled", window.scrollY > 28), { passive: true });
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 28);
+}, { passive: true });
 
-const revealElements = document.querySelectorAll(".reveal");
-document.querySelectorAll(".stagger-group").forEach((group) => {
-  group.querySelectorAll(":scope > .reveal").forEach((element, index) => {
-    element.style.setProperty("--reveal-delay", `${index * 120}ms`);
-  });
-});
-revealElements.forEach((element) => {
-  if (element.dataset.delay) element.style.setProperty("--reveal-delay", `${element.dataset.delay}ms`);
-});
-
-const revealObserver = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
-    entry.target.classList.add("is-visible");
-    revealObserver.unobserve(entry.target);
+    entry.target.classList.add("visible");
+    observer.unobserve(entry.target);
   });
-}, { threshold: 0.1, rootMargin: "0px 0px -7% 0px" });
+}, { threshold: 0.12, rootMargin: "0px 0px -50px" });
 
-requestAnimationFrame(() => requestAnimationFrame(() => revealElements.forEach((element) => revealObserver.observe(element))));
+document.querySelectorAll(".enter").forEach((element) => revealObserver.observe(element));
 
-const video = document.querySelector(".hero-video video");
-const videoFallback = document.querySelector(".hero-fallback");
-if (video) {
-  const showFallback = () => videoFallback.classList.add("is-visible");
-  video.addEventListener("error", showFallback, { once: true });
-  video.querySelector("source")?.addEventListener("error", showFallback, { once: true });
-  video.play().catch(() => {});
+if (window.matchMedia("(pointer: fine)").matches) {
+  window.addEventListener("pointermove", (event) => {
+    pointer.style.left = `${event.clientX}px`;
+    pointer.style.top = `${event.clientY}px`;
+  });
+
+  document.querySelectorAll("a, button, input, textarea").forEach((element) => {
+    element.addEventListener("mouseenter", () => pointer.classList.add("active"));
+    element.addEventListener("mouseleave", () => pointer.classList.remove("active"));
+  });
+
+  document.querySelectorAll(".magnetic").forEach((element) => {
+    element.addEventListener("mousemove", (event) => {
+      const box = element.getBoundingClientRect();
+      const x = (event.clientX - box.left - box.width / 2) * 0.08;
+      const y = (event.clientY - box.top - box.height / 2) * 0.08;
+      element.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    element.addEventListener("mouseleave", () => {
+      element.style.transform = "";
+    });
+  });
 }
 
 document.querySelectorAll("img").forEach((image) => {
   image.addEventListener("error", () => {
-    const fallback = document.createElement("div");
-    fallback.className = "media-fallback";
-    fallback.textContent = "I.V";
-    image.replaceWith(fallback);
-  }, { once: true });
-});
-
-const projectForm = document.getElementById("project-form");
-projectForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(projectForm);
-  const subject = encodeURIComponent("Новая заявка с сайта IV Studio");
-  const body = encodeURIComponent(
-    `Контакт: ${data.get("contact")}\n\nЗадача:\n${data.get("description")}`
-  );
-  window.location.href = `mailto:iskandarbek2007@gmail.com?subject=${subject}&body=${body}`;
-});
-
-const cursorGlow = document.querySelector(".cursor-glow");
-let pointerFrame = 0;
-window.addEventListener("pointermove", (event) => {
-  if (window.matchMedia("(pointer: coarse)").matches || pointerFrame) return;
-  pointerFrame = requestAnimationFrame(() => {
-    cursorGlow.style.transform = `translate3d(${event.clientX - 4.5}px, ${event.clientY - 4.5}px, 0)`;
-    pointerFrame = 0;
+    image.closest(".case-visual, .phone-frame")?.classList.add("media-error");
+    image.style.display = "none";
   });
-}, { passive: true });
+});
 
-document.querySelectorAll("a, button, input, textarea, select").forEach((element) => {
-  element.addEventListener("pointerenter", () => cursorGlow.classList.add("is-hovering"));
-  element.addEventListener("pointerleave", () => cursorGlow.classList.remove("is-hovering"));
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const contact = formData.get("contact");
+  const project = formData.get("project");
+  const subject = encodeURIComponent("Новый проект для IV Studio");
+  const message = encodeURIComponent(`Контакт: ${contact}\n\nОписание проекта:\n${project}`);
+  window.location.href = `mailto:iskandarbek2007@gmail.com?subject=${subject}&body=${message}`;
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
