@@ -239,15 +239,6 @@ window.addEventListener("scroll", () => {
   timelineProgress.style.height = `${visible}px`;
 }, { passive: true });
 
-const form = document.getElementById("projectForm");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const subject = encodeURIComponent("Новый проект для IV Digital Forge");
-  const message = encodeURIComponent(`Имя: ${data.get("name")}\nEmail: ${data.get("email")}\nБюджет: ${data.get("budget")}\n\nПроект:\n${data.get("project")}`);
-  window.location.href = `mailto:iskandarbek2007@gmail.com?subject=${subject}&body=${message}`;
-});
-
 const canvas = document.getElementById("particleCanvas");
 const context = canvas.getContext("2d");
 let particles = [];
