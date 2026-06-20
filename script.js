@@ -1,274 +1,176 @@
 const translations = {
   ru: {
-    navServices: "Возможности",
-    navWork: "Проекты",
-    navProcess: "Процесс",
-    navContact: "Контакты",
-    heroIndex: "FULL-STACK DEVELOPMENT",
-    heroEyebrow: "Независимая IT-студия · Ташкент",
-    heroTitleOne: "Создаю цифровые",
-    heroTitleAccent: "продукты с характером.",
-    heroCopy: "Проектирую и разрабатываю сайты, мобильные приложения и backend-системы, которые помогают бизнесу выглядеть сильнее и работать быстрее.",
-    heroCta: "Обсудить проект",
-    heroWork: "Смотреть работы",
-    available: "Доступен для новых проектов",
-    aboutEyebrow: "О студии",
-    aboutTitle: "Технологии должны решать задачи, а дизайн — создавать доверие.",
-    aboutText: "Меня зовут Iskandarbek Valijonov. Я full-stack разработчик, который ведет продукт от идеи и интерфейса до серверной логики, базы данных и запуска.",
-    factAge: "лет",
-    factDirections: "направления",
-    factOwner: "ответственный",
-    servicesEyebrow: "Что создаю",
-    servicesTitle: "От первой идеи до работающего продукта.",
-    serviceWebTitle: "Сайты для бизнеса",
-    serviceWebText: "Лендинги, корпоративные сайты, интернет-магазины и web-сервисы с продуманной логикой и сильной визуальной подачей.",
-    serviceMobileTitle: "Мобильные приложения",
-    serviceMobileText: "Кроссплатформенные приложения на React Native с API, авторизацией и безопасной работой с данными.",
-    serviceBackendTitle: "Backend и автоматизация",
-    serviceBackendText: "API, базы данных, админ-панели, Telegram-интеграции и серверная архитектура для стабильной работы продукта.",
-    stackLabel: "ОСНОВНОЙ СТЕК",
-    workEyebrow: "Избранные проекты",
-    workTitle: "Не просто экраны. Решения с контекстом.",
-    projectOneTitle: "Персональная digital-платформа",
-    projectOneText: "Портфолио, которое упаковывает опыт разработчика в ясный образ студии и приводит клиента к прямому контакту.",
-    caseTask: "Задача",
-    projectOneResult: "Позиционирование и доверие",
-    projectTwoTitle: "Сайт современной кофейни",
-    projectTwoText: "Атмосферная web-подача заведения: меню, история бренда, преимущества и понятный путь к посещению.",
-    projectTwoResult: "Передать атмосферу бренда",
-    projectThreeTitle: "Keystone Password Manager",
-    projectThreeText: "Мобильное хранилище паролей с акцентом на безопасность, понятную навигацию и визуальное ощущение защищенности.",
-    projectThreeResult: "Безопасность без сложности",
-    processEyebrow: "Как строится работа",
-    processTitle: "Прозрачный процесс без лишней бюрократии.",
-    processOne: "Погружение",
-    processOneText: "Задачи, аудитория и приоритеты.",
-    processTwo: "Система",
-    processTwoText: "Структура, сценарии и визуальное направление.",
-    processThree: "Разработка",
-    processThreeText: "Интерфейс, логика, API и база данных.",
-    processFour: "Запуск",
-    processFourText: "Тестирование, публикация и поддержка.",
-    pricingEyebrow: "Форматы работы",
-    pricingTitle: "Понятный масштаб и честная отправная точка.",
-    priceOneTitle: "Landing Page",
-    priceOneText: "Сильная презентация услуги или продукта.",
-    priceOneValue: "от 2 500 000 UZS",
-    priceTwoTitle: "Business Website",
-    priceTwoText: "Многостраничный сайт с бизнес-логикой.",
-    priceTwoValue: "от 5 000 000 UZS",
-    priceThreeTitle: "Full-stack Product",
-    priceThreeText: "Web или mobile-продукт с backend-системой.",
-    priceThreeValue: "от 10 000 000 UZS",
-    contactEyebrow: "Есть идея?",
-    contactTitle: "Давайте превратим ее в сильный цифровой продукт.",
-    contactText: "Опишите задачу в нескольких предложениях. Я отвечу лично и предложу подходящий формат разработки.",
-    formContact: "Как с вами связаться",
-    formContactPlaceholder: "Telegram, email или телефон",
-    formProject: "Расскажите о проекте",
-    formProjectPlaceholder: "Что нужно создать и для кого?",
-    formSubmit: "Отправить запрос",
-    phone: "Телефон",
-    backTop: "Наверх ↑"
+    navServices: "Услуги", navStack: "Стек", navPortfolio: "Кейсы", navProcess: "Процесс", navContact: "Контакты",
+    availableShort: "Свободен", availableLong: "Доступен для новых проектов", startProject: "Начать проект",
+    heroLabel: "FULL-STACK DIGITAL FORGE", heroTitleOne: "Превращаем идеи", heroTitleTwo: "в цифровую реальность",
+    heroText: "Full-stack разработка от первой концепции до production: интерфейс, серверная логика, база данных, интеграции и запуск.",
+    discuss: "Обсудить проект", viewCases: "Посмотреть кейсы", scroll: "Листайте",
+    heroStatServices: "направлений разработки", heroStatTech: "основных технологий", heroStatPlatforms: "платформы: web, mobile, API",
+    servicesTitle: "Полный цикл разработки. Один ответственный.", servicesIntro: "Создаю цифровые продукты целиком — без разрыва между дизайном, клиентской частью и сервером.",
+    frontendText: "Быстрые адаптивные интерфейсы с продуманными состояниями и плавной анимацией.",
+    backendText: "API, авторизация, бизнес-логика и надежная работа с данными.",
+    devopsText: "Контейнеризация, развертывание и стабильная production-среда.",
+    mobileText: "Кроссплатформенные приложения для Android и iOS с единым backend.",
+    designText: "Интерфейсы, в которых визуальный характер поддерживает удобство и цели бизнеса.",
+    qaText: "Проверка сценариев, адаптивности, производительности и поведения перед запуском.",
+    stackTitle: "Инструменты, которые решают задачу.", stackIntro: "Стек подбирается под продукт, а не наоборот. Основа — современная типизация, понятная архитектура и масштабируемый backend.",
+    metricServices: "направлений", metricTech: "технологий", metricPlatforms: "платформы", metricResponsive: "адаптивность",
+    portfolioTitle: "Реальные проекты. Разные задачи.", portfolioIntro: "Три направления работы: выразительный web, продуктовый интерфейс и мобильное приложение.",
+    filterAll: "Все", projectOneTitle: "Персональная digital-платформа", projectOneShort: "Выразительная презентация экспертизы и прямой путь к заявке.",
+    projectTwoTitle: "Сайт современной кофейни", projectTwoShort: "Атмосфера бренда, меню и понятный сценарий бронирования.",
+    projectThreeShort: "Безопасное мобильное хранилище с ясным интерфейсом.", viewCase: "Смотреть кейс ↗",
+    processTitle: "От идеи до запуска. Без чёрного ящика.", processIntro: "На каждом этапе понятно, что происходит, какой результат готов и что будет дальше.",
+    stepOne: "Погружение", stepOneText: "Цели, аудитория, функции и ограничения будущего продукта.",
+    stepTwo: "Система и дизайн", stepTwoText: "Структура, пользовательские сценарии и визуальное направление.",
+    stepThree: "Разработка", stepThreeText: "Frontend, backend, база данных и необходимые интеграции.",
+    stepFour: "Тестирование", stepFourText: "Проверка устройств, сценариев, скорости и стабильности.",
+    stepFive: "Запуск и поддержка", stepFiveText: "Публикация, настройка окружения и помощь после релиза.",
+    faqTitle: "До старта проекта.", faqIntro: "Короткие ответы на вопросы, которые обычно возникают перед разработкой.",
+    faqOneQ: "Сколько времени занимает разработка?", faqOneA: "Лендинг обычно занимает от 1–2 недель. Сайт или приложение со сложной логикой — от нескольких недель, в зависимости от функций.",
+    faqTwoQ: "Как формируется стоимость?", faqTwoA: "Стоимость зависит от объема экранов, логики, интеграций и backend. После обсуждения задачи вы получаете понятную оценку.",
+    faqThreeQ: "Можно начать только с идеи?", faqThreeA: "Да. Я помогу превратить идею в структуру, определить необходимый функционал и выбрать подходящий стек.",
+    faqFourQ: "Что происходит после запуска?", faqFourA: "Проверяю production-версию, помогаю с доменом и публикацией, а также остаюсь на связи для поддержки и развития.",
+    contactTitle: "Есть идея? Давайте выкуем продукт.", contactText: "Расскажите, что нужно создать. Я отвечу лично, уточню детали и предложу технический путь.",
+    phone: "Телефон", formName: "Ваше имя", formNamePlaceholder: "Как к вам обращаться?", formProject: "О проекте", formProjectPlaceholder: "Что нужно создать?",
+    formBudget: "Бюджет", budgetUnknown: "Пока не определён", formSubmit: "Отправить запрос"
   },
   en: {
-    navServices: "Capabilities",
-    navWork: "Projects",
-    navProcess: "Process",
-    navContact: "Contact",
-    heroIndex: "FULL-STACK DEVELOPMENT",
-    heroEyebrow: "Independent IT studio · Tashkent",
-    heroTitleOne: "I build digital",
-    heroTitleAccent: "products with character.",
-    heroCopy: "I design and develop websites, mobile apps and backend systems that help businesses look stronger and operate faster.",
-    heroCta: "Discuss a project",
-    heroWork: "View selected work",
-    available: "Available for new projects",
-    aboutEyebrow: "About the studio",
-    aboutTitle: "Technology should solve problems. Design should build trust.",
-    aboutText: "I am Iskandarbek Valijonov, a full-stack developer taking products from initial idea and interface to backend logic, database and launch.",
-    factAge: "years old",
-    factDirections: "disciplines",
-    factOwner: "accountable owner",
-    servicesEyebrow: "What I build",
-    servicesTitle: "From the first idea to a working product.",
-    serviceWebTitle: "Business websites",
-    serviceWebText: "Landing pages, corporate websites, online stores and web services with thoughtful logic and a strong visual presence.",
-    serviceMobileTitle: "Mobile applications",
-    serviceMobileText: "Cross-platform React Native apps with APIs, authentication and secure data handling.",
-    serviceBackendTitle: "Backend and automation",
-    serviceBackendText: "APIs, databases, admin panels, Telegram integrations and server architecture for reliable products.",
-    stackLabel: "CORE STACK",
-    workEyebrow: "Selected work",
-    workTitle: "More than screens. Solutions with context.",
-    projectOneTitle: "Personal digital platform",
-    projectOneText: "A portfolio that turns developer expertise into a clear studio identity and guides clients toward direct contact.",
-    caseTask: "Objective",
-    projectOneResult: "Positioning and trust",
-    projectTwoTitle: "Contemporary coffee shop website",
-    projectTwoText: "An atmospheric web presence with menu, brand story, key benefits and a clear path to an in-person visit.",
-    projectTwoResult: "Translate the brand atmosphere",
-    projectThreeTitle: "Keystone Password Manager",
-    projectThreeText: "A mobile password vault focused on security, clear navigation and a strong sense of protection.",
-    projectThreeResult: "Security without complexity",
-    processEyebrow: "How we work",
-    processTitle: "A transparent process without unnecessary bureaucracy.",
-    processOne: "Discovery",
-    processOneText: "Goals, audience and priorities.",
-    processTwo: "System",
-    processTwoText: "Structure, scenarios and visual direction.",
-    processThree: "Development",
-    processThreeText: "Interface, logic, API and database.",
-    processFour: "Launch",
-    processFourText: "Testing, publishing and support.",
-    pricingEyebrow: "Engagements",
-    pricingTitle: "Clear scope and an honest starting point.",
-    priceOneTitle: "Landing Page",
-    priceOneText: "A strong presentation for a service or product.",
-    priceOneValue: "from 2,500,000 UZS",
-    priceTwoTitle: "Business Website",
-    priceTwoText: "A multi-page website with business logic.",
-    priceTwoValue: "from 5,000,000 UZS",
-    priceThreeTitle: "Full-stack Product",
-    priceThreeText: "A web or mobile product with a backend system.",
-    priceThreeValue: "from 10,000,000 UZS",
-    contactEyebrow: "Have an idea?",
-    contactTitle: "Let’s turn it into a strong digital product.",
-    contactText: "Describe your task in a few sentences. I will reply personally and suggest the right development format.",
-    formContact: "How can I reach you?",
-    formContactPlaceholder: "Telegram, email or phone",
-    formProject: "Tell me about the project",
-    formProjectPlaceholder: "What should be built and for whom?",
-    formSubmit: "Send request",
-    phone: "Phone",
-    backTop: "Back to top ↑"
+    navServices: "Services", navStack: "Stack", navPortfolio: "Work", navProcess: "Process", navContact: "Contact",
+    availableShort: "Available", availableLong: "Available for new projects", startProject: "Start a project",
+    heroLabel: "FULL-STACK DIGITAL FORGE", heroTitleOne: "Turning ideas", heroTitleTwo: "into digital reality",
+    heroText: "Full-stack development from the first concept to production: interface, backend logic, database, integrations and launch.",
+    discuss: "Discuss a project", viewCases: "View selected work", scroll: "Scroll",
+    heroStatServices: "development disciplines", heroStatTech: "core technologies", heroStatPlatforms: "platforms: web, mobile, API",
+    servicesTitle: "The full development cycle. One accountable partner.", servicesIntro: "I build complete digital products without gaps between design, client-side experience and backend.",
+    frontendText: "Fast responsive interfaces with thoughtful states and smooth motion.",
+    backendText: "APIs, authentication, business logic and reliable data handling.",
+    devopsText: "Containerization, deployment and a stable production environment.",
+    mobileText: "Cross-platform Android and iOS applications with one backend.",
+    designText: "Interfaces where visual character supports usability and business goals.",
+    qaText: "Testing user flows, responsiveness, performance and behavior before launch.",
+    stackTitle: "Tools chosen to solve the problem.", stackIntro: "The stack follows the product, not the other way around. The foundation is typed code, clear architecture and a scalable backend.",
+    metricServices: "disciplines", metricTech: "technologies", metricPlatforms: "platforms", metricResponsive: "responsive",
+    portfolioTitle: "Real projects. Different challenges.", portfolioIntro: "Three fields of work: expressive web, product interfaces and mobile applications.",
+    filterAll: "All", projectOneTitle: "Personal digital platform", projectOneShort: "An expressive presentation of expertise with a direct route to contact.",
+    projectTwoTitle: "Contemporary coffee shop website", projectTwoShort: "Brand atmosphere, menu and a clear booking journey.",
+    projectThreeShort: "A secure mobile vault with a clear interface.", viewCase: "View case ↗",
+    processTitle: "From idea to launch. No black box.", processIntro: "At every stage you know what is happening, what is ready and what comes next.",
+    stepOne: "Discovery", stepOneText: "Goals, audience, features and constraints of the future product.",
+    stepTwo: "System and design", stepTwoText: "Structure, user journeys and visual direction.",
+    stepThree: "Development", stepThreeText: "Frontend, backend, database and required integrations.",
+    stepFour: "Testing", stepFourText: "Device, flow, speed and stability verification.",
+    stepFive: "Launch and support", stepFiveText: "Publishing, environment setup and post-release support.",
+    faqTitle: "Before we start.", faqIntro: "Short answers to common questions before development begins.",
+    faqOneQ: "How long does development take?", faqOneA: "A landing page usually takes 1–2 weeks. A website or application with complex logic takes several weeks depending on features.",
+    faqTwoQ: "How is the price calculated?", faqTwoA: "The price depends on screens, logic, integrations and backend. After discussing the task, you receive a clear estimate.",
+    faqThreeQ: "Can we start with just an idea?", faqThreeA: "Yes. I can turn the idea into a structure, define the right feature set and choose the technology stack.",
+    faqFourQ: "What happens after launch?", faqFourA: "I verify the production version, help with domain and publishing, and remain available for support and further development.",
+    contactTitle: "Have an idea? Let’s forge the product.", contactText: "Tell me what you need to build. I will reply personally, clarify the details and suggest a technical path.",
+    phone: "Phone", formName: "Your name", formNamePlaceholder: "How should I address you?", formProject: "About the project", formProjectPlaceholder: "What should be built?",
+    formBudget: "Budget", budgetUnknown: "Not defined yet", formSubmit: "Send request"
   },
   uz: {
-    navServices: "Imkoniyatlar",
-    navWork: "Loyihalar",
-    navProcess: "Jarayon",
-    navContact: "Aloqa",
-    heroIndex: "FULL-STACK DEVELOPMENT",
-    heroEyebrow: "Mustaqil IT studiya · Toshkent",
-    heroTitleOne: "Xarakterga ega",
-    heroTitleAccent: "raqamli mahsulotlar.",
-    heroCopy: "Biznesga kuchliroq ko‘rinish va tezroq ishlashga yordam beradigan saytlar, mobil ilovalar va backend tizimlarini loyihalayman.",
-    heroCta: "Loyihani muhokama qilish",
-    heroWork: "Ishlarni ko‘rish",
-    available: "Yangi loyihalar uchun ochiqman",
-    aboutEyebrow: "Studiya haqida",
-    aboutTitle: "Texnologiya muammoni hal qilishi, dizayn esa ishonch yaratishi kerak.",
-    aboutText: "Men Iskandarbek Valijonovman. G‘oya va interfeysdan server mantig‘i, ma’lumotlar bazasi va ishga tushirishgacha mahsulotni yaratadigan full-stack dasturchiman.",
-    factAge: "yosh",
-    factDirections: "yo‘nalish",
-    factOwner: "mas’ul ijrochi",
-    servicesEyebrow: "Nima yarataman",
-    servicesTitle: "Birinchi g‘oyadan ishlaydigan mahsulotgacha.",
-    serviceWebTitle: "Biznes uchun saytlar",
-    serviceWebText: "Landing, korporativ sayt, internet-do‘kon va puxta mantiq hamda kuchli vizual uslubga ega web-servislar.",
-    serviceMobileTitle: "Mobil ilovalar",
-    serviceMobileText: "API, autentifikatsiya va xavfsiz ma’lumotlar bilan ishlaydigan React Native ilovalari.",
-    serviceBackendTitle: "Backend va avtomatlashtirish",
-    serviceBackendText: "Barqaror mahsulot uchun API, ma’lumotlar bazasi, admin panel, Telegram integratsiyasi va server arxitekturasi.",
-    stackLabel: "ASOSIY TEXNOLOGIYALAR",
-    workEyebrow: "Tanlangan loyihalar",
-    workTitle: "Shunchaki ekranlar emas. Kontekstli yechimlar.",
-    projectOneTitle: "Shaxsiy raqamli platforma",
-    projectOneText: "Dasturchi tajribasini aniq studiya obraziga aylantiradigan va mijozni to‘g‘ridan-to‘g‘ri aloqaga olib keladigan portfolio.",
-    caseTask: "Vazifa",
-    projectOneResult: "Pozitsiyalash va ishonch",
-    projectTwoTitle: "Zamonaviy qahvaxona sayti",
-    projectTwoText: "Menyu, brend tarixi, afzalliklar va tashrifga olib boradigan tushunarli yo‘lga ega atmosferali sayt.",
-    projectTwoResult: "Brend muhitini yetkazish",
-    projectThreeTitle: "Keystone Password Manager",
-    projectThreeText: "Xavfsizlik, tushunarli navigatsiya va himoyalanganlik hissiga yo‘naltirilgan mobil parol ombori.",
-    projectThreeResult: "Murakkabliksiz xavfsizlik",
-    processEyebrow: "Ish jarayoni",
-    processTitle: "Ortiqcha byurokratiyasiz shaffof jarayon.",
-    processOne: "Tahlil",
-    processOneText: "Maqsad, auditoriya va ustuvorliklar.",
-    processTwo: "Tizim",
-    processTwoText: "Tuzilma, ssenariy va vizual yo‘nalish.",
-    processThree: "Dasturlash",
-    processThreeText: "Interfeys, mantiq, API va ma’lumotlar bazasi.",
-    processFour: "Ishga tushirish",
-    processFourText: "Sinov, nashr va qo‘llab-quvvatlash.",
-    pricingEyebrow: "Ish formatlari",
-    pricingTitle: "Aniq ko‘lam va halol boshlang‘ich narx.",
-    priceOneTitle: "Landing Page",
-    priceOneText: "Xizmat yoki mahsulotning kuchli taqdimoti.",
-    priceOneValue: "2 500 000 UZS dan",
-    priceTwoTitle: "Business Website",
-    priceTwoText: "Biznes mantig‘iga ega ko‘p sahifali sayt.",
-    priceTwoValue: "5 000 000 UZS dan",
-    priceThreeTitle: "Full-stack Product",
-    priceThreeText: "Backend tizimli web yoki mobil mahsulot.",
-    priceThreeValue: "10 000 000 UZS dan",
-    contactEyebrow: "G‘oyangiz bormi?",
-    contactTitle: "Uni kuchli raqamli mahsulotga aylantiramiz.",
-    contactText: "Vazifani bir necha jumlada tasvirlab bering. Shaxsan javob beraman va mos ishlab chiqish formatini taklif qilaman.",
-    formContact: "Siz bilan qanday bog‘lanish mumkin?",
-    formContactPlaceholder: "Telegram, email yoki telefon",
-    formProject: "Loyiha haqida ayting",
-    formProjectPlaceholder: "Nima va kim uchun yaratilishi kerak?",
-    formSubmit: "So‘rov yuborish",
-    phone: "Telefon",
-    backTop: "Yuqoriga ↑"
+    navServices: "Xizmatlar", navStack: "Stek", navPortfolio: "Loyihalar", navProcess: "Jarayon", navContact: "Aloqa",
+    availableShort: "Bo‘sh", availableLong: "Yangi loyihalar uchun ochiqman", startProject: "Loyihani boshlash",
+    heroLabel: "FULL-STACK DIGITAL FORGE", heroTitleOne: "G‘oyalarni", heroTitleTwo: "raqamli haqiqatga aylantiramiz",
+    heroText: "Birinchi konsepsiyadan productiongacha full-stack dasturlash: interfeys, backend mantiqi, ma’lumotlar bazasi, integratsiya va ishga tushirish.",
+    discuss: "Loyihani muhokama qilish", viewCases: "Loyihalarni ko‘rish", scroll: "Pastga",
+    heroStatServices: "dasturlash yo‘nalishi", heroStatTech: "asosiy texnologiya", heroStatPlatforms: "platforma: web, mobile, API",
+    servicesTitle: "To‘liq ishlab chiqish sikli. Bitta mas’ul mutaxassis.", servicesIntro: "Dizayn, mijoz tomoni va server o‘rtasida uzilishsiz to‘liq raqamli mahsulot yarataman.",
+    frontendText: "Puxta holatlar va silliq animatsiyaga ega tezkor moslashuvchan interfeyslar.",
+    backendText: "API, autentifikatsiya, biznes mantiqi va ishonchli ma’lumotlar bilan ishlash.",
+    devopsText: "Konteynerlash, joylashtirish va barqaror production muhiti.",
+    mobileText: "Yagona backend bilan Android va iOS uchun krossplatforma ilovalar.",
+    designText: "Vizual xarakter qulaylik va biznes maqsadini qo‘llab-quvvatlaydigan interfeyslar.",
+    qaText: "Ishga tushirishdan oldin ssenariy, moslashuvchanlik, tezlik va xatti-harakatni tekshirish.",
+    stackTitle: "Vazifani hal qiladigan vositalar.", stackIntro: "Stek mahsulotga mos tanlanadi. Asos — tiplangan kod, tushunarli arxitektura va kengayadigan backend.",
+    metricServices: "yo‘nalish", metricTech: "texnologiya", metricPlatforms: "platforma", metricResponsive: "moslashuvchan",
+    portfolioTitle: "Haqiqiy loyihalar. Turli vazifalar.", portfolioIntro: "Uch yo‘nalish: ifodali web, mahsulot interfeysi va mobil ilova.",
+    filterAll: "Barchasi", projectOneTitle: "Shaxsiy raqamli platforma", projectOneShort: "Tajribani kuchli ko‘rsatish va mijozni to‘g‘ri aloqaga olib borish.",
+    projectTwoTitle: "Zamonaviy qahvaxona sayti", projectTwoShort: "Brend muhiti, menyu va tushunarli bron qilish jarayoni.",
+    projectThreeShort: "Aniq interfeysli xavfsiz mobil parol ombori.", viewCase: "Loyihani ko‘rish ↗",
+    processTitle: "G‘oyadan ishga tushirishgacha. Hammasi ochiq.", processIntro: "Har bosqichda nima qilinayotgani, nima tayyorligi va keyingi qadam ma’lum.",
+    stepOne: "Tahlil", stepOneText: "Maqsad, auditoriya, funksiyalar va mahsulot cheklovlari.",
+    stepTwo: "Tizim va dizayn", stepTwoText: "Tuzilma, foydalanuvchi ssenariylari va vizual yo‘nalish.",
+    stepThree: "Dasturlash", stepThreeText: "Frontend, backend, ma’lumotlar bazasi va integratsiyalar.",
+    stepFour: "Sinov", stepFourText: "Qurilma, ssenariy, tezlik va barqarorlik tekshiruvi.",
+    stepFive: "Ishga tushirish", stepFiveText: "Nashr, muhitni sozlash va relizdan keyingi yordam.",
+    faqTitle: "Boshlashdan oldin.", faqIntro: "Dasturlash boshlanishidan oldingi odatiy savollarga qisqa javoblar.",
+    faqOneQ: "Ishlab chiqish qancha vaqt oladi?", faqOneA: "Landing odatda 1–2 hafta. Murakkab mantiqli sayt yoki ilova funksiyalarga qarab bir necha hafta oladi.",
+    faqTwoQ: "Narx qanday hisoblanadi?", faqTwoA: "Narx ekranlar, mantiq, integratsiya va backend hajmiga bog‘liq. Muhokamadan keyin aniq baho beriladi.",
+    faqThreeQ: "Faqat g‘oya bilan boshlash mumkinmi?", faqThreeA: "Ha. G‘oyani tuzilmaga aylantirish, kerakli funksiyalarni aniqlash va stek tanlashga yordam beraman.",
+    faqFourQ: "Ishga tushirgandan keyin nima bo‘ladi?", faqFourA: "Production versiyani tekshiraman, domen va nashrga yordam beraman, keyingi rivojlanish uchun aloqada qolaman.",
+    contactTitle: "G‘oyangiz bormi? Mahsulotni birga yaratamiz.", contactText: "Nima yaratish kerakligini ayting. Shaxsan javob beraman, tafsilotlarni aniqlayman va texnik yo‘l taklif qilaman.",
+    phone: "Telefon", formName: "Ismingiz", formNamePlaceholder: "Sizga qanday murojaat qilay?", formProject: "Loyiha haqida", formProjectPlaceholder: "Nima yaratish kerak?",
+    formBudget: "Byudjet", budgetUnknown: "Hali aniqlanmagan", formSubmit: "So‘rov yuborish"
   }
 };
 
-const documentRoot = document.documentElement;
 const body = document.body;
-const header = document.querySelector(".site-header");
-const menuToggle = document.querySelector(".menu-toggle");
+const header = document.querySelector(".header");
+const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
-const languageButtons = document.querySelectorAll(".lang");
+const progress = document.querySelector(".scroll-progress");
+let lastScroll = 0;
+
+window.addEventListener("load", () => {
+  window.setTimeout(() => document.querySelector(".preloader").classList.add("done"), 450);
+  const heroVideo = document.querySelector(".hero-video");
+  if (heroVideo) heroVideo.play().catch(() => {});
+});
 
 function setLanguage(language) {
   const dictionary = translations[language] || translations.ru;
-  documentRoot.lang = language;
-
+  document.documentElement.lang = language;
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.dataset.i18n;
-    if (dictionary[key]) element.textContent = dictionary[key];
+    const value = dictionary[element.dataset.i18n];
+    if (!value) return;
+    if (element.matches("h1 span, h2")) {
+      const words = value.split(" ");
+      if (element.matches("h1 span") && element.dataset.i18n === "heroTitleTwo") {
+        const last = words.pop();
+        element.innerHTML = `${words.join(" ")} <em>${last}</em>`;
+      } else if (element.matches("h2")) {
+        const midpoint = Math.max(1, Math.ceil(words.length * 0.58));
+        element.innerHTML = `${words.slice(0, midpoint).join(" ")}<br><em>${words.slice(midpoint).join(" ")}</em>`;
+      } else {
+        element.textContent = value;
+      }
+    } else {
+      element.textContent = value;
+    }
   });
-
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-    const key = element.dataset.i18nPlaceholder;
-    if (dictionary[key]) element.placeholder = dictionary[key];
+    const value = dictionary[element.dataset.i18nPlaceholder];
+    if (value) element.placeholder = value;
   });
-
-  languageButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.lang === language);
-  });
-
+  document.querySelectorAll(".lang").forEach((button) => button.classList.toggle("active", button.dataset.lang === language));
   localStorage.setItem("iv-language", language);
 }
 
-languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
-});
-
+document.querySelectorAll(".lang").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
 setLanguage(localStorage.getItem("iv-language") || "ru");
 
 function closeMenu() {
   body.classList.remove("menu-open");
-  menuToggle.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute("aria-expanded", "false");
   mobileMenu.setAttribute("aria-hidden", "true");
 }
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = body.classList.toggle("menu-open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  mobileMenu.setAttribute("aria-hidden", String(!isOpen));
+menuButton.addEventListener("click", () => {
+  const open = body.classList.toggle("menu-open");
+  menuButton.setAttribute("aria-expanded", String(open));
+  mobileMenu.setAttribute("aria-hidden", String(!open));
 });
-
-mobileMenu.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 
 window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 28);
+  const current = window.scrollY;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.width = `${max > 0 ? (current / max) * 100 : 0}%`;
+  header.classList.toggle("compact", current > 35);
+  header.classList.toggle("hidden", current > lastScroll && current > 180 && !body.classList.contains("menu-open"));
+  lastScroll = Math.max(current, 0);
 }, { passive: true });
 
 const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -277,41 +179,143 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
     entry.target.classList.add("visible");
     observer.unobserve(entry.target);
   });
-}, { threshold: 0.12, rootMargin: "0px 0px -50px" });
+}, { threshold: 0.12, rootMargin: "0px 0px -45px" });
+document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-document.querySelectorAll(".enter").forEach((element) => revealObserver.observe(element));
-
-if (window.matchMedia("(pointer: fine)").matches) {
-  document.querySelectorAll(".magnetic").forEach((element) => {
-    element.addEventListener("mousemove", (event) => {
-      const box = element.getBoundingClientRect();
-      const x = (event.clientX - box.left - box.width / 2) * 0.08;
-      const y = (event.clientY - box.top - box.height / 2) * 0.08;
-      element.style.transform = `translate(${x}px, ${y}px)`;
-    });
-
-    element.addEventListener("mouseleave", () => {
-      element.style.transform = "";
-    });
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    document.querySelectorAll(".desktop-nav a").forEach((link) => link.classList.toggle("active", link.dataset.nav === entry.target.id));
   });
-}
+}, { rootMargin: "-35% 0px -60% 0px" });
+document.querySelectorAll("main section[id]").forEach((section) => navObserver.observe(section));
 
-document.querySelectorAll("img").forEach((image) => {
-  image.addEventListener("error", () => {
-    image.closest(".case-visual, .phone-frame")?.classList.add("media-error");
-    image.style.display = "none";
+const metrics = document.querySelector(".metrics");
+let countersStarted = false;
+const counterObserver = new IntersectionObserver((entries) => {
+  if (!entries[0].isIntersecting || countersStarted) return;
+  countersStarted = true;
+  document.querySelectorAll("[data-count]").forEach((counter) => {
+    const target = Number(counter.dataset.count);
+    const suffix = counter.dataset.suffix || "";
+    const start = performance.now();
+    const duration = 1200;
+    function update(time) {
+      const amount = Math.min((time - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - amount, 3);
+      counter.textContent = `${Math.round(target * eased)}${suffix}`;
+      if (amount < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  });
+}, { threshold: 0.4 });
+if (metrics) counterObserver.observe(metrics);
+
+document.querySelectorAll(".filter").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    const filter = button.dataset.filter;
+    document.querySelectorAll(".project-card").forEach((card) => {
+      card.classList.toggle("filtered", filter !== "all" && card.dataset.category !== filter);
+    });
   });
 });
 
-const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", (event) => {
+document.querySelectorAll(".faq-item button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    const open = item.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(open));
+  });
+});
+
+const timeline = document.querySelector(".timeline");
+const timelineProgress = document.querySelector(".timeline-progress");
+window.addEventListener("scroll", () => {
+  if (!timeline) return;
+  const rect = timeline.getBoundingClientRect();
+  const visible = Math.min(Math.max(window.innerHeight * 0.65 - rect.top, 0), rect.height);
+  timelineProgress.style.height = `${visible}px`;
+}, { passive: true });
+
+const form = document.getElementById("projectForm");
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = new FormData(contactForm);
-  const contact = formData.get("contact");
-  const project = formData.get("project");
-  const subject = encodeURIComponent("Новый проект для IV Studio");
-  const message = encodeURIComponent(`Контакт: ${contact}\n\nОписание проекта:\n${project}`);
+  const data = new FormData(form);
+  const subject = encodeURIComponent("Новый проект для IV Digital Forge");
+  const message = encodeURIComponent(`Имя: ${data.get("name")}\nEmail: ${data.get("email")}\nБюджет: ${data.get("budget")}\n\nПроект:\n${data.get("project")}`);
   window.location.href = `mailto:iskandarbek2007@gmail.com?subject=${subject}&body=${message}`;
 });
+
+const canvas = document.getElementById("particleCanvas");
+const context = canvas.getContext("2d");
+let particles = [];
+let mouse = { x: -1000, y: -1000 };
+let animationFrame;
+
+function resizeCanvas() {
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * ratio;
+  canvas.height = rect.height * ratio;
+  context.setTransform(ratio, 0, 0, ratio, 0, 0);
+  const count = window.innerWidth < 640 ? 26 : 62;
+  particles = Array.from({ length: count }, () => ({
+    x: Math.random() * rect.width,
+    y: Math.random() * rect.height,
+    vx: (Math.random() - 0.5) * 0.22,
+    vy: (Math.random() - 0.5) * 0.22,
+    size: Math.random() * 1.4 + 0.5
+  }));
+}
+
+function drawParticles() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  context.clearRect(0, 0, width, height);
+  particles.forEach((particle, index) => {
+    const dxMouse = particle.x - mouse.x;
+    const dyMouse = particle.y - mouse.y;
+    const mouseDistance = Math.hypot(dxMouse, dyMouse);
+    if (mouseDistance < 105 && mouseDistance > 0) {
+      particle.x += (dxMouse / mouseDistance) * 0.8;
+      particle.y += (dyMouse / mouseDistance) * 0.8;
+    }
+    particle.x += particle.vx;
+    particle.y += particle.vy;
+    if (particle.x < 0 || particle.x > width) particle.vx *= -1;
+    if (particle.y < 0 || particle.y > height) particle.vy *= -1;
+    context.beginPath();
+    context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+    context.fillStyle = "rgba(0, 212, 255, .42)";
+    context.fill();
+    for (let next = index + 1; next < particles.length; next += 1) {
+      const other = particles[next];
+      const distance = Math.hypot(particle.x - other.x, particle.y - other.y);
+      if (distance < 135) {
+        context.beginPath();
+        context.moveTo(particle.x, particle.y);
+        context.lineTo(other.x, other.y);
+        context.strokeStyle = `rgba(0, 212, 255, ${0.09 * (1 - distance / 135)})`;
+        context.stroke();
+      }
+    }
+  });
+  animationFrame = requestAnimationFrame(drawParticles);
+}
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  resizeCanvas();
+  drawParticles();
+  window.addEventListener("resize", resizeCanvas);
+  document.querySelector(".hero").addEventListener("pointermove", (event) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse = { x: event.clientX - rect.left, y: event.clientY - rect.top };
+  });
+  document.querySelector(".hero").addEventListener("pointerleave", () => { mouse = { x: -1000, y: -1000 }; });
+} else {
+  cancelAnimationFrame(animationFrame);
+}
 
 document.getElementById("year").textContent = new Date().getFullYear();
