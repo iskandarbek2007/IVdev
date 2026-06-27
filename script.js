@@ -597,14 +597,7 @@ if (motionAllowed.matches) {
   });
 }
 
-const splineScenes = {
-  services: "https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode",
-  portfolio: "https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode",
-  process: "https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode",
-  contact: "https://prod.spline.design/U9O6K7fXziMEU7Wu/scene.splinecode"
-};
-
-const pricingSplineEmbed = "https://my.spline.design/motiontrails-6pO4zFc51sjxebAx17XdffDO/";
+const innerPagesSplineScene = "https://prod.spline.design/WQn2FaqfCZASKn3h/scene.splinecode";
 
 function mountSplineHero() {
   const hero = document.querySelector(".hero, .page-hero");
@@ -616,8 +609,9 @@ function mountSplineHero() {
   const compactScreen = window.matchMedia("(max-width: 900px)").matches;
 
   if (pageName === "index") return;
+  if (hero.querySelector(".page-spline-viewer")) return;
 
-  const sceneUrl = splineScenes[pageName] || splineScenes.services;
+  const sceneUrl = innerPagesSplineScene;
   const layer = document.createElement("div");
   layer.className = `hero-spline hero-spline-${pageName}`;
   layer.setAttribute("aria-hidden", "true");
@@ -627,19 +621,6 @@ function mountSplineHero() {
   layer.append(fallback);
   hero.prepend(layer);
   if (reduceMotion || compactScreen || connection?.saveData) return;
-
-  if (pageName === "pricing") {
-    const embed = document.createElement("iframe");
-    embed.className = "spline-public-embed";
-    embed.src = pricingSplineEmbed;
-    embed.title = "Motion Trails — интерактивная 3D-сцена";
-    embed.loading = "eager";
-    embed.allow = "autoplay; fullscreen";
-    embed.referrerPolicy = "strict-origin-when-cross-origin";
-    embed.addEventListener("load", () => layer.classList.add("is-ready"), { once: true });
-    layer.append(embed);
-    return;
-  }
 
   ["https://unpkg.com", "https://prod.spline.design"].forEach((origin) => {
     if (document.querySelector(`link[rel="preconnect"][href="${origin}"]`)) return;

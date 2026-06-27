@@ -2823,6 +2823,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.76) 24%, #000 52%, rgba(0,0,0,.8) 88%, transparent 100%);
 }
 .page-hero .hero-spline { top: 0; left: 50%; }
+.page-spline-viewer {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -3vw;
+  bottom: 0;
+  left: 50%;
+  width: 56vw;
+  max-width: none;
+  height: 100%;
+  pointer-events: auto;
+  filter: grayscale(.9) saturate(.2) contrast(1.04);
+  mix-blend-mode: multiply;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 24%, #000 92%, transparent 100%);
+}
 .hero-spline spline-viewer {
   position: absolute;
   inset: -8%;
@@ -2920,6 +2935,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-spline spline-viewer,
   .hero-spline .spline-public-embed { display: none; }
   .hero-blackhole-viewer { display: none; }
+  .page-spline-viewer { display: none; }
   .spline-fallback-shape { left: 66%; width: min(86vw, 390px); }
   [data-page="pricing"] .page-hero-copy { max-width: 100%; }
   [data-page="pricing"] .page-hero .hero-spline-pricing {
@@ -3002,4 +3018,33 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .page-pricing .pricing-card { padding-inline: 16px; }
   .page-pricing .pricing-price { gap: 4px; }
   .page-pricing .pricing-price strong { font-size: 1.75rem; }
+}
+
+/* Full-width light Spline background for internal page heroes */
+.page-hero { background: #f7f8f9; }
+.page-hero::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(250,251,252,.98) 0%, rgba(250,251,252,.88) 34%, rgba(250,251,252,.34) 62%, rgba(250,251,252,.08) 100%);
+}
+.page-hero > .container { position: relative; z-index: 4; }
+.page-hero-grid { z-index: 3; opacity: .12; }
+.page-spline-viewer {
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  opacity: .78;
+  filter: grayscale(1) invert(1) brightness(1.08) contrast(.72);
+  mix-blend-mode: multiply;
+  mask-image: none;
+}
+
+@media (max-width: 900px) {
+  .page-spline-viewer { display: none; }
+  .page-hero::before { background: rgba(250,251,252,.9); }
 }
