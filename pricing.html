@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta name="description" content="IV Studio — Прозрачные цены: стоимость зависит от сложности и объёма проекта.">
+  <title>IV Studio — Цены</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-mark"><span>I</span><span>V</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <i class="blob blob-one"></i>
+    <i class="blob blob-two"></i>
+    <i class="blob blob-three"></i>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="IV Digital Forge">
+      <span class="logo-mark">IV</span>
+      <span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="services.html" data-page="services" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-page="portfolio" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-page="process" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-page="contact" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="header-tools">
+      <div class="availability"><i></i><span data-i18n="availableShort">Свободен</span></div>
+      <div class="languages" aria-label="Выбор языка">
+        <button class="lang active" type="button" data-lang="ru">RU</button>
+        <button class="lang" type="button" data-lang="en">EN</button>
+        <button class="lang" type="button" data-lang="uz">UZ</button>
+      </div>
+      <a class="nav-cta" href="contact.html" data-i18n="startProject">Начать проект</a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="services.html" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <span>Iskandarbek Valijonov</span>
+      <a href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">@iskandarbek0220</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero section">
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-copy">
+          <div class="terminal-label reveal"><span>08</span><i></i><span>PRICING</span></div>
+          <h1 class="reveal">
+            <span data-i18n="pricingTitle">Прозрачные цены.</span>
+            <span class="hero-accent" data-i18n="pricingTitleAccent">Честная оценка.</span>
+          </h1>
+          <p class="page-hero-description reveal" data-i18n="pricingIntro">Стоимость формируется на основе сложности, объёма функций и сроков. Каждый проект уникален — цена отражает реальную работу, а не шаблон.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <span class="kicker">08 / PACKAGES</span>
+            <h2 data-i18n="packagesTitle">Три уровня.<br><em>Один подход.</em></h2>
+          </div>
+          <p data-i18n="packagesIntro">Базовые ориентиры для старта. Финальная стоимость зависит от ваших целей и пожеланий.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <div class="pricing-header">
+              <span class="pricing-tier">STARTER</span>
+              <h3 data-i18n="pricingStarterTitle">Лендинг</h3>
+              <div class="pricing-price">
+                <span class="price-from" data-i18n="priceFrom">от</span>
+                <strong>$300</strong>
+              </div>
+              <span class="pricing-timeline" data-i18n="pricingStarterTime">1–2 недели</span>
+            </div>
+            <ul class="pricing-features">
+              <li data-i18n="pricingStarter1">Одностраничный сайт</li>
+              <li data-i18n="pricingStarter2">Адаптивный дизайн</li>
+              <li data-i18n="pricingStarter3">Базовая анимация</li>
+              <li data-i18n="pricingStarter4">Форма обратной связи</li>
+              <li data-i18n="pricingStarter5">SEO-оптимизация</li>
+              <li data-i18n="pricingStarter6">Хостинг и домен</li>
+            </ul>
+            <a class="button button-secondary pricing-cta" href="contact.html"><span data-i18n="discuss">Обсудить проект</span><b>→</b></a>
+          </article>
+
+          <article class="pricing-card pricing-popular reveal">
+            <div class="pricing-badge" data-i18n="pricingPopular">Популярный</div>
+            <div class="pricing-header">
+              <span class="pricing-tier">BUSINESS</span>
+              <h3 data-i18n="pricingBusinessTitle">Корпоративный сайт</h3>
+              <div class="pricing-price">
+                <span class="price-from" data-i18n="priceFrom">от</span>
+                <strong>$800</strong>
+              </div>
+              <span class="pricing-timeline" data-i18n="pricingBusinessTime">2–4 недели</span>
+            </div>
+            <ul class="pricing-features">
+              <li data-i18n="pricingBusiness1">Многостраничный сайт</li>
+              <li data-i18n="pricingBusiness2">Уникальный UI/UX дизайн</li>
+              <li data-i18n="pricingBusiness3">Продвинутая анимация</li>
+              <li data-i18n="pricingBusiness4">Админ-панель / CMS</li>
+              <li data-i18n="pricingBusiness5">Интеграции (CRM, аналитика)</li>
+              <li data-i18n="pricingBusiness6">Блог / портфолио</li>
+              <li data-i18n="pricingBusiness7">Мультиязычность</li>
+              <li data-i18n="pricingBusiness8">3 месяца поддержки</li>
+            </ul>
+            <a class="button button-primary pricing-cta" href="contact.html"><span data-i18n="discuss">Обсудить проект</span><b>→</b></a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <div class="pricing-header">
+              <span class="pricing-tier">ENTERPRISE</span>
+              <h3 data-i18n="pricingEnterpriseTitle">Веб-приложение</h3>
+              <div class="pricing-price">
+                <span class="price-from" data-i18n="priceFrom">от</span>
+                <strong>$2000</strong>
+              </div>
+              <span class="pricing-timeline" data-i18n="pricingEnterpriseTime">4–8 недель</span>
+            </div>
+            <ul class="pricing-features">
+              <li data-i18n="pricingEnterprise1">Полнофункциональное приложение</li>
+              <li data-i18n="pricingEnterprise2">Backend + база данных</li>
+              <li data-i18n="pricingEnterprise3">Авторизация и роли</li>
+              <li data-i18n="pricingEnterprise4">REST API</li>
+              <li data-i18n="pricingEnterprise5">Личный кабинет</li>
+              <li data-i18n="pricingEnterprise6">Платежные системы</li>
+              <li data-i18n="pricingEnterprise7">Мобильная адаптация</li>
+              <li data-i18n="pricingEnterprise8">6 месяцев поддержки</li>
+            </ul>
+            <a class="button button-secondary pricing-cta" href="contact.html"><span data-i18n="discuss">Обсудить проект</span><b>→</b></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-values section">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <span class="kicker">09 / OUR VALUES</span>
+            <h2 data-i18n="valuesTitle">Что влияет<br><em>на цену.</em></h2>
+          </div>
+          <p data-i18n="valuesIntro">Мы не работаем по шаблонам. Каждая цифра в смете — результат анализа ваших задач.</p>
+        </header>
+
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <div class="value-icon cyan">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 data-i18n="valueComplexityTitle">Сложность</h3>
+            <p data-i18n="valueComplexityText">Количество экранов, бизнес-логика, интеграции с внешними сервисами и нестандартные решения — всё это влияет на объём работы.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <div class="value-icon purple">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 data-i18n="valueTimelineTitle">Сроки</h3>
+            <p data-i18n="valueTimelineText">Сжатые дедлайны требуют больше ресурсов. Чёткие сроки на старте помогают распределить работу эффективно.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <div class="value-icon mint">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 data-i18n="valueQualityTitle">Качество</h3>
+            <p data-i18n="valueQualityText">Мы не экономим на тестировании, адаптивности и производительности. Качественный продукт — это инвестиция, а не расход.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <div class="value-icon cyan">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 data-i18n="valueTeamTitle">Команда</h3>
+            <p data-i18n="valueTeamText">Один исполнитель на всех этапах — без потери контекста, без лишних согласований. Это экономит время и бюджет.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-faq section">
+      <div class="container faq-layout">
+        <header class="faq-head reveal">
+          <span class="kicker">10 / FAQ</span>
+          <h2 data-i18n="pricingFaqTitle">Вопросы<br><em>о ценах.</em></h2>
+          <p data-i18n="pricingFaqIntro">Короткие ответы на вопросы, которые возникают при обсуждении бюджета.</p>
+        </header>
+
+        <div class="accordion reveal">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="pricingFaqOneQ">Почему нет фиксированных цен?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="pricingFaqOneA">Каждый проект уникален. Два «лендинга» могут отличаться в 3 раза по сложности. Мы оцениваем реальный объём работы, а не наклеиваем ярлык.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="pricingFaqTwoQ">Можно ли начать с малого бюджета?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="pricingFaqTwoA">Да. Мы обсудим ваши приоритеты и предложим оптимальный вариант. Лучше запустить MVP и расти, чем тратить всё на первую версию.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="pricingFaqThreeQ">Что входит в поддержку?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="pricingFaqThreeA">Исправление багов, мелкие доработки, обновление зависимостей и консультации. Сроки поддержки зависят от пакета.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="pricingFaqFourQ">Как происходит оплата?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="pricingFaqFourA">Обычно 50% предоплата и 50% после сдачи. Для крупных проектов — поэтапная оплата по milestone.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-cta-section section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 data-i18n="pricingCtaTitle">Уже есть идея?<br><em>Давайте оценим.</em></h2>
+          <p data-i18n="pricingCtaText">Расскажите о проекте — я подготовлю честную оценку с разбивкой по этапам.</p>
+          <a class="button button-primary" href="contact.html"><span data-i18n="startProject">Начать проект</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a>
+      <div class="footer-center"><i></i><span data-i18n="availableLong">Доступен для новых проектов</span></div>
+      <p>© <span id="year"></span> Iskandarbek Valijonov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

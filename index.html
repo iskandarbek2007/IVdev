@@ -4,72 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0a0e1a">
-  <meta name="description" content="IV Digital Forge — full-stack разработка сайтов, мобильных приложений и backend-систем.">
-  <title>IV Digital Forge — Full-stack Studio</title>
+  <meta name="description" content="IV Studio — full-stack разработка сайтов, мобильных приложений и backend-систем.">
+  <meta property="og:title" content="IV Studio — Full-stack Studio">
+  <meta property="og:description" content="Full-stack разработка от первой концепции до production: интерфейс, серверная логика, база данных, интеграции и запуск.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="IV Studio">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2300d4ff'/%3E%3Cstop offset='100%25' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='15' fill='none' stroke='url(%23g)' stroke-width='2'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='13' fill='url(%23g)'%3EIV%3C/text%3E%3C/svg%3E">
+  <title>IV Studio — Full-stack Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"IV Studio","description":"Full-stack разработка сайтов, мобильных приложений и backend-систем.","telephone":"+998938882027","email":"iskandarbek2007@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Tashkent","addressCountry":"UZ"},"areaServed":"UZ"}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link" data-i18n="skipToContent">Перейти к содержимому</a>
   <div class="preloader" aria-hidden="true">
     <div class="loader-mark"><span>I</span><span>V</span></div>
     <div class="loader-line"><i></i></div>
   </div>
-
   <div class="scroll-progress" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
-  <div class="ambient" aria-hidden="true">
-    <i class="blob blob-one"></i>
-    <i class="blob blob-two"></i>
-    <i class="blob blob-three"></i>
-  </div>
+  <div class="ambient" aria-hidden="true"><i class="blob blob-one"></i><i class="blob blob-two"></i><i class="blob blob-three"></i></div>
 
   <header class="header">
-    <a class="logo" href="#home" aria-label="IV Digital Forge">
+    <a class="logo" href="index.html" aria-label="IV Digital Forge">
       <span class="logo-mark">IV</span>
       <span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span>
     </a>
-
     <nav class="desktop-nav" aria-label="Основная навигация">
-      <a href="#services" data-nav="services" data-i18n="navServices">Услуги</a>
-      <a href="#stack" data-nav="stack" data-i18n="navStack">Стек</a>
-      <a href="#portfolio" data-nav="portfolio" data-i18n="navPortfolio">Кейсы</a>
-      <a href="#process" data-nav="process" data-i18n="navProcess">Процесс</a>
-      <a href="#contact" data-nav="contact" data-i18n="navContact">Контакты</a>
+      <a href="services.html" data-page="services" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-page="portfolio" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-page="process" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-page="contact" data-i18n="navContact">Контакты</a>
     </nav>
-
     <div class="header-tools">
       <div class="availability"><i></i><span data-i18n="availableShort">Свободен</span></div>
       <div class="languages" aria-label="Выбор языка">
-        <button class="lang active" type="button" data-lang="ru">RU</button>
-        <button class="lang" type="button" data-lang="en">EN</button>
-        <button class="lang" type="button" data-lang="uz">UZ</button>
+        <button class="lang active" type="button" data-lang="ru" aria-label="Русский">RU</button>
+        <button class="lang" type="button" data-lang="en" aria-label="English">EN</button>
+        <button class="lang" type="button" data-lang="uz" aria-label="O'zbek">UZ</button>
       </div>
-      <a class="nav-cta" href="#contact" data-i18n="startProject">Начать проект</a>
-      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <a class="nav-cta" href="contact.html" data-i18n="startProject">Начать проект</a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
 
   <div class="mobile-menu" aria-hidden="true">
     <nav>
-      <a href="#services" data-i18n="navServices">Услуги</a>
-      <a href="#stack" data-i18n="navStack">Стек</a>
-      <a href="#portfolio" data-i18n="navPortfolio">Кейсы</a>
-      <a href="#process" data-i18n="navProcess">Процесс</a>
-      <a href="#contact" data-i18n="navContact">Контакты</a>
+      <a href="services.html" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-i18n="navContact">Контакты</a>
     </nav>
-    <div class="mobile-menu-bottom">
-      <span>Iskandarbek Valijonov</span>
-      <a href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">@iskandarbek0220</a>
-    </div>
+    <div class="mobile-menu-bottom"><span>Iskandarbek Valijonov</span><a href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">@iskandarbek0220</a></div>
   </div>
 
-  <main>
-    <section class="hero section" id="home">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+  <main id="main-content">
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
         <source src="animationMAINmenu.mp4" type="video/mp4">
       </video>
       <div class="hero-video-shade" aria-hidden="true"></div>
@@ -85,17 +84,13 @@
           </h1>
           <p class="hero-description reveal" data-i18n="heroText">Full-stack разработка от первой концепции до production: интерфейс, серверная логика, база данных, интеграции и запуск.</p>
           <div class="hero-actions reveal">
-            <a class="button button-primary" href="#contact"><span data-i18n="discuss">Обсудить проект</span><b>↗</b></a>
-            <a class="button button-secondary" href="#portfolio"><span data-i18n="viewCases">Посмотреть кейсы</span><b>↓</b></a>
+            <a class="button button-primary" href="contact.html"><span data-i18n="discuss">Обсудить проект</span><b>↗</b></a>
+            <a class="button button-secondary" href="portfolio.html"><span data-i18n="viewCases">Посмотреть кейсы</span><b>↓</b></a>
           </div>
         </div>
 
-        <div class="hero-console reveal" aria-hidden="true">
-          <div class="console-bar">
-            <div><i></i><i></i><i></i></div>
-            <span>forge.config.ts</span>
-            <small>v1.0.26</small>
-          </div>
+        <div class="hero-console reveal" aria-label="Пример конфигурации проекта">
+          <div class="console-bar"><div><i></i><i></i><i></i></div><span>forge.config.ts</span><small>v1.0.26</small></div>
           <pre><code><span class="code-purple">const</span> project = <span class="code-purple">await</span> forge.<span class="code-cyan">create</span>({
   idea: <span class="code-mint">'yours'</span>,
   stack: [
@@ -103,319 +98,88 @@
     <span class="code-mint">'backend'</span>,
     <span class="code-mint">'mobile'</span>
   ],
-  quality: <span class="code-cyan">true</span>,
+  quality: <span class="code-purple">true</span>,
   result: <span class="code-mint">'production'</span>
 });
 
-<span class="code-comment">// Ready to build.</span>
-<span class="console-cursor"></span></code></pre>
-          <div class="console-status"><span><i></i> SYSTEM ONLINE</span><span>UZ / TASHKENT</span></div>
+<span class="code-comment">// Ready to build.</span><span class="console-cursor"></span></code></pre>
+          <div class="console-status"><span><i></i>SYSTEM ONLINE</span><span>UZ / TASHKENT</span></div>
         </div>
       </div>
 
       <div class="hero-bottom">
-        <div class="hero-stat"><strong>6</strong><span data-i18n="heroStatServices">направлений разработки</span></div>
-        <div class="hero-stat"><strong>9+</strong><span data-i18n="heroStatTech">основных технологий</span></div>
-        <div class="hero-stat"><strong>3</strong><span data-i18n="heroStatPlatforms">платформы: web, mobile, API</span></div>
-        <a class="scroll-hint" href="#services"><span data-i18n="scroll">Листайте</span><i>↓</i></a>
+        <div class="hero-stat reveal"><strong>6</strong><span data-i18n="heroStatServices">направлений разработки</span></div>
+        <div class="hero-stat reveal"><strong>9+</strong><span data-i18n="heroStatTech">основных технологий</span></div>
+        <div class="hero-stat reveal"><strong>3</strong><span data-i18n="heroStatPlatforms">платформы: web, mobile, API</span></div>
+        <a class="scroll-hint reveal" href="#home-teasers"><span data-i18n="scroll">Листайте</span><i>↓</i></a>
       </div>
     </section>
 
-    <section class="services section" id="services">
-      <div class="container">
-        <header class="section-head reveal">
-          <div>
-            <span class="kicker">02 / SERVICES</span>
-            <h2 data-i18n="servicesTitle">Полный цикл разработки.<br><em>Один ответственный.</em></h2>
-          </div>
+    <section class="home-teasers section" id="home-teasers">
+      <div class="container teaser-grid">
+        <a class="teaser-card reveal" href="services.html">
+          <span class="teaser-number">02</span><span class="teaser-label">SERVICES</span>
+          <h2 data-i18n="servicesTitle">Полный цикл <em>разработки.</em></h2>
           <p data-i18n="servicesIntro">Создаю цифровые продукты целиком — без разрыва между дизайном, клиентской частью и сервером.</p>
-        </header>
-
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="service-icon cyan">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4zM8 20h8M12 16v4M8 9l-2 2 2 2M16 9l2 2-2 2M14 8l-4 6"/></svg>
-            </div>
-            <span class="card-number">01</span>
-            <h3>Frontend</h3>
-            <p data-i18n="frontendText">Быстрые адаптивные интерфейсы с продуманными состояниями и плавной анимацией.</p>
-            <div class="tags"><span>React</span><span>TypeScript</span><span>Next.js</span></div>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon purple">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7" ry="3"/><path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7"/></svg>
-            </div>
-            <span class="card-number">02</span>
-            <h3>Backend</h3>
-            <p data-i18n="backendText">API, авторизация, бизнес-логика и надежная работа с данными.</p>
-            <div class="tags"><span>Node.js</span><span>Python</span><span>SQL</span></div>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon mint">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/><circle cx="12" cy="12" r="4"/></svg>
-            </div>
-            <span class="card-number">03</span>
-            <h3>DevOps</h3>
-            <p data-i18n="devopsText">Контейнеризация, развертывание и стабильная production-среда.</p>
-            <div class="tags"><span>Docker</span><span>CI/CD</span><span>Cloud</span></div>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon cyan">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></svg>
-            </div>
-            <span class="card-number">04</span>
-            <h3>Mobile</h3>
-            <p data-i18n="mobileText">Кроссплатформенные приложения для Android и iOS с единым backend.</p>
-            <div class="tags"><span>React Native</span><span>Expo</span><span>API</span></div>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon purple">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4M12 11v10"/><circle cx="12" cy="11" r="2"/></svg>
-            </div>
-            <span class="card-number">05</span>
-            <h3>UI / UX</h3>
-            <p data-i18n="designText">Интерфейсы, в которых визуальный характер поддерживает удобство и цели бизнеса.</p>
-            <div class="tags"><span>Figma</span><span>UX Flow</span><span>Motion</span></div>
-          </article>
-
-          <article class="service-card reveal">
-            <div class="service-icon mint">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><path d="M20 12a8 8 0 1 1-5-7.4"/></svg>
-            </div>
-            <span class="card-number">06</span>
-            <h3>QA & Testing</h3>
-            <p data-i18n="qaText">Проверка сценариев, адаптивности, производительности и поведения перед запуском.</p>
-            <div class="tags"><span>QA</span><span>Responsive</span><span>Performance</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="stack section" id="stack">
-      <div class="container">
-        <header class="section-head reveal">
-          <div>
-            <span class="kicker">03 / TECHNOLOGY</span>
-            <h2 data-i18n="stackTitle">Инструменты, которые<br><em>решают задачу.</em></h2>
-          </div>
-          <p data-i18n="stackIntro">Стек подбирается под продукт, а не наоборот. Основа — современная типизация, понятная архитектура и масштабируемый backend.</p>
-        </header>
-
-        <div class="stack-layout">
-          <div class="tech-grid reveal">
-            <div class="tech-item" data-tech="JavaScript"><strong>JS</strong><span>JavaScript</span></div>
-            <div class="tech-item" data-tech="TypeScript"><strong>TS</strong><span>TypeScript</span></div>
-            <div class="tech-item" data-tech="React"><strong>R</strong><span>React</span></div>
-            <div class="tech-item" data-tech="React Native"><strong>RN</strong><span>React Native</span></div>
-            <div class="tech-item" data-tech="Node.js"><strong>N</strong><span>Node.js</span></div>
-            <div class="tech-item" data-tech="Python"><strong>PY</strong><span>Python</span></div>
-            <div class="tech-item" data-tech="PostgreSQL"><strong>SQL</strong><span>PostgreSQL</span></div>
-            <div class="tech-item" data-tech="Docker"><strong>DK</strong><span>Docker</span></div>
-            <div class="tech-item" data-tech="REST API"><strong>API</strong><span>REST API</span></div>
-          </div>
-
-          <div class="stack-code reveal">
-            <div class="code-head"><span>architecture.json</span><i>● live</i></div>
-            <pre><code>{
-  <span class="code-cyan">"frontend"</span>: <span class="code-mint">"react"</span>,
-  <span class="code-cyan">"backend"</span>: <span class="code-mint">"node | python"</span>,
-  <span class="code-cyan">"database"</span>: <span class="code-mint">"postgresql"</span>,
-  <span class="code-cyan">"delivery"</span>: <span class="code-mint">"docker"</span>,
-  <span class="code-cyan">"status"</span>: <span class="code-purple">"scalable"</span>
-}</code></pre>
-          </div>
-        </div>
-
-        <div class="metrics reveal">
-          <div><strong data-count="6">0</strong><span data-i18n="metricServices">направлений</span></div>
-          <div><strong data-count="9" data-suffix="+">0</strong><span data-i18n="metricTech">технологий</span></div>
-          <div><strong data-count="3">0</strong><span data-i18n="metricPlatforms">платформы</span></div>
-          <div><strong data-count="100" data-suffix="%">0</strong><span data-i18n="metricResponsive">адаптивность</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio section" id="portfolio">
-      <div class="container">
-        <header class="section-head reveal">
-          <div>
-            <span class="kicker">04 / SELECTED WORK</span>
-            <h2 data-i18n="portfolioTitle">Реальные проекты.<br><em>Разные задачи.</em></h2>
-          </div>
+          <span class="teaser-link"><span data-i18n="navServices">Услуги</span><b>↗</b></span>
+        </a>
+        <a class="teaser-card reveal" href="portfolio.html">
+          <span class="teaser-number">04</span><span class="teaser-label">SELECTED WORK</span>
+          <h2 data-i18n="portfolioTitle">Реальные <em>проекты.</em></h2>
           <p data-i18n="portfolioIntro">Три направления работы: выразительный web, продуктовый интерфейс и мобильное приложение.</p>
-        </header>
-
-        <div class="filters reveal" role="group" aria-label="Фильтр проектов">
-          <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">Все</button>
-          <button class="filter" type="button" data-filter="web">Web</button>
-          <button class="filter" type="button" data-filter="mobile">Mobile</button>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card reveal" data-category="web">
-            <img src="foto1site1.jpg" loading="lazy" alt="Сайт архитектурной студии">
-            <div class="project-overlay"></div>
-            <div class="project-content">
-              <span class="project-type">WEB / DIGITAL EXPERIENCE</span>
-              <h3 data-i18n="projectOneTitle">Персональная digital-платформа</h3>
-              <p data-i18n="projectOneShort">Выразительная презентация экспертизы и прямой путь к заявке.</p>
-              <div class="project-bottom"><div><span>HTML</span><span>CSS</span><span>JS</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="web">
-            <img src="foto1site2.jpg" loading="lazy" alt="Сайт современной кофейни">
-            <div class="project-overlay"></div>
-            <div class="project-content">
-              <span class="project-type">WEB / HOSPITALITY</span>
-              <h3 data-i18n="projectTwoTitle">Сайт современной кофейни</h3>
-              <p data-i18n="projectTwoShort">Атмосфера бренда, меню и понятный сценарий бронирования.</p>
-              <div class="project-bottom"><div><span>UI/UX</span><span>Responsive</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
-            </div>
-          </article>
-
-          <article class="project-card project-mobile reveal" data-category="mobile">
-            <img src="foto1phone.jpg" loading="lazy" alt="Мобильное приложение Keystone Password Manager">
-            <div class="project-overlay"></div>
-            <div class="project-content">
-              <span class="project-type">MOBILE / SECURITY</span>
-              <h3>Keystone Password Manager</h3>
-              <p data-i18n="projectThreeShort">Безопасное мобильное хранилище с ясным интерфейсом.</p>
-              <div class="project-bottom"><div><span>React Native</span><span>Security</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
-            </div>
-          </article>
-        </div>
+          <span class="teaser-link"><span data-i18n="navPortfolio">Кейсы</span><b>↗</b></span>
+        </a>
+        <a class="teaser-card reveal" href="process.html">
+          <span class="teaser-number">05</span><span class="teaser-label">WORKFLOW</span>
+          <h2 data-i18n="processTitle">От идеи до <em>запуска.</em></h2>
+          <p data-i18n="processIntro">На каждом этапе понятно, что происходит, какой результат готов и что будет дальше.</p>
+          <span class="teaser-link"><span data-i18n="navProcess">Процесс</span><b>↗</b></span>
+        </a>
       </div>
     </section>
 
-    <section class="process section" id="process">
+    <section class="studio-proof section" aria-labelledby="proof-title">
       <div class="container">
         <header class="section-head reveal">
-          <div>
-            <span class="kicker">05 / WORKFLOW</span>
-            <h2 data-i18n="processTitle">От идеи до запуска.<br><em>Без чёрного ящика.</em></h2>
-          </div>
-          <p data-i18n="processIntro">На каждом этапе понятно, что происходит, какой результат готов и что будет дальше.</p>
+          <div><span class="kicker">03 / ENGINEERING STANDARD</span><h2 id="proof-title" data-i18n="proofTitle">Не просто красиво. Готово к <em>реальной работе.</em></h2></div>
+          <p data-i18n="proofIntro">Проектирую продукт как единую систему: от первого экрана и логики до скорости, безопасности и стабильного запуска.</p>
         </header>
-
-        <div class="timeline">
-          <div class="timeline-progress" aria-hidden="true"></div>
-          <article class="timeline-step reveal">
-            <span class="step-dot"></span>
-            <div class="step-card"><b>01</b><span>DISCOVERY</span><h3 data-i18n="stepOne">Погружение</h3><p data-i18n="stepOneText">Цели, аудитория, функции и ограничения будущего продукта.</p></div>
+        <div class="proof-grid">
+          <article class="proof-card reveal">
+            <span class="proof-index">01</span><div class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9l8-5 8 5v10M8 19v-6h8v6M3 19h18"/></svg></div>
+            <h3 data-i18n="proofProductTitle">Продуктовое мышление</h3><p data-i18n="proofProductText">Сначала цель, аудитория и сценарий. Каждый экран получает понятную задачу, а не просто эффектный вид.</p>
           </article>
-          <article class="timeline-step reveal">
-            <span class="step-dot"></span>
-            <div class="step-card"><b>02</b><span>DESIGN</span><h3 data-i18n="stepTwo">Система и дизайн</h3><p data-i18n="stepTwoText">Структура, пользовательские сценарии и визуальное направление.</p></div>
+          <article class="proof-card proof-card-wide reveal">
+            <div class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+            <div><span class="proof-index">02</span><h3 data-i18n="proofSystemTitle">Системный дизайн</h3><p data-i18n="proofSystemText">Компоненты, состояния и единые правила делают интерфейс цельным и легко расширяемым.</p></div>
           </article>
-          <article class="timeline-step reveal">
-            <span class="step-dot"></span>
-            <div class="step-card"><b>03</b><span>DEVELOPMENT</span><h3 data-i18n="stepThree">Разработка</h3><p data-i18n="stepThreeText">Frontend, backend, база данных и необходимые интеграции.</p></div>
+          <article class="proof-card proof-card-wide reveal">
+            <div class="proof-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h4l2-7 4 12 2-5h4"/></svg></div>
+            <div><span class="proof-index">03</span><h3 data-i18n="proofSpeedTitle">Скорость и качество</h3><p data-i18n="proofSpeedText">Адаптивность, доступность, SEO и производительность проверяются до релиза.</p></div>
           </article>
-          <article class="timeline-step reveal">
-            <span class="step-dot"></span>
-            <div class="step-card"><b>04</b><span>TESTING</span><h3 data-i18n="stepFour">Тестирование</h3><p data-i18n="stepFourText">Проверка устройств, сценариев, скорости и стабильности.</p></div>
-          </article>
-          <article class="timeline-step reveal">
-            <span class="step-dot"></span>
-            <div class="step-card"><b>05</b><span>LAUNCH</span><h3 data-i18n="stepFive">Запуск и поддержка</h3><p data-i18n="stepFiveText">Публикация, настройка окружения и помощь после релиза.</p></div>
+          <article class="proof-card proof-card-accent reveal">
+            <span class="proof-index">04</span><div class="proof-score"><strong>360°</strong><span data-i18n="proofScore">контроль продукта</span></div>
+            <p data-i18n="proofOwnerText">Один ответственный за дизайн, frontend, backend и запуск — без потери контекста между этапами.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="faq section" id="faq">
-      <div class="container faq-layout">
-        <header class="faq-head reveal">
-          <span class="kicker">06 / FAQ</span>
-          <h2 data-i18n="faqTitle">До старта<br><em>проекта.</em></h2>
-          <p data-i18n="faqIntro">Короткие ответы на вопросы, которые обычно возникают перед разработкой.</p>
-        </header>
-
-        <div class="accordion reveal">
-          <article class="faq-item">
-            <button type="button" aria-expanded="false"><span data-i18n="faqOneQ">Сколько времени занимает разработка?</span><i></i></button>
-            <div class="faq-answer"><p data-i18n="faqOneA">Лендинг обычно занимает от 1–2 недель. Сайт или приложение со сложной логикой — от нескольких недель, в зависимости от функций.</p></div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false"><span data-i18n="faqTwoQ">Как формируется стоимость?</span><i></i></button>
-            <div class="faq-answer"><p data-i18n="faqTwoA">Стоимость зависит от объема экранов, логики, интеграций и backend. После обсуждения задачи вы получаете понятную оценку.</p></div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false"><span data-i18n="faqThreeQ">Можно начать только с идеи?</span><i></i></button>
-            <div class="faq-answer"><p data-i18n="faqThreeA">Да. Я помогу превратить идею в структуру, определить необходимый функционал и выбрать подходящий стек.</p></div>
-          </article>
-          <article class="faq-item">
-            <button type="button" aria-expanded="false"><span data-i18n="faqFourQ">Что происходит после запуска?</span><i></i></button>
-            <div class="faq-answer"><p data-i18n="faqFourA">Проверяю production-версию, помогаю с доменом и публикацией, а также остаюсь на связи для поддержки и развития.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container">
-        <div class="contact-shell">
-          <div class="contact-copy reveal">
-            <span class="kicker">07 / START A PROJECT</span>
-            <h2 data-i18n="contactTitle">Есть идея?<br><em>Давайте выкуем продукт.</em></h2>
-            <p data-i18n="contactText">Расскажите, что нужно создать. Я отвечу лично, уточню детали и предложу технический путь.</p>
-            <div class="contact-note">
-              <i></i>
-              <span data-i18n="availableLong">Доступен для новых проектов</span>
-            </div>
-          </div>
-
-          <div class="contact-grid reveal">
-            <a class="contact-card telegram" href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">
-              <span class="contact-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-3.7 17.1c-.3 1.2-1 1.5-2 1l-5.6-4.2-2.7 2.6c-.3.3-.6.6-1.1.6l.4-5.7L16.7 5c.5-.4-.1-.7-.7-.3L3.2 12.8l-5.5-1.7c-1.2-.4-1.2-1.2.3-1.8L19.5 1c1-.4 1.9.2 1.5 2Z"/></svg>
-              </span>
-              <span class="contact-card-copy"><small>Telegram</small><strong>@iskandarbek0220</strong></span>
-              <b>↗</b>
-            </a>
-
-            <a class="contact-card instagram" href="https://instagram.com/iskandarbek_0220" target="_blank" rel="noreferrer">
-              <span class="contact-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-              </span>
-              <span class="contact-card-copy"><small>Instagram</small><strong>@iskandarbek_0220</strong></span>
-              <b>↗</b>
-            </a>
-
-            <a class="contact-card email" href="mailto:iskandarbek2007@gmail.com">
-              <span class="contact-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-              </span>
-              <span class="contact-card-copy"><small>Email</small><strong>iskandarbek2007@gmail.com</strong></span>
-              <b>↗</b>
-            </a>
-
-            <a class="contact-card phone" href="tel:+998938882027">
-              <span class="contact-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.2 10 7.8 8.2 10c1.2 2.5 3.3 4.6 5.8 5.8l2.2-1.8 4.6 2.8-.8 3.3c-.2.8-1 1.4-1.8 1.3C9.8 20.5 3.5 14.2 2.6 5.8c-.1-.9.5-1.6 1.3-1.8Z"/></svg>
-              </span>
-              <span class="contact-card-copy"><small data-i18n="phone">Телефон</small><strong>+998 93 888 20 27</strong></span>
-              <b>↗</b>
-            </a>
-          </div>
-        </div>
+    <section class="home-cta section">
+      <div class="container home-cta-shell reveal">
+        <div><span class="kicker">READY WHEN YOU ARE</span><h2 data-i18n="homeCtaTitle">Есть задача? Соберём <em>сильный продукт.</em></h2></div>
+        <div class="home-cta-copy"><p data-i18n="homeCtaText">Опишите идею в нескольких предложениях. Я отвечу лично, задам точные вопросы и предложу понятный следующий шаг.</p><a class="button button-primary" href="contact.html"><span data-i18n="startProject">Начать проект</span><b>↗</b></a></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <a class="logo" href="#home"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a>
+      <a class="logo" href="index.html"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a>
       <div class="footer-center"><i></i><span data-i18n="availableLong">Доступен для новых проектов</span></div>
       <p>© <span id="year"></span> Iskandarbek Valijonov</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

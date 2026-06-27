@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta name="description" content="IV Studio — Портфолио: реальные проекты, разные задачи.">
+  <title>IV Studio — Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-mark"><span>I</span><span>V</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <i class="blob blob-one"></i>
+    <i class="blob blob-two"></i>
+    <i class="blob blob-three"></i>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="IV Digital Forge">
+      <span class="logo-mark">IV</span>
+      <span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="services.html" data-page="services" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-page="portfolio" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-page="process" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-page="contact" data-i18n="navContact">Контакты</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="availability"><i></i><span data-i18n="availableShort">Свободен</span></div>
+      <div class="languages" aria-label="Выбор языка">
+        <button class="lang active" type="button" data-lang="ru">RU</button>
+        <button class="lang" type="button" data-lang="en">EN</button>
+        <button class="lang" type="button" data-lang="uz">UZ</button>
+      </div>
+      <a class="nav-cta" href="contact.html" data-i18n="startProject">Начать проект</a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="services.html" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <span>Iskandarbek Valijonov</span>
+      <a href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">@iskandarbek0220</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero section">
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-copy">
+          <div class="terminal-label reveal"><span>04</span><i></i><span>SELECTED WORK</span></div>
+          <h1 class="reveal">
+            <span data-i18n="portfolioTitle">Реальные проекты.</span>
+            <span class="hero-accent" data-i18n="portfolioTitleAccent">Разные задачи.</span>
+          </h1>
+          <p class="page-hero-description reveal" data-i18n="portfolioIntro">Три направления работы: выразительный web, продуктовый интерфейс и мобильное приложение.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section">
+      <div class="container">
+        <div class="filters reveal" role="group" aria-label="Фильтр проектов">
+          <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">Все</button>
+          <button class="filter" type="button" data-filter="web">Web</button>
+          <button class="filter" type="button" data-filter="mobile">Mobile</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="web">
+            <img src="foto1site1.jpg" loading="lazy" alt="Сайт архитектурной студии">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <span class="project-type">WEB / DIGITAL EXPERIENCE</span>
+              <h3 data-i18n="projectOneTitle">Персональная digital-платформа</h3>
+              <p data-i18n="projectOneShort">Выразительная презентация экспертизы и прямой путь к заявке.</p>
+              <div class="project-bottom"><div><span>HTML</span><span>CSS</span><span>JS</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <img src="foto1site2.jpg" loading="lazy" alt="Сайт современной кофейни">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <span class="project-type">WEB / HOSPITALITY</span>
+              <h3 data-i18n="projectTwoTitle">Сайт современной кофейни</h3>
+              <p data-i18n="projectTwoShort">Атмосфера бренда, меню и понятный сценарий бронирования.</p>
+              <div class="project-bottom"><div><span>UI/UX</span><span>Responsive</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
+            </div>
+          </article>
+
+          <article class="project-card project-mobile reveal" data-category="mobile">
+            <img src="foto1phone.jpg" loading="lazy" alt="Мобильное приложение Keystone Password Manager">
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <span class="project-type">MOBILE / SECURITY</span>
+              <h3>Keystone Password Manager</h3>
+              <p data-i18n="projectThreeShort">Безопасное мобильное хранилище с ясным интерфейсом.</p>
+              <div class="project-bottom"><div><span>React Native</span><span>Security</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a>
+      <div class="footer-center"><i></i><span data-i18n="availableLong">Доступен для новых проектов</span></div>
+      <p>© <span id="year"></span> Iskandarbek Valijonov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

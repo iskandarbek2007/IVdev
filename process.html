@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta name="description" content="IV Studio — Процесс работы: от идеи до запуска.">
+  <title>IV Studio — Процесс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="loader-mark"><span>I</span><span>V</span></div>
+    <div class="loader-line"><i></i></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <i class="blob blob-one"></i>
+    <i class="blob blob-two"></i>
+    <i class="blob blob-three"></i>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html" aria-label="IV Digital Forge">
+      <span class="logo-mark">IV</span>
+      <span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="services.html" data-page="services" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-page="portfolio" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-page="pricing" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-page="process" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-page="contact" data-i18n="navContact">Контакты</a>
+    </nav>
+
+    <div class="header-tools">
+      <div class="availability"><i></i><span data-i18n="availableShort">Свободен</span></div>
+      <div class="languages" aria-label="Выбор языка">
+        <button class="lang active" type="button" data-lang="ru">RU</button>
+        <button class="lang" type="button" data-lang="en">EN</button>
+        <button class="lang" type="button" data-lang="uz">UZ</button>
+      </div>
+      <a class="nav-cta" href="contact.html" data-i18n="startProject">Начать проект</a>
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav>
+      <a href="services.html" data-i18n="navServices">Услуги</a>
+      <a href="portfolio.html" data-i18n="navPortfolio">Кейсы</a>
+      <a href="pricing.html" data-i18n="navPricing">Цены</a>
+      <a href="process.html" data-i18n="navProcess">Процесс</a>
+      <a href="contact.html" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="mobile-menu-bottom">
+      <span>Iskandarbek Valijonov</span>
+      <a href="https://t.me/iskandarbek0220" target="_blank" rel="noreferrer">@iskandarbek0220</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero section">
+      <div class="page-hero-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-copy">
+          <div class="terminal-label reveal"><span>05</span><i></i><span>WORKFLOW</span></div>
+          <h1 class="reveal">
+            <span data-i18n="processTitle">От идеи до запуска.</span>
+            <span class="hero-accent" data-i18n="processTitleAccent">Без чёрного ящика.</span>
+          </h1>
+          <p class="page-hero-description reveal" data-i18n="processIntro">На каждом этапе понятно, что происходит, какой результат готов и что будет дальше.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline-progress" aria-hidden="true"></div>
+          <article class="timeline-step reveal">
+            <span class="step-dot"></span>
+            <div class="step-card"><b>01</b><span>DISCOVERY</span><h3 data-i18n="stepOne">Погружение</h3><p data-i18n="stepOneText">Цели, аудитория, функции и ограничения будущего продукта.</p></div>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="step-dot"></span>
+            <div class="step-card"><b>02</b><span>DESIGN</span><h3 data-i18n="stepTwo">Система и дизайн</h3><p data-i18n="stepTwoText">Структура, пользовательские сценарии и визуальное направление.</p></div>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="step-dot"></span>
+            <div class="step-card"><b>03</b><span>DEVELOPMENT</span><h3 data-i18n="stepThree">Разработка</h3><p data-i18n="stepThreeText">Frontend, backend, база данных и необходимые интеграции.</p></div>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="step-dot"></span>
+            <div class="step-card"><b>04</b><span>TESTING</span><h3 data-i18n="stepFour">Тестирование</h3><p data-i18n="stepFourText">Проверка устройств, сценариев, скорости и стабильности.</p></div>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="step-dot"></span>
+            <div class="step-card"><b>05</b><span>LAUNCH</span><h3 data-i18n="stepFive">Запуск и поддержка</h3><p data-i18n="stepFiveText">Публикация, настройка окружения и помощь после релиза.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container faq-layout">
+        <header class="faq-head reveal">
+          <span class="kicker">06 / FAQ</span>
+          <h2 data-i18n="faqTitle">До старта<br><em>проекта.</em></h2>
+          <p data-i18n="faqIntro">Короткие ответы на вопросы, которые обычно возникают перед разработкой.</p>
+        </header>
+
+        <div class="accordion reveal">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="faqOneQ">Сколько времени занимает разработка?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="faqOneA">Лендинг обычно занимает от 1–2 недель. Сайт или приложение со сложной логикой — от нескольких недель, в зависимости от функций.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="faqTwoQ">Как формируется стоимость?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="faqTwoA">Стоимость зависит от объема экранов, логики, интеграций и backend. После обсуждения задачи вы получаете понятную оценку.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="faqThreeQ">Можно начать только с идеи?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="faqThreeA">Да. Я помогу превратить идею в структуру, определить необходимый функционал и выбрать подходящий стек.</p></div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false"><span data-i18n="faqFourQ">Что происходит после запуска?</span><i></i></button>
+            <div class="faq-answer"><p data-i18n="faqFourA">Проверяю production-версию, помогаю с доменом и публикацией, а также остаюсь на связи для поддержки и развития.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a>
+      <div class="footer-center"><i></i><span data-i18n="availableLong">Доступен для новых проектов</span></div>
+      <p>© <span id="year"></span> Iskandarbek Valijonov</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
