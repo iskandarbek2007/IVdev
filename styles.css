@@ -2943,3 +2943,63 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-spline spline-viewer,
   .hero-spline .spline-public-embed { display: none; }
 }
+
+/* Pricing page responsive layout */
+@media (max-width: 1024px) {
+  .page-pricing .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-pricing .pricing-popular { order: -1; }
+}
+
+@media (max-width: 760px) {
+  .page-pricing { overflow-x: hidden; }
+  .page-pricing .page-hero-copy,
+  .page-pricing .page-hero-description,
+  .page-pricing .section-head,
+  .page-pricing .section-head > div,
+  .page-pricing .section-head > p { width: 100%; min-width: 0; max-width: 100%; }
+  .page-pricing .page-hero h1,
+  .page-pricing .page-hero-description { overflow-wrap: break-word; }
+  .page-pricing .pricing-grid,
+  .page-pricing .values-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .page-pricing .pricing-popular { order: initial; }
+  .page-pricing .pricing-card {
+    width: 100%;
+    min-width: 0;
+    padding: 26px 20px 22px;
+    border-radius: 20px;
+  }
+  .page-pricing .pricing-card:hover { transform: none; }
+  .page-pricing .pricing-header {
+    min-height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .page-pricing .pricing-header h3 { margin: 10px 0 0; font-size: 1.25rem; }
+  .page-pricing .pricing-price {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 6px;
+  }
+  .page-pricing .pricing-price strong {
+    max-width: 100%;
+    font-size: clamp(1.8rem, 9.5vw, 2.35rem);
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+  .page-pricing .pricing-price strong small { font-size: .7rem; }
+  .page-pricing .pricing-features { gap: 10px; }
+  .page-pricing .pricing-features li { padding-left: 20px; font-size: .82rem; overflow-wrap: break-word; }
+  .page-pricing .pricing-cta { min-height: 48px; margin-top: 22px; }
+  .page-pricing .value-card { min-width: 0; padding: 24px 20px; }
+  .page-pricing .faq-item button { align-items: flex-start; gap: 14px; }
+  .page-pricing .faq-item button span { min-width: 0; overflow-wrap: break-word; }
+}
+
+@media (max-width: 390px) {
+  .page-pricing .pricing-card { padding-inline: 16px; }
+  .page-pricing .pricing-price { gap: 4px; }
+  .page-pricing .pricing-price strong { font-size: 1.75rem; }
+}
