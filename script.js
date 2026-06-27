@@ -598,7 +598,6 @@ if (motionAllowed.matches) {
 }
 
 const splineScenes = {
-  index: "https://prod.spline.design/FK8-z41R9daZ0u25/scene.splinecode",
   services: "https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode",
   portfolio: "https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode",
   process: "https://prod.spline.design/LEvjG3OETYd2GsRw/scene.splinecode",
@@ -606,15 +605,19 @@ const splineScenes = {
 };
 
 const pricingSplineEmbed = "https://my.spline.design/motiontrails-6pO4zFc51sjxebAx17XdffDO/";
-const homeSplineBackdrop = "https://my.spline.design/blackhole-3utK4GL7XaVEonHoio4jJsE0/";
 
 function mountSplineHero() {
   const hero = document.querySelector(".hero, .page-hero");
   if (!hero) return;
 
   const pageName = document.body.dataset.page || "index";
-  const sceneUrl = splineScenes[pageName] || splineScenes.index;
-  const mountTarget = pageName === "index" ? document.querySelector(".hero-visual") || hero : hero;
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const compactScreen = window.matchMedia("(max-width: 900px)").matches;
+
+  if (pageName === "index") return;
+
+  const sceneUrl = splineScenes[pageName] || splineScenes.services;
   const layer = document.createElement("div");
   layer.className = `hero-spline hero-spline-${pageName}`;
   layer.setAttribute("aria-hidden", "true");
@@ -622,27 +625,8 @@ function mountSplineHero() {
   const fallback = document.createElement("div");
   fallback.className = "spline-fallback-shape";
   layer.append(fallback);
-  if (mountTarget === hero) hero.prepend(layer);
-  else mountTarget.append(layer);
-
-  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const compactScreen = window.matchMedia("(max-width: 900px)").matches;
+  hero.prepend(layer);
   if (reduceMotion || compactScreen || connection?.saveData) return;
-
-  if (pageName === "index") {
-    const backdrop = document.createElement("iframe");
-    backdrop.className = "hero-blackhole-embed";
-    backdrop.src = homeSplineBackdrop;
-    backdrop.title = "Black Hole — интерактивная 3D-сцена";
-    backdrop.loading = "eager";
-    backdrop.allow = "autoplay; fullscreen";
-    backdrop.referrerPolicy = "strict-origin-when-cross-origin";
-    backdrop.addEventListener("load", () => mountTarget.classList.add("blackhole-ready"), { once: true });
-    mountTarget.prepend(backdrop);
-    layer.remove();
-    return;
-  }
 
   if (pageName === "pricing") {
     const embed = document.createElement("iframe");

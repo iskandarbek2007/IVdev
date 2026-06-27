@@ -64,7 +64,11 @@
           <p class="hero-description reveal" data-i18n="heroText">Full-stack разработка от первой концепции до production: интерфейс, серверная логика, база данных, интеграции и запуск.</p>
           <div class="hero-actions reveal"><a class="button button-primary" href="contact.html"><span data-i18n="discuss">Обсудить проект</span><b>↗</b></a><a class="button button-secondary" href="portfolio.html"><span data-i18n="viewCases">Посмотреть кейсы</span><b>↓</b></a></div>
         </div>
-        <div class="hero-visual reveal" aria-hidden="true"></div>
+        <spline-viewer
+          class="hero-blackhole-viewer reveal"
+          url="https://prod.spline.design/FF6868m46kPsc4ic/scene.splinecode"
+          aria-hidden="true"
+        ></spline-viewer>
       </div>
       <div class="hero-bottom">
         <div class="hero-stat reveal"><strong>6</strong><span data-i18n="heroStatServices">направлений разработки</span></div>
@@ -127,6 +131,7 @@
   </main>
 
   <footer class="footer"><div class="container footer-inner"><a class="logo" href="index.html"><span class="logo-mark">IV</span><span class="logo-copy"><strong>Digital Forge</strong><small>Full-stack studio</small></span></a><div class="footer-center"><i></i><span data-i18n="availableLong">Доступен для новых проектов</span></div><p>© <span id="year"></span> Iskandarbek Valijonov</p></div></footer>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.98/build/spline-viewer.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

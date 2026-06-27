@@ -2835,53 +2835,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: opacity .7s ease;
 }
 .hero-spline.is-ready spline-viewer { opacity: .72; }
-.hero-visual {
-  position: relative;
-  z-index: 3;
-  min-width: 0;
-  min-height: clamp(430px, 46vw, 610px);
-  overflow: hidden;
-  border: 1px solid rgba(16,18,20,.14);
-  border-radius: 32px;
-  background: #050607;
-  box-shadow: 0 32px 90px rgba(23,27,31,.18);
-}
-.hero-blackhole-embed {
+.hero-blackhole-viewer {
   position: absolute;
   z-index: 1;
-  inset: 0;
-  width: 100%;
+  top: 0;
+  right: -20%;
+  width: 72%;
   height: 100%;
-  border: 0;
-  opacity: 0;
+  opacity: 1;
+  pointer-events: auto;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 24%, #000 100%);
   transition: opacity .35s ease-out;
 }
-.hero-visual.blackhole-ready .hero-blackhole-embed { opacity: 1; }
-.hero-visual::after {
-  position: absolute;
-  z-index: 2;
-  content: "";
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(120deg, rgba(5,6,7,.04), rgba(5,6,7,.34));
-}
-.hero-visual .hero-spline-index {
-  z-index: 3;
-  inset: 0;
-  opacity: 1;
-  overflow: visible;
-  mask-image: radial-gradient(circle at 72% 68%, #000 0%, #000 48%, transparent 76%);
-}
-.hero-visual .hero-spline-index spline-viewer {
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(.18) saturate(.72) contrast(1.08) brightness(1.1);
-  mix-blend-mode: screen;
-  transform: translate(24%, 18%) scale(.66);
-  transform-origin: 50% 50%;
-}
-.hero-visual .hero-spline-index.is-ready spline-viewer { opacity: .92; }
+.hero-copy { position: relative; z-index: 2; }
 .hero-spline .spline-public-embed {
   position: absolute;
   inset: 0;
@@ -2953,7 +2919,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .page-hero .hero-spline { top: var(--header); right: -28%; left: 44%; opacity: .45; }
   .hero-spline spline-viewer,
   .hero-spline .spline-public-embed { display: none; }
-  .hero-visual { display: none; }
+  .hero-blackhole-viewer { display: none; }
   .spline-fallback-shape { left: 66%; width: min(86vw, 390px); }
   [data-page="pricing"] .page-hero-copy { max-width: 100%; }
   [data-page="pricing"] .page-hero .hero-spline-pricing {
