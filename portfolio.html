@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0e1a">
+  <meta name="theme-color" content="#f4f5f6">
   <meta name="description" content="IV Studio — Портфолио: реальные проекты, разные задачи.">
   <title>IV Studio — Портфолио</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +77,21 @@
             <span data-i18n="portfolioTitle">Реальные проекты.</span>
             <span class="hero-accent" data-i18n="portfolioTitleAccent">Разные задачи.</span>
           </h1>
-          <p class="page-hero-description reveal" data-i18n="portfolioIntro">Три направления работы: выразительный web, продуктовый интерфейс и мобильное приложение.</p>
+          <p class="page-hero-description reveal" data-i18n="portfolioIntro">Решения для продаж, презентации бизнеса, сервисов и внутренних процессов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-advantages section" aria-labelledby="case-advantages-title">
+      <div class="container">
+        <header class="section-head reveal"><div><span class="kicker">05 / WHY IV STUDIO</span><h2 id="case-advantages-title" data-i18n="caseAdvantagesTitle">Берём ответственность <em>за результат после запуска.</em></h2></div><p data-i18n="caseAdvantagesIntro">Вы работаете с одним специалистом от первой структуры до публикации и дальнейших обновлений.</p></header>
+        <div class="case-advantage-grid">
+          <article class="case-advantage reveal"><span>01</span><h3 data-i18n="caseSupportTitle">Сопровождаем сайт</h3><p data-i18n="caseSupportText">Следим за формами, исправляем ошибки и помогаем развивать проект после публикации.</p></article>
+          <article class="case-advantage reveal"><span>02</span><h3 data-i18n="caseFastTitle">Запускаем без затяжки</h3><p data-i18n="caseFastText">Лендинг занимает от 5 до 14 дней, если контент и согласования готовы вовремя.</p></article>
+          <article class="case-advantage reveal"><span>03</span><h3 data-i18n="caseDesignTitle">Проектируем под бренд</h3><p data-i18n="caseDesignText">Дизайн учитывает аудиторию, предложение и действия посетителя.</p></article>
+          <article class="case-advantage reveal"><span>04</span><h3 data-i18n="caseContactTitle">Остаёмся на связи</h3><p data-i18n="caseContactText">Вы знаете статус работы, ближайший этап и решения, которые требуют согласования.</p></article>
+          <article class="case-advantage reveal"><span>05</span><h3 data-i18n="caseSafeTitle">Проверяем стабильность</h3><p data-i18n="caseSafeText">Тестируем формы, адаптивность, скорость и защиту данных перед запуском.</p></article>
+          <article class="case-advantage case-advantage-dark reveal"><span>06</span><h3 data-i18n="caseOneTitle">Один ответственный</h3><p data-i18n="caseOneText">Вам не нужно координировать дизайнера, разработчика и специалиста по запуску.</p><a href="contact.html" data-i18n="discuss">Обсудить проект</a></article>
         </div>
       </div>
     </section>
@@ -86,30 +100,34 @@
       <div class="container">
         <div class="filters reveal" role="group" aria-label="Фильтр проектов">
           <button class="filter active" type="button" data-filter="all" data-i18n="filterAll">Все</button>
-          <button class="filter" type="button" data-filter="web">Web</button>
+          <button class="filter" type="button" data-filter="business" data-i18n="filterBusiness">Бизнес</button>
+          <button class="filter" type="button" data-filter="commerce" data-i18n="filterCommerce">Продажи</button>
+          <button class="filter" type="button" data-filter="automation" data-i18n="filterAutomation">Автоматизация</button>
           <button class="filter" type="button" data-filter="mobile">Mobile</button>
         </div>
 
         <div class="project-grid">
-          <article class="project-card reveal" data-category="web">
+          <article class="project-card reveal" data-category="business">
             <img src="foto1site1.jpg" loading="lazy" alt="Сайт архитектурной студии">
             <div class="project-overlay"></div>
             <div class="project-content">
               <span class="project-type">WEB / DIGITAL EXPERIENCE</span>
               <h3 data-i18n="projectOneTitle">Персональная digital-платформа</h3>
               <p data-i18n="projectOneShort">Выразительная презентация экспертизы и прямой путь к заявке.</p>
-              <div class="project-bottom"><div><span>HTML</span><span>CSS</span><span>JS</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
+              <div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Экспертиза</span><span><b data-i18n="caseResult">Результат</b> Заявки</span><span><b data-i18n="caseTime">Срок</b> 12 дней</span></div>
+              <div class="project-bottom"><div><span>Corporate</span><span>Lead form</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="web">
+          <article class="project-card reveal" data-category="business">
             <img src="foto1site2.jpg" loading="lazy" alt="Сайт современной кофейни">
             <div class="project-overlay"></div>
             <div class="project-content">
               <span class="project-type">WEB / HOSPITALITY</span>
               <h3 data-i18n="projectTwoTitle">Сайт современной кофейни</h3>
               <p data-i18n="projectTwoShort">Атмосфера бренда, меню и понятный сценарий бронирования.</p>
-              <div class="project-bottom"><div><span>UI/UX</span><span>Responsive</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
+              <div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Меню</span><span><b data-i18n="caseResult">Результат</b> Бронь</span><span><b data-i18n="caseTime">Срок</b> 9 дней</span></div>
+              <div class="project-bottom"><div><span>Hospitality</span><span>Booking</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
             </div>
           </article>
 
@@ -120,12 +138,64 @@
               <span class="project-type">MOBILE / SECURITY</span>
               <h3>Keystone Password Manager</h3>
               <p data-i18n="projectThreeShort">Безопасное мобильное хранилище с ясным интерфейсом.</p>
+              <div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Защита</span><span><b data-i18n="caseResult">Результат</b> Mobile app</span><span><b data-i18n="caseTime">Срок</b> 8 недель</span></div>
               <div class="project-bottom"><div><span>React Native</span><span>Security</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div>
             </div>
+          </article>
+
+          <article class="project-card project-concept concept-property reveal" data-category="business">
+            <div class="project-visual"><span class="visual-label">NOVA RESIDENCE</span><div class="visual-building"></div><div class="visual-ui"><i></i><i></i><i></i></div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">REAL ESTATE / LEAD GENERATION</span><h3 data-i18n="projectPropertyTitle">Жилой комплекс Nova</h3><p data-i18n="projectPropertyShort">Планировки, ход строительства и запись на просмотр.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Продажа квартир</span><span><b data-i18n="caseResult">Результат</b> Просмотры</span><span><b data-i18n="caseTime">Срок</b> 18 дней</span></div><div class="project-bottom"><div><span>Catalog</span><span>CRM</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-dental reveal" data-category="business">
+            <div class="project-visual"><span class="visual-label">DENTA CARE</span><div class="visual-orbit"></div><div class="visual-copy">Healthy smile<br>starts here</div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">HEALTHCARE / APPOINTMENTS</span><h3 data-i18n="projectDentalTitle">Стоматология Denta Care</h3><p data-i18n="projectDentalShort">Услуги, врачи, цены и запись на консультацию.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Запись</span><span><b data-i18n="caseResult">Результат</b> Приёмы</span><span><b data-i18n="caseTime">Срок</b> 14 дней</span></div><div class="project-bottom"><div><span>Medical</span><span>Booking</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-education reveal" data-category="business">
+            <div class="project-visual"><span class="visual-label">LEVEL UP</span><div class="visual-number">24</div><div class="visual-chips"><i>IELTS</i><i>IT</i><i>Business</i></div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">EDUCATION / ENROLLMENT</span><h3 data-i18n="projectEducationTitle">Учебный центр Level Up</h3><p data-i18n="projectEducationShort">Курсы, преподаватели и запись на пробный урок.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Набор</span><span><b data-i18n="caseResult">Результат</b> Ученики</span><span><b data-i18n="caseTime">Срок</b> 12 дней</span></div><div class="project-bottom"><div><span>Courses</span><span>Forms</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-fashion reveal" data-category="commerce">
+            <div class="project-visual"><span class="visual-label">MONO / SHOP</span><div class="visual-product"></div><div class="visual-price">790 000 UZS</div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">E-COMMERCE / RETAIL</span><h3 data-i18n="projectShopTitle">Интернет-магазин Mono</h3><p data-i18n="projectShopShort">Каталог, фильтры, корзина и оплата заказов.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Онлайн-продажи</span><span><b data-i18n="caseResult">Результат</b> Заказы</span><span><b data-i18n="caseTime">Срок</b> 24 дня</span></div><div class="project-bottom"><div><span>Shop</span><span>Payment</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-b2b reveal" data-category="commerce">
+            <div class="project-visual"><span class="visual-label">PRO SUPPLY</span><div class="visual-lines"><i></i><i></i><i></i><i></i></div><div class="visual-copy">Industrial<br>catalog</div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">B2B / PRODUCT CATALOG</span><h3 data-i18n="projectB2bTitle">Каталог B2B-поставщика</h3><p data-i18n="projectB2bShort">Товары, спецификации и запрос коммерческого предложения.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Каталог</span><span><b data-i18n="caseResult">Результат</b> Запросы</span><span><b data-i18n="caseTime">Срок</b> 20 дней</span></div><div class="project-bottom"><div><span>B2B</span><span>CRM</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-auto reveal" data-category="business">
+            <div class="project-visual"><span class="visual-label">DRIVE LAB</span><div class="visual-wheel"></div><div class="visual-ui"><i></i><i></i><i></i></div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">AUTO SERVICE / BOOKING</span><h3 data-i18n="projectAutoTitle">Автосервис Drive Lab</h3><p data-i18n="projectAutoShort">Услуги, расчёт стоимости и запись на обслуживание.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Запись</span><span><b data-i18n="caseResult">Результат</b> Заезды</span><span><b data-i18n="caseTime">Срок</b> 10 дней</span></div><div class="project-bottom"><div><span>Service</span><span>Calculator</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-beauty reveal" data-category="business">
+            <div class="project-visual"><span class="visual-label">SÉLENE</span><div class="visual-moon"></div><div class="visual-copy">Beauty<br>studio</div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">BEAUTY / ONLINE BOOKING</span><h3 data-i18n="projectBeautyTitle">Салон красоты Sélene</h3><p data-i18n="projectBeautyShort">Мастера, услуги, портфолио и онлайн-запись.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Расписание</span><span><b data-i18n="caseResult">Результат</b> Записи</span><span><b data-i18n="caseTime">Срок</b> 11 дней</span></div><div class="project-bottom"><div><span>Beauty</span><span>Booking</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-crm reveal" data-category="automation">
+            <div class="project-visual"><span class="visual-label">FLOW CRM</span><div class="visual-dashboard"><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">CRM / SALES OPERATIONS</span><h3 data-i18n="projectCrmTitle">CRM для отдела продаж</h3><p data-i18n="projectCrmShort">Сделки, задачи, сотрудники и отчёты в одном интерфейсе.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Контроль</span><span><b data-i18n="caseResult">Результат</b> Воронка</span><span><b data-i18n="caseTime">Срок</b> 6 недель</span></div><div class="project-bottom"><div><span>Dashboard</span><span>API</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-bot reveal" data-category="automation">
+            <div class="project-visual"><span class="visual-label">TELEGRAM BOT</span><div class="visual-chat"><i></i><i></i><i></i></div><div class="visual-send">↗</div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">TELEGRAM / AUTOMATION</span><h3 data-i18n="projectBotTitle">Бот для заявок и доставки</h3><p data-i18n="projectBotShort">Приём заказов, статусы и уведомления менеджеру.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Автоматизация</span><span><b data-i18n="caseResult">Результат</b> Меньше рутины</span><span><b data-i18n="caseTime">Срок</b> 16 дней</span></div><div class="project-bottom"><div><span>Telegram</span><span>Backend</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
+          </article>
+
+          <article class="project-card project-concept concept-delivery reveal" data-category="mobile">
+            <div class="project-visual"><span class="visual-label">TEZ / DELIVERY</span><div class="visual-phone"><i></i><i></i><i></i></div><div class="visual-route"></div></div>
+            <div class="project-overlay"></div><div class="project-content"><span class="project-type">MOBILE / DELIVERY</span><h3 data-i18n="projectDeliveryTitle">Приложение доставки Tez</h3><p data-i18n="projectDeliveryShort">Каталог, заказ, оплата и отслеживание курьера.</p><div class="case-facts"><span><b data-i18n="caseTask">Задача</b> Заказы</span><span><b data-i18n="caseResult">Результат</b> Mobile app</span><span><b data-i18n="caseTime">Срок</b> 9 недель</span></div><div class="project-bottom"><div><span>Mobile</span><span>Maps</span></div><b data-i18n="viewCase">Смотреть кейс ↗</b></div></div>
           </article>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
