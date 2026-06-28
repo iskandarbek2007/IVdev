@@ -2145,26 +2145,61 @@ body {
   gap: 10px;
 }
 .audience-card {
-  min-height: 220px;
+  min-height: 356px;
   display: flex;
   flex-direction: column;
-  padding: 28px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 20px;
   background: rgba(27,28,24,.58);
   transition: transform .4s cubic-bezier(.16,1,.3,1), border-color .3s ease, background .3s ease;
 }
 .audience-card:hover { transform: translateY(-4px); border-color: rgba(216,231,180,.25); background: rgba(31,32,28,.82); }
-.audience-card > span,
+.audience-card-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #e3e6e8;
+  border-bottom: 1px solid var(--line);
+}
+.audience-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .65s cubic-bezier(.16,1,.3,1);
+}
+.audience-card:hover .audience-card-media img { transform: scale(1.035); }
+.audience-card-body {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 132px;
+  padding: 24px 28px 26px;
+}
+.audience-card-number,
 .result-item > span {
   color: #74766d;
   font-family: "JetBrains Mono", monospace;
   font-size: .62rem;
   letter-spacing: .1em;
 }
-.audience-card h3 { margin: auto 0 8px; font-family: "Space Grotesk", sans-serif; font-size: 1.18rem; font-weight: 500; }
+.audience-card-number { position: absolute; top: 18px; right: 22px; }
+.audience-card h3 { margin: 0 0 8px; font-family: "Space Grotesk", sans-serif; font-size: 1.18rem; font-weight: 500; }
 .audience-card p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.6; }
-.audience-card-wide { grid-column: span 2; background: rgba(216,231,180,.055); }
+.audience-card-wide {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, .75fr);
+  background: rgba(216,231,180,.055);
+}
+.audience-card-wide .audience-card-media {
+  min-height: 100%;
+  aspect-ratio: auto;
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
 
 .client-results { border-top: 1px solid var(--line); background: #0d0e0c; }
 .results-shell { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(60px, 10vw, 150px); align-items: start; }
@@ -2252,7 +2287,16 @@ body {
   .header .languages { gap: 7px; }
   .audience-grid { grid-template-columns: 1fr; }
   .audience-card,
-  .audience-card-wide { grid-column: auto; min-height: 175px; padding: 22px; }
+  .audience-card-wide { grid-column: auto; min-height: 330px; }
+  .audience-card-wide { display: flex; }
+  .audience-card-wide .audience-card-media {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .audience-card-body { min-height: 126px; padding: 22px; }
+  .audience-card-number { top: 16px; right: 19px; }
   .results-shell { display: block; }
   .results-copy { position: static; margin-bottom: 40px; }
   .results-copy h2 { font-size: clamp(1.9rem, 8.5vw, 2.65rem); }
@@ -2344,7 +2388,15 @@ body {
 .services, .portfolio, .pricing, .process, .contact,
 .stack, .pricing-values, .studio-proof, .client-results,
 .audience, .home-teasers, .faq, .pricing-faq { color: var(--text); background: transparent; border-color: var(--line); }
-.client-results { background: #e9ebed; }
+.client-results {
+  background-color: #e9ebed;
+  background-image:
+    linear-gradient(rgba(244,245,246,.12), rgba(244,245,246,.12)),
+    url("assets/results/results-background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .trust-numbers { border-color: var(--line); background: #dfe2e5; }
 .audience-card,
 :is(.service-card, .tech-item, .pricing-card, .value-card, .step-card, .proof-card, .teaser-card),
@@ -2382,6 +2434,10 @@ body {
 .trust-number small { color: #666b70; }
 .text-link { color: #111315; border-color: rgba(16,18,20,.4); }
 .text-link b { color: #111315; }
+
+@media (max-width: 760px) {
+  .client-results { background-position: 16% center; }
+}
 
 .button-primary { color: #fff; border-color: #111315; background: #111315; }
 .button-primary:hover { color: #111315; background: #cfd3d7; }
@@ -3109,5 +3165,89 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .mobile-menu {
     -webkit-user-select: none;
     user-select: none;
+  }
+}
+
+/* Home navigation cards: full-width violet actions without arrows. */
+.home-teasers .teaser-card { min-height: 470px; }
+.home-teasers .teaser-link {
+  width: 100%;
+  min-height: 58px;
+  margin-top: auto;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border-radius: 14px;
+  color: #fff;
+  background: linear-gradient(100deg, #7547f8 0%, #8c5cf5 100%);
+  box-shadow: 0 12px 28px rgba(117,71,248,.24);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: .88rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s ease, filter .3s ease;
+}
+.home-teasers .teaser-card:hover .teaser-link {
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+  box-shadow: 0 16px 34px rgba(117,71,248,.32);
+}
+
+@media (max-width: 1024px) {
+  .home-teasers .teaser-card { min-height: 360px; }
+}
+
+@media (max-width: 760px) {
+  .home-teasers .teaser-card { min-height: 330px; }
+  .home-teasers .teaser-link { min-height: 54px; border-radius: 12px; }
+}
+
+/* Individual image backgrounds for the homepage proof cards. */
+.proof-grid-six .proof-card.proof-card-image {
+  background-color: #f6f7f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.proof-grid-six .proof-card.proof-card-strategy {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/strategy.webp");
+}
+.proof-grid-six .proof-card.proof-card-design {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/design.webp");
+}
+.proof-grid-six .proof-card.proof-card-development {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/development.webp");
+}
+.proof-grid-six .proof-card.proof-card-responsive {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/responsive.webp");
+}
+.proof-grid-six .proof-card.proof-card-speed {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/speed.webp");
+}
+.proof-grid-six .proof-card.proof-card-support {
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/support.webp");
+}
+
+/* Dedicated portrait hero artwork for phones. */
+@media (max-width: 760px) {
+  .hero {
+    min-height: 100svh;
+    background-color: #eef0f2;
+    background-image:
+      linear-gradient(180deg, rgba(250,251,252,.72) 0%, rgba(246,248,249,.3) 38%, rgba(239,242,244,.2) 68%, rgba(238,240,242,.82) 100%),
+      url("assets/hero/mobile-hero.webp");
+    background-repeat: no-repeat;
+    background-position: center, center 42%;
+    background-size: cover, cover;
+  }
+  .hero::after { display: none; }
+  .hero-grid { opacity: .07; }
+  #particleCanvas { display: none; }
+  .hero-description {
+    color: #292e33;
+    font-weight: 500;
+    text-shadow: 0 1px 10px rgba(255,255,255,.95);
   }
 }
