@@ -3048,3 +3048,66 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .page-spline-viewer { display: none; }
   .page-hero::before { background: rgba(250,251,252,.9); }
 }
+
+/* Cleaner mobile actions: one consistent drawn icon instead of font arrows. */
+@media (max-width: 760px) {
+  .button {
+    gap: 16px;
+    padding-inline: 20px;
+  }
+
+  :is(.button b, .contact-card > b) {
+    position: relative;
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    display: block;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 1;
+    opacity: .72;
+  }
+
+  :is(.button b, .contact-card > b)::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 1.5px;
+    border-radius: 999px;
+    content: "";
+    background: currentColor;
+    transform: translate(-60%, -50%);
+  }
+
+  :is(.button b, .contact-card > b)::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-top: 1.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+    content: "";
+    transform: translate(-15%, -50%) rotate(45deg);
+  }
+
+  .mobile-menu nav a::after { content: none; }
+  .mobile-menu nav a:active { background: rgba(16,18,20,.06); }
+  .contact-card:hover > b { transform: none; }
+
+  .header .lang,
+  .header .lang.active,
+  .mobile-menu nav a {
+    color: #111315;
+    background: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .mobile-menu {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
