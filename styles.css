@@ -2392,7 +2392,7 @@ body {
   background-color: #e9ebed;
   background-image:
     linear-gradient(rgba(244,245,246,.12), rgba(244,245,246,.12)),
-    url("assets/results/results-background.webp");
+    url("results-background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3212,22 +3212,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background-size: cover;
 }
 .proof-grid-six .proof-card.proof-card-strategy {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/strategy.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("strategy.webp");
 }
 .proof-grid-six .proof-card.proof-card-design {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/design.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("design.webp");
 }
 .proof-grid-six .proof-card.proof-card-development {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/development.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("development.webp");
 }
 .proof-grid-six .proof-card.proof-card-responsive {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/responsive.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("responsive.webp");
 }
 .proof-grid-six .proof-card.proof-card-speed {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/speed.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("speed.webp");
 }
 .proof-grid-six .proof-card.proof-card-support {
-  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("assets/proof/support.webp");
+  background-image: linear-gradient(180deg, rgba(255,255,255,.02) 28%, rgba(255,255,255,.74) 78%, rgba(255,255,255,.94) 100%), url("support.webp");
 }
 
 /* Dedicated portrait hero artwork for phones. */
@@ -3237,7 +3237,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     background-color: #eef0f2;
     background-image:
       linear-gradient(180deg, rgba(250,251,252,.72) 0%, rgba(246,248,249,.3) 38%, rgba(239,242,244,.2) 68%, rgba(238,240,242,.82) 100%),
-      url("assets/hero/mobile-hero.webp");
+      url("mobile-hero.webp");
     background-repeat: no-repeat;
     background-position: center, center 42%;
     background-size: cover, cover;
